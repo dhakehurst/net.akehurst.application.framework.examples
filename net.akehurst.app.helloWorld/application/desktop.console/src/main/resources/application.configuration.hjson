@@ -1,0 +1,8 @@
+{
+	greeter: {
+	  userRequestHandler: {
+	    message: "Hi World!"
+	  }
+	}
+
+}
