@@ -39,10 +39,10 @@ subprojects {
     
     dependencies {
    		compile "${afPrefix}.common.bits:${afVersion}"
-    	compile "net.akehurst.application.framework:net.akehurst.application.framework.common.os:${afVersion}"
-    	compile "net.akehurst.application.framework:net.akehurst.application.framework.technology.logging.log4j:${afVersion}"
-		compile "net.akehurst.application.framework:net.akehurst.application.framework.technology.filesystem:${afVersion}"
-		compile "net.akehurst.application.framework:net.akehurst.application.framework.technology.persistence.filesystem:${afVersion}"
+    	compile "${afPrefix}.common.os:${afVersion}"
+    	compile "${afPrefix}.technology.logging.log4j:${afVersion}"
+		compile "${afPrefix}.technology.filesystem:${afVersion}"
+		compile "${afPrefix}.technology.persistence.filesystem:${afVersion}"
 
     	testCompile 'junit:junit:+'
     }

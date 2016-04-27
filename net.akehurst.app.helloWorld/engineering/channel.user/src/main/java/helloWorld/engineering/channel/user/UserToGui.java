@@ -17,54 +17,34 @@ package helloWorld.engineering.channel.user;
 
 import helloWorld.computational.interfaceUser.IUserNotification;
 import helloWorld.computational.interfaceUser.IUserRequest;
-import helloWorld.computational.interfaceUser.Message;
 import net.akehurst.application.framework.common.IPort;
 import net.akehurst.application.framework.common.annotations.declaration.Component;
+import net.akehurst.application.framework.common.annotations.declaration.ProvidesInterfaceForPort;
+import net.akehurst.application.framework.common.annotations.instance.ActiveObjectInstance;
+import net.akehurst.application.framework.common.annotations.instance.ConfiguredValue;
 import net.akehurst.application.framework.common.annotations.instance.PortInstance;
 import net.akehurst.application.framework.realisation.AbstractComponent;
-import net.akehurst.application.framework.technology.authentication.TechSession;
-import net.akehurst.application.framework.technology.guiInterface.GuiEvent;
-import net.akehurst.application.framework.technology.guiInterface.IGuiCallback;
 import net.akehurst.application.framework.technology.guiInterface.IGuiNotification;
 import net.akehurst.application.framework.technology.guiInterface.IGuiRequest;
 
-//the proxy object implements the IUser interface by
-// forwarding messages to an output object
 @Component
-public class UserToGui extends AbstractComponent implements IUserNotification, IGuiNotification {
+public class UserToGui extends AbstractComponent {
 
 	public UserToGui(String id) {
 		super(id);
 	}
 
-	public void notifyMessage(Message message) {
-
-		portGui().out(IGuiRequest.class).setText(null, "", "output", message.asPrimitive());
-
-	}
-
+	@ActiveObjectInstance
+	@ProvidesInterfaceForPort(portId = "portGui", provides = IGuiNotification.class)
+	@ProvidesInterfaceForPort(portId = "portUser", provides = IUserNotification.class)
+	HelloWorldHandler handler;
+	
 	@Override
-	public void notifyReady() {
-		portUser().out(IUserRequest.class).requestStart();
+	public void afConnectParts() {
+		this.handler.setGuiRequest( portGui().out(IGuiRequest.class) );
+		this.handler.userRequest = portUser().out(IUserRequest.class);
 	}
-
-	@Override
-	public void notifyEventOccured(GuiEvent event) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void notifyDowloadRequest(TechSession session, String filename, IGuiCallback callback) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void notifyUpload(TechSession session, String filename) {
-		// TODO Auto-generated method stub
-
-	}
+	
 
 	@PortInstance(provides = { IUserNotification.class }, requires = { IUserRequest.class })
 	IPort portUser;

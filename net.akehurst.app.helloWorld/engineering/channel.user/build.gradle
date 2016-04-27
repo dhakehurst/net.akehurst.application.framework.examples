@@ -18,4 +18,5 @@ dependencies {
 	compile project(":${rootProject.name}.computational.interfaceUser")
 
 	compile "net.akehurst.application.framework:net.akehurst.application.framework.technology.interfaceGui:+"
+	compile "net.akehurst.application.framework:net.akehurst.application.framework.technology.gui.common:+"
 }

@@ -15,11 +15,13 @@
  */
 package helloWorld.computational.interfaceUser;
 
+import java.util.concurrent.Future;
+
 import net.akehurst.application.framework.common.annotations.declaration.Signal;
 
 public interface IUserRequest {
 
 	@Signal
-	void requestStart();
+	Future<Void> requestStart();
 	
 }

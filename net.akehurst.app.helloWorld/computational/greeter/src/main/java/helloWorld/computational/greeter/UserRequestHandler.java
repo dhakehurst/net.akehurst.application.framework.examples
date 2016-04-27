@@ -15,6 +15,8 @@
  */
 package helloWorld.computational.greeter;
 
+import java.util.concurrent.Future;
+
 import helloWorld.computational.interfaceUser.IUserNotification;
 import helloWorld.computational.interfaceUser.IUserRequest;
 import helloWorld.computational.interfaceUser.Message;
@@ -39,8 +41,8 @@ public class UserRequestHandler extends AbstractActiveSignalProcessingObject imp
 	
 	// --------- IUserRequest ---------
 	@Override
-	public void requestStart() {
-		super.addToQueue("requestStart", () -> {
+	public Future<Void> requestStart() {
+		return super.submit("requestStart", () -> {
 			
 			this.userNotification.notifyMessage(this.message);
 
