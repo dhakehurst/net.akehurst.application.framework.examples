@@ -1,0 +1,16 @@
+{
+  application:
+  {
+    monitor: {}
+    samplerProxy:
+    {
+      channelId: "commsChannel"
+    }
+    monitorToGui: {}
+    gui:
+    {
+      fxmlUrlStr: "file:src/main/resources/Gui.fxml"
+    }
+    socketComms: {}
+  }
+}

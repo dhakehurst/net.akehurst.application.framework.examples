@@ -1,0 +1,1789 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:configuration="http://www.eclipse.org/papyrus/infra/viewpoints/configuration" xmlns:css="http://www.eclipse.org/papyrus/infra/gmfdiag/css" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/viewpoints/policy/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <notation:Diagram xmi:id="_mH0wMHokEeSdTdiyFkcj2g" type="PapyrusUMLClassDiagram" name="Model Organisation" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_mlrw4HokEeSdTdiyFkcj2g" type="2007">
+      <children xmi:type="notation:DecorationNode" xmi:id="_mls_AHokEeSdTdiyFkcj2g" type="5026"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_mls_AXokEeSdTdiyFkcj2g" type="7016">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_mls_AnokEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mls_A3okEeSdTdiyFkcj2g"/>
+      </children>
+      <element xmi:type="uml:Package" href="TemperatureSensor.uml#_mlTWYHokEeSdTdiyFkcj2g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mlrw4XokEeSdTdiyFkcj2g" x="400" y="217"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_nTjjgHokEeSdTdiyFkcj2g" type="2007">
+      <children xmi:type="notation:DecorationNode" xmi:id="_nTjjgnokEeSdTdiyFkcj2g" type="5026"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_nTjjg3okEeSdTdiyFkcj2g" type="7016">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_nTjjhHokEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nTjjhXokEeSdTdiyFkcj2g"/>
+      </children>
+      <element xmi:type="uml:Package" href="TemperatureSensor.uml#_nTiVYHokEeSdTdiyFkcj2g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nTjjgXokEeSdTdiyFkcj2g" x="100" y="96"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_orauUHokEeSdTdiyFkcj2g" type="2007">
+      <children xmi:type="notation:DecorationNode" xmi:id="_orauUnokEeSdTdiyFkcj2g" type="5026"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_orauU3okEeSdTdiyFkcj2g" type="7016">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_orauVHokEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_orauVXokEeSdTdiyFkcj2g"/>
+      </children>
+      <element xmi:type="uml:Package" href="TemperatureSensor.uml#_orZgMHokEeSdTdiyFkcj2g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_orauUXokEeSdTdiyFkcj2g" x="694" y="86"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_qMv-MHokEeSdTdiyFkcj2g" type="2007">
+      <children xmi:type="notation:DecorationNode" xmi:id="_qMwlQHokEeSdTdiyFkcj2g" type="5026"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_qMwlQXokEeSdTdiyFkcj2g" type="7016">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_qMwlQnokEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qMwlQ3okEeSdTdiyFkcj2g"/>
+      </children>
+      <element xmi:type="uml:Package" href="TemperatureSensor.uml#_qMuwEHokEeSdTdiyFkcj2g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qMv-MXokEeSdTdiyFkcj2g" x="113" y="377"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_r3lvYHokEeSdTdiyFkcj2g" type="2007">
+      <children xmi:type="notation:DecorationNode" xmi:id="_r3lvYnokEeSdTdiyFkcj2g" type="5026"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_r3lvY3okEeSdTdiyFkcj2g" type="7016">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_r3lvZHokEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r3lvZXokEeSdTdiyFkcj2g"/>
+      </children>
+      <element xmi:type="uml:Package" href="TemperatureSensor.uml#_r3khQHokEeSdTdiyFkcj2g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r3lvYXokEeSdTdiyFkcj2g" x="658" y="366"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_mH0wMXokEeSdTdiyFkcj2g" name="diagram_compatibility_version" stringValue="1.0.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_mH0wMnokEeSdTdiyFkcj2g"/>
+    <styles xmi:type="style:PapyrusViewStyle" xmi:id="_mH0wM3okEeSdTdiyFkcj2g">
+      <owner xmi:type="uml:Model" href="TemperatureSensor.uml#_iffXkHokEeSdTdiyFkcj2g"/>
+      <configuration xmi:type="configuration:PapyrusDiagram" href="platform:/plugin/org.eclipse.papyrus.infra.viewpoints.policy/builtin/default.configuration#_7wLmpNxhEeOqHvRyiN87hA"/>
+    </styles>
+    <element xmi:type="uml:Model" href="TemperatureSensor.uml#_iffXkHokEeSdTdiyFkcj2g"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_v9QkQHokEeSdTdiyFkcj2g" type="PapyrusUMLClassDiagram" name="Package Organisation" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_wayNwHokEeSdTdiyFkcj2g" type="2007">
+      <children xmi:type="notation:DecorationNode" xmi:id="_wayNwnokEeSdTdiyFkcj2g" type="5026"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_wayNw3okEeSdTdiyFkcj2g" type="7016">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_wayNxHokEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wayNxXokEeSdTdiyFkcj2g"/>
+      </children>
+      <element xmi:type="uml:Package" href="TemperatureSensor.uml#_wawYkHokEeSdTdiyFkcj2g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wayNwXokEeSdTdiyFkcj2g" x="61" y="48"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_xv2jQHokEeSdTdiyFkcj2g" type="2007">
+      <children xmi:type="notation:DecorationNode" xmi:id="_xv2jQnokEeSdTdiyFkcj2g" type="5026"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_xv2jQ3okEeSdTdiyFkcj2g" type="7016">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_xv2jRHokEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xv2jRXokEeSdTdiyFkcj2g"/>
+      </children>
+      <element xmi:type="uml:Package" href="TemperatureSensor.uml#_xv1VIHokEeSdTdiyFkcj2g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xv2jQXokEeSdTdiyFkcj2g" x="62" y="197"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_v9QkQXokEeSdTdiyFkcj2g" name="diagram_compatibility_version" stringValue="1.0.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_v9QkQnokEeSdTdiyFkcj2g"/>
+    <styles xmi:type="style:PapyrusViewStyle" xmi:id="_v9QkQ3okEeSdTdiyFkcj2g">
+      <owner xmi:type="uml:Package" href="TemperatureSensor.uml#_r3khQHokEeSdTdiyFkcj2g"/>
+      <configuration xmi:type="configuration:PapyrusDiagram" href="platform:/plugin/org.eclipse.papyrus.infra.viewpoints.policy/builtin/default.configuration#_7wLmpNxhEeOqHvRyiN87hA"/>
+    </styles>
+    <element xmi:type="uml:Package" href="TemperatureSensor.uml#_r3khQHokEeSdTdiyFkcj2g"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_5Ok-oHokEeSdTdiyFkcj2g" type="CompositeStructure" name="Composite Structure" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_5Ok-oXokEeSdTdiyFkcj2g" type="2069" fillColor="10265827">
+      <children xmi:type="notation:DecorationNode" xmi:id="_5Ok-onokEeSdTdiyFkcj2g" type="5121"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_5Ok-o3okEeSdTdiyFkcj2g" type="7069">
+        <children xmi:type="notation:Shape" xmi:id="_6ppOcHokEeSdTdiyFkcj2g" type="3070">
+          <children xmi:type="notation:DecorationNode" xmi:id="_6ppOcnokEeSdTdiyFkcj2g" type="5126"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_6ppOc3okEeSdTdiyFkcj2g" type="7077">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_6ppOdHokEeSdTdiyFkcj2g"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6ppOdXokEeSdTdiyFkcj2g"/>
+          </children>
+          <element xmi:type="uml:Property" href="TemperatureSensor.uml#_6pVFYHokEeSdTdiyFkcj2g"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6ppOcXokEeSdTdiyFkcj2g" x="47" y="33" width="184" height="270"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_8Z5rIHokEeSdTdiyFkcj2g" type="3070" fillColor="8421504">
+          <children xmi:type="notation:DecorationNode" xmi:id="_8Z6SMHokEeSdTdiyFkcj2g" type="5126"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_8Z6SMXokEeSdTdiyFkcj2g" type="7077">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_8Z6SMnokEeSdTdiyFkcj2g"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8Z6SM3okEeSdTdiyFkcj2g"/>
+          </children>
+          <element xmi:type="uml:Property" href="TemperatureSensor.uml#_8Z318HokEeSdTdiyFkcj2g"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8Z5rIXokEeSdTdiyFkcj2g" x="552" y="227" width="167" height="45"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_BJoJoHolEeSdTdiyFkcj2g" type="3070" fillColor="10011046">
+          <children xmi:type="notation:DecorationNode" xmi:id="_BJowsHolEeSdTdiyFkcj2g" type="5126"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_BJowsXolEeSdTdiyFkcj2g" type="7077">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_BJowsnolEeSdTdiyFkcj2g"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BJows3olEeSdTdiyFkcj2g"/>
+          </children>
+          <element xmi:type="uml:Property" href="TemperatureSensor.uml#_BJm7gHolEeSdTdiyFkcj2g"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BJoJoXolEeSdTdiyFkcj2g" x="305" y="229" width="179" height="49"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_E52S8HolEeSdTdiyFkcj2g" type="3070" fillColor="8421504">
+          <children xmi:type="notation:DecorationNode" xmi:id="_E52S8nolEeSdTdiyFkcj2g" type="5126"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_E52S83olEeSdTdiyFkcj2g" type="7077">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_E52S9HolEeSdTdiyFkcj2g"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E52S9XolEeSdTdiyFkcj2g"/>
+          </children>
+          <element xmi:type="uml:Property" href="TemperatureSensor.uml#_E50dwHolEeSdTdiyFkcj2g"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E52S8XolEeSdTdiyFkcj2g" x="555" y="63" width="150"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_GQpt0HolEeSdTdiyFkcj2g" type="3070" fillColor="10011046">
+          <children xmi:type="notation:DecorationNode" xmi:id="_GQpt0nolEeSdTdiyFkcj2g" type="5126"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_GQpt03olEeSdTdiyFkcj2g" type="7077">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_GQpt1HolEeSdTdiyFkcj2g"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GQpt1XolEeSdTdiyFkcj2g"/>
+          </children>
+          <element xmi:type="uml:Property" href="TemperatureSensor.uml#_GQn4oHolEeSdTdiyFkcj2g"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GQpt0XolEeSdTdiyFkcj2g" x="301" y="64" width="180" height="46"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_5Ok-pHokEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5Ok-pXokEeSdTdiyFkcj2g"/>
+      </children>
+      <element xmi:type="uml:Component" href="TemperatureSensor.uml#_0dDwYHokEeSdTdiyFkcj2g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5Ok-pnokEeSdTdiyFkcj2g" x="40" y="40" width="766" height="374"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_5Ok-p3okEeSdTdiyFkcj2g" name="diagram_compatibility_version" stringValue="1.0.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_5Ok-qHokEeSdTdiyFkcj2g"/>
+    <styles xmi:type="style:PapyrusViewStyle" xmi:id="_5Ok-qXokEeSdTdiyFkcj2g">
+      <owner xmi:type="uml:Component" href="TemperatureSensor.uml#_0dDwYHokEeSdTdiyFkcj2g"/>
+    </styles>
+    <element xmi:type="uml:Component" href="TemperatureSensor.uml#_0dDwYHokEeSdTdiyFkcj2g"/>
+    <edges xmi:type="notation:Connector" xmi:id="_DiA9UHolEeSdTdiyFkcj2g" type="4013" source="_BJoJoHolEeSdTdiyFkcj2g" target="_8Z5rIHokEeSdTdiyFkcj2g" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_DiA9U3olEeSdTdiyFkcj2g" visible="false" type="6025">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_DiA9VHolEeSdTdiyFkcj2g" y="60"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_DiBkYHolEeSdTdiyFkcj2g" type="6050">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_DiBkYXolEeSdTdiyFkcj2g" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_DiBkYnolEeSdTdiyFkcj2g" visible="false" type="6051">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_DiBkY3olEeSdTdiyFkcj2g" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_DiBkZHolEeSdTdiyFkcj2g" visible="false" type="6052">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_DiBkZXolEeSdTdiyFkcj2g" y="20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_DiA9UXolEeSdTdiyFkcj2g"/>
+      <element xmi:type="uml:Connector" href="TemperatureSensor.uml#_Dh62sHolEeSdTdiyFkcj2g"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DiA9UnolEeSdTdiyFkcj2g" points="[38, -5, -182, 0]$[186, -2, -34, 3]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DiYJsHolEeSdTdiyFkcj2g" id="(0.7877094972067039,0.673469387755102)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DiYJsXolEeSdTdiyFkcj2g" id="(0.21935483870967742,0.6)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_D7aUwHolEeSdTdiyFkcj2g" type="4013" source="_6ppOcHokEeSdTdiyFkcj2g" target="_BJoJoHolEeSdTdiyFkcj2g" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_D7aUw3olEeSdTdiyFkcj2g" visible="false" type="6025">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_D7aUxHolEeSdTdiyFkcj2g" y="60"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_D7aUxXolEeSdTdiyFkcj2g" type="6050">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_D7aUxnolEeSdTdiyFkcj2g" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_D7a70HolEeSdTdiyFkcj2g" visible="false" type="6051">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_D7a70XolEeSdTdiyFkcj2g" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_D7a70nolEeSdTdiyFkcj2g" visible="false" type="6052">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_D7a703olEeSdTdiyFkcj2g" y="20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_D7aUwXolEeSdTdiyFkcj2g"/>
+      <element xmi:type="uml:Connector" href="TemperatureSensor.uml#_D7YfkHolEeSdTdiyFkcj2g"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_D7aUwnolEeSdTdiyFkcj2g" points="[23, 3, -132, 0]$[113, 8, -42, 5]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_D7hCcHolEeSdTdiyFkcj2g" id="(0.875,0.8444444444444444)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_D7hCcXolEeSdTdiyFkcj2g" id="(0.2346368715083799,0.6326530612244898)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_J859IHolEeSdTdiyFkcj2g" type="4013" source="_GQpt0HolEeSdTdiyFkcj2g" target="_E52S8HolEeSdTdiyFkcj2g" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_J859I3olEeSdTdiyFkcj2g" visible="false" type="6025">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_J859JHolEeSdTdiyFkcj2g" y="60"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_J86kMHolEeSdTdiyFkcj2g" type="6050">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_J86kMXolEeSdTdiyFkcj2g" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_J86kMnolEeSdTdiyFkcj2g" visible="false" type="6051">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_J86kM3olEeSdTdiyFkcj2g" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_J86kNHolEeSdTdiyFkcj2g" visible="false" type="6052">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_J86kNXolEeSdTdiyFkcj2g" y="20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_J859IXolEeSdTdiyFkcj2g"/>
+      <element xmi:type="uml:Connector" href="TemperatureSensor.uml#_J84H8HolEeSdTdiyFkcj2g"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_J859InolEeSdTdiyFkcj2g" points="[12, 3, -166, -15]$[157, 3, -21, -15]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_J9ADwHolEeSdTdiyFkcj2g" id="(0.9333333333333333,0.5217391304347826)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_J9ADwXolEeSdTdiyFkcj2g" id="(0.14685314685314685,0.782608695652174)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_KXSzEHolEeSdTdiyFkcj2g" type="4013" source="_6ppOcHokEeSdTdiyFkcj2g" target="_GQpt0HolEeSdTdiyFkcj2g" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_KXUBMHolEeSdTdiyFkcj2g" visible="false" type="6025">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_KXUoQHolEeSdTdiyFkcj2g" y="60"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_KXUoQXolEeSdTdiyFkcj2g" type="6050">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_KXUoQnolEeSdTdiyFkcj2g" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_KXUoQ3olEeSdTdiyFkcj2g" visible="false" type="6051">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_KXUoRHolEeSdTdiyFkcj2g" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_KXUoRXolEeSdTdiyFkcj2g" visible="false" type="6052">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_KXUoRnolEeSdTdiyFkcj2g" y="20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_KXSzEXolEeSdTdiyFkcj2g"/>
+      <element xmi:type="uml:Connector" href="TemperatureSensor.uml#_KXQ94HolEeSdTdiyFkcj2g"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KXSzEnolEeSdTdiyFkcj2g" points="[29, -1, -105, -7]$[99, -1, -35, -7]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KXb9AHolEeSdTdiyFkcj2g" id="(0.842391304347826,0.2111111111111111)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KXb9AXolEeSdTdiyFkcj2g" id="(0.19444444444444445,0.6956521739130435)"/>
+    </edges>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_PCUkQHrUEeSdTdiyFkcj2g" type="PapyrusUMLClassDiagram" name="Package Organisation" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_PcIycHrUEeSdTdiyFkcj2g" type="2007">
+      <children xmi:type="notation:DecorationNode" xmi:id="_PcIycnrUEeSdTdiyFkcj2g" type="5026"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_PcIyc3rUEeSdTdiyFkcj2g" type="7016">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_PcIydHrUEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PcIydXrUEeSdTdiyFkcj2g"/>
+      </children>
+      <element xmi:type="uml:Package" href="TemperatureSensor.uml#_PcHkUHrUEeSdTdiyFkcj2g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PcIycXrUEeSdTdiyFkcj2g" x="56" y="58"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_Q10iMHrUEeSdTdiyFkcj2g" type="2007">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Q10iMnrUEeSdTdiyFkcj2g" type="5026"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Q10iM3rUEeSdTdiyFkcj2g" type="7016">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_Q10iNHrUEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Q10iNXrUEeSdTdiyFkcj2g"/>
+      </children>
+      <element xmi:type="uml:Package" href="TemperatureSensor.uml#_Q1zUEHrUEeSdTdiyFkcj2g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Q10iMXrUEeSdTdiyFkcj2g" x="189" y="192"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_SCUxkHrUEeSdTdiyFkcj2g" type="2007">
+      <children xmi:type="notation:DecorationNode" xmi:id="_SCVYoHrUEeSdTdiyFkcj2g" type="5026"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_SCVYoXrUEeSdTdiyFkcj2g" type="7016">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_SCVYonrUEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SCVYo3rUEeSdTdiyFkcj2g"/>
+      </children>
+      <element xmi:type="uml:Package" href="TemperatureSensor.uml#_SCUKgHrUEeSdTdiyFkcj2g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SCUxkXrUEeSdTdiyFkcj2g" x="324" y="314"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_PCVLUHrUEeSdTdiyFkcj2g" name="diagram_compatibility_version" stringValue="1.0.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_PCVLUXrUEeSdTdiyFkcj2g"/>
+    <styles xmi:type="style:PapyrusViewStyle" xmi:id="_PCVLUnrUEeSdTdiyFkcj2g">
+      <owner xmi:type="uml:Package" href="TemperatureSensor.uml#_orZgMHokEeSdTdiyFkcj2g"/>
+      <configuration xmi:type="configuration:PapyrusDiagram" href="platform:/plugin/org.eclipse.papyrus.infra.viewpoints.policy/builtin/default.configuration#_7wLmpNxhEeOqHvRyiN87hA"/>
+    </styles>
+    <element xmi:type="uml:Package" href="TemperatureSensor.uml#_orZgMHokEeSdTdiyFkcj2g"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_bOGkoHrUEeSdTdiyFkcj2g" type="PapyrusUMLClassDiagram" name="computational" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_cDy2gHrUEeSdTdiyFkcj2g" type="2007">
+      <children xmi:type="notation:DecorationNode" xmi:id="_cDy2gnrUEeSdTdiyFkcj2g" type="5026"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_cDzdkHrUEeSdTdiyFkcj2g" type="7016">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_cDzdkXrUEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cDzdknrUEeSdTdiyFkcj2g"/>
+      </children>
+      <element xmi:type="uml:Package" href="TemperatureSensor.uml#_cDyPcHrUEeSdTdiyFkcj2g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cDy2gXrUEeSdTdiyFkcj2g" x="49" y="171"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_eiDBoHrUEeSdTdiyFkcj2g" type="2007">
+      <children xmi:type="notation:DecorationNode" xmi:id="_eiDosHrUEeSdTdiyFkcj2g" type="5026"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eiDosXrUEeSdTdiyFkcj2g" type="7016">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_eiDosnrUEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eiDos3rUEeSdTdiyFkcj2g"/>
+      </children>
+      <element xmi:type="uml:Package" href="TemperatureSensor.uml#_eiCakHrUEeSdTdiyFkcj2g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eiDBoXrUEeSdTdiyFkcj2g" x="48" y="48"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_bOGkoXrUEeSdTdiyFkcj2g" name="diagram_compatibility_version" stringValue="1.0.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_bOGkonrUEeSdTdiyFkcj2g"/>
+    <styles xmi:type="style:PapyrusViewStyle" xmi:id="_bOGko3rUEeSdTdiyFkcj2g">
+      <owner xmi:type="uml:Package" href="TemperatureSensor.uml#_PcHkUHrUEeSdTdiyFkcj2g"/>
+      <configuration xmi:type="configuration:PapyrusDiagram" href="platform:/plugin/org.eclipse.papyrus.infra.viewpoints.policy/builtin/default.configuration#_7wLmpNxhEeOqHvRyiN87hA"/>
+    </styles>
+    <element xmi:type="uml:Package" href="TemperatureSensor.uml#_PcHkUHrUEeSdTdiyFkcj2g"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_ii3LsHrUEeSdTdiyFkcj2g" type="PapyrusUMLClassDiagram" name="computational::sampler" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_jhk2sHrUEeSdTdiyFkcj2g" type="2008">
+      <children xmi:type="notation:DecorationNode" xmi:id="_jhldwHrUEeSdTdiyFkcj2g" type="5029"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_jhldwXrUEeSdTdiyFkcj2g" type="7017">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_jhldwnrUEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_jhldw3rUEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_jhldxHrUEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jhldxXrUEeSdTdiyFkcj2g"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_jhldxnrUEeSdTdiyFkcj2g" type="7018">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_jhldx3rUEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_jhldyHrUEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_jhldyXrUEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jhldynrUEeSdTdiyFkcj2g"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_jhmE0HrUEeSdTdiyFkcj2g" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_jhmE0XrUEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_jhmE0nrUEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_jhmE03rUEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jhmE1HrUEeSdTdiyFkcj2g"/>
+      </children>
+      <element xmi:type="uml:Class" href="TemperatureSensor.uml#_jhjBgHrUEeSdTdiyFkcj2g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jhk2sXrUEeSdTdiyFkcj2g" x="56" y="58" width="202" height="137"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_ii3LsXrUEeSdTdiyFkcj2g" name="diagram_compatibility_version" stringValue="1.0.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_ii3LsnrUEeSdTdiyFkcj2g"/>
+    <styles xmi:type="style:PapyrusViewStyle" xmi:id="_ii3Ls3rUEeSdTdiyFkcj2g">
+      <owner xmi:type="uml:Package" href="TemperatureSensor.uml#_eiCakHrUEeSdTdiyFkcj2g"/>
+    </styles>
+    <element xmi:type="uml:Package" href="TemperatureSensor.uml#_eiCakHrUEeSdTdiyFkcj2g"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_sDKdQHrUEeSdTdiyFkcj2g" type="PapyrusUMLClassDiagram" name="engineering" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_vo7qEHrUEeSdTdiyFkcj2g" type="2007" fillColor="10011046">
+      <children xmi:type="notation:DecorationNode" xmi:id="_vo7qEnrUEeSdTdiyFkcj2g" type="5026"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_vo7qE3rUEeSdTdiyFkcj2g" type="7016">
+        <children xmi:type="notation:Shape" xmi:id="_w-o4wHrUEeSdTdiyFkcj2g" type="3009" fillColor="10011046">
+          <children xmi:type="notation:DecorationNode" xmi:id="_w-o4wnrUEeSdTdiyFkcj2g" type="5017"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_w-o4w3rUEeSdTdiyFkcj2g" type="7010">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_w-o4xHrUEeSdTdiyFkcj2g"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_w-o4xXrUEeSdTdiyFkcj2g"/>
+          </children>
+          <element xmi:type="uml:Package" href="TemperatureSensor.uml#_w-iyIHrUEeSdTdiyFkcj2g"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_w-o4wXrUEeSdTdiyFkcj2g" x="34" y="27" width="219" height="92"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_x__oEHrUEeSdTdiyFkcj2g" type="3009" fillColor="10011046">
+          <children xmi:type="notation:DecorationNode" xmi:id="_x__oEnrUEeSdTdiyFkcj2g" type="5017"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_x__oE3rUEeSdTdiyFkcj2g" type="7010">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_x__oFHrUEeSdTdiyFkcj2g"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x__oFXrUEeSdTdiyFkcj2g"/>
+          </children>
+          <element xmi:type="uml:Package" href="TemperatureSensor.uml#_x__BAHrUEeSdTdiyFkcj2g"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x__oEXrUEeSdTdiyFkcj2g" x="36" y="160" width="216"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_vo7qFHrUEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vo7qFXrUEeSdTdiyFkcj2g"/>
+      </children>
+      <element xmi:type="uml:Package" href="TemperatureSensor.uml#_vo6b8HrUEeSdTdiyFkcj2g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vo7qEXrUEeSdTdiyFkcj2g" x="37" y="29" width="306" height="324"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_sDKdQXrUEeSdTdiyFkcj2g" name="diagram_compatibility_version" stringValue="1.0.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_sDKdQnrUEeSdTdiyFkcj2g"/>
+    <styles xmi:type="style:PapyrusViewStyle" xmi:id="_sDKdQ3rUEeSdTdiyFkcj2g">
+      <owner xmi:type="uml:Package" href="TemperatureSensor.uml#_Q1zUEHrUEeSdTdiyFkcj2g"/>
+      <configuration xmi:type="configuration:PapyrusDiagram" href="platform:/plugin/org.eclipse.papyrus.infra.viewpoints.policy/builtin/default.configuration#_7wLmpNxhEeOqHvRyiN87hA"/>
+    </styles>
+    <element xmi:type="uml:Package" href="TemperatureSensor.uml#_Q1zUEHrUEeSdTdiyFkcj2g"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_-tzXcHrUEeSdTdiyFkcj2g" type="PapyrusUMLClassDiagram" name="engineering::channel::sensorSampler" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="__28w0HrUEeSdTdiyFkcj2g" type="2008" fillColor="10011046">
+      <children xmi:type="notation:DecorationNode" xmi:id="__28w0nrUEeSdTdiyFkcj2g" type="5029"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="__29X4HrUEeSdTdiyFkcj2g" type="7017">
+        <styles xmi:type="notation:TitleStyle" xmi:id="__29X4XrUEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="__29X4nrUEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="__29X43rUEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="__29X5HrUEeSdTdiyFkcj2g"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="__29X5XrUEeSdTdiyFkcj2g" type="7018">
+        <styles xmi:type="notation:TitleStyle" xmi:id="__29X5nrUEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="__29X53rUEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="__29X6HrUEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="__29X6XrUEeSdTdiyFkcj2g"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="__29X6nrUEeSdTdiyFkcj2g" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="__29X63rUEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="__29X7HrUEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="__29X7XrUEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="__29X7nrUEeSdTdiyFkcj2g"/>
+      </children>
+      <element xmi:type="uml:Class" href="TemperatureSensor.uml#__27isHrUEeSdTdiyFkcj2g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="__28w0XrUEeSdTdiyFkcj2g" x="62" y="55"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_-tzXcXrUEeSdTdiyFkcj2g" name="diagram_compatibility_version" stringValue="1.0.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_-tzXcnrUEeSdTdiyFkcj2g"/>
+    <styles xmi:type="style:PapyrusViewStyle" xmi:id="_-tzXc3rUEeSdTdiyFkcj2g">
+      <owner xmi:type="uml:Package" href="TemperatureSensor.uml#_w-iyIHrUEeSdTdiyFkcj2g"/>
+    </styles>
+    <element xmi:type="uml:Package" href="TemperatureSensor.uml#_w-iyIHrUEeSdTdiyFkcj2g"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_H3FQIHrVEeSdTdiyFkcj2g" type="PapyrusUMLClassDiagram" name="engineering::channel::samplerMonitor" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_INryQHrVEeSdTdiyFkcj2g" type="2008" fillColor="10011046">
+      <children xmi:type="notation:DecorationNode" xmi:id="_INryQnrVEeSdTdiyFkcj2g" type="5029"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_INryQ3rVEeSdTdiyFkcj2g" type="7017">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_INryRHrVEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_INryRXrVEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_INryRnrVEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_INryR3rVEeSdTdiyFkcj2g"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_INrySHrVEeSdTdiyFkcj2g" type="7018">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_INsZUHrVEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_INsZUXrVEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_INsZUnrVEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_INsZU3rVEeSdTdiyFkcj2g"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_INsZVHrVEeSdTdiyFkcj2g" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_INsZVXrVEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_INsZVnrVEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_INsZV3rVEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_INsZWHrVEeSdTdiyFkcj2g"/>
+      </children>
+      <element xmi:type="uml:Class" href="TemperatureSensor.uml#_INqkIHrVEeSdTdiyFkcj2g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_INryQXrVEeSdTdiyFkcj2g" x="116" y="71"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_J0ILoHrVEeSdTdiyFkcj2g" type="2008" fillColor="10011046">
+      <children xmi:type="notation:DecorationNode" xmi:id="_J0ILonrVEeSdTdiyFkcj2g" type="5029"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_J0ILo3rVEeSdTdiyFkcj2g" type="7017">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_J0ILpHrVEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_J0ILpXrVEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_J0ILpnrVEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J0ILp3rVEeSdTdiyFkcj2g"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_J0ILqHrVEeSdTdiyFkcj2g" type="7018">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_J0ILqXrVEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_J0ILqnrVEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_J0ILq3rVEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J0ILrHrVEeSdTdiyFkcj2g"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_J0ILrXrVEeSdTdiyFkcj2g" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_J0ILrnrVEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_J0ILr3rVEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_J0ILsHrVEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J0ILsXrVEeSdTdiyFkcj2g"/>
+      </children>
+      <element xmi:type="uml:Class" href="TemperatureSensor.uml#_J0HkkHrVEeSdTdiyFkcj2g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J0ILoXrVEeSdTdiyFkcj2g" x="119" y="206"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_H3F3MHrVEeSdTdiyFkcj2g" name="diagram_compatibility_version" stringValue="1.0.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_H3F3MXrVEeSdTdiyFkcj2g"/>
+    <styles xmi:type="style:PapyrusViewStyle" xmi:id="_H3F3MnrVEeSdTdiyFkcj2g">
+      <owner xmi:type="uml:Package" href="TemperatureSensor.uml#_x__BAHrUEeSdTdiyFkcj2g"/>
+    </styles>
+    <element xmi:type="uml:Package" href="TemperatureSensor.uml#_x__BAHrUEeSdTdiyFkcj2g"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_UCs4cHrVEeSdTdiyFkcj2g" type="PapyrusUMLClassDiagram" name="technology" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_XadecHrVEeSdTdiyFkcj2g" type="2007">
+      <children xmi:type="notation:DecorationNode" xmi:id="_XadecnrVEeSdTdiyFkcj2g" type="5026"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Xadec3rVEeSdTdiyFkcj2g" type="7016">
+        <children xmi:type="notation:Shape" xmi:id="_YLLJsHrVEeSdTdiyFkcj2g" type="3009">
+          <children xmi:type="notation:DecorationNode" xmi:id="_YLLJsnrVEeSdTdiyFkcj2g" type="5017"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_YLLJs3rVEeSdTdiyFkcj2g" type="7010">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_YLLJtHrVEeSdTdiyFkcj2g"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YLLJtXrVEeSdTdiyFkcj2g"/>
+          </children>
+          <element xmi:type="uml:Package" href="TemperatureSensor.uml#_YLJ7kHrVEeSdTdiyFkcj2g"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YLLJsXrVEeSdTdiyFkcj2g" x="51" y="35" width="191" height="148"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_XadedHrVEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XadedXrVEeSdTdiyFkcj2g"/>
+      </children>
+      <element xmi:type="uml:Package" href="TemperatureSensor.uml#_Xac3YHrVEeSdTdiyFkcj2g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XadecXrVEeSdTdiyFkcj2g" x="37" y="40" width="320" height="338"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_a_o1YHrVEeSdTdiyFkcj2g" type="2007">
+      <children xmi:type="notation:DecorationNode" xmi:id="_a_pccHrVEeSdTdiyFkcj2g" type="5026"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_a_pccXrVEeSdTdiyFkcj2g" type="7016">
+        <children xmi:type="notation:Shape" xmi:id="_b-7vMHrVEeSdTdiyFkcj2g" type="3009">
+          <children xmi:type="notation:DecorationNode" xmi:id="_b-7vMnrVEeSdTdiyFkcj2g" type="5017"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_b-7vM3rVEeSdTdiyFkcj2g" type="7010">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_b-7vNHrVEeSdTdiyFkcj2g"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_b-7vNXrVEeSdTdiyFkcj2g"/>
+          </children>
+          <element xmi:type="uml:Package" href="TemperatureSensor.uml#_b-6hEHrVEeSdTdiyFkcj2g"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_b-7vMXrVEeSdTdiyFkcj2g" x="47" y="38" width="253" height="198"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_a_pccnrVEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_a_pcc3rVEeSdTdiyFkcj2g"/>
+      </children>
+      <element xmi:type="uml:Package" href="TemperatureSensor.uml#_a_oOUHrVEeSdTdiyFkcj2g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_a_o1YXrVEeSdTdiyFkcj2g" x="413" y="39" width="353" height="338"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_UCs4cXrVEeSdTdiyFkcj2g" name="diagram_compatibility_version" stringValue="1.0.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_UCs4cnrVEeSdTdiyFkcj2g"/>
+    <styles xmi:type="style:PapyrusViewStyle" xmi:id="_UCs4c3rVEeSdTdiyFkcj2g">
+      <owner xmi:type="uml:Package" href="TemperatureSensor.uml#_SCUKgHrUEeSdTdiyFkcj2g"/>
+      <configuration xmi:type="configuration:PapyrusDiagram" href="platform:/plugin/org.eclipse.papyrus.infra.viewpoints.policy/builtin/default.configuration#_7wLmpNxhEeOqHvRyiN87hA"/>
+    </styles>
+    <element xmi:type="uml:Package" href="TemperatureSensor.uml#_SCUKgHrUEeSdTdiyFkcj2g"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_n6lB0HrVEeSdTdiyFkcj2g" type="PapyrusUMLClassDiagram" name="technology::hardware" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_oZgZgHrVEeSdTdiyFkcj2g" type="2008" fillColor="8421504">
+      <children xmi:type="notation:DecorationNode" xmi:id="_oZgZgnrVEeSdTdiyFkcj2g" type="5029"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_oZgZg3rVEeSdTdiyFkcj2g" type="7017">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_oZgZhHrVEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_oZgZhXrVEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_oZgZhnrVEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZgZh3rVEeSdTdiyFkcj2g"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_oZgZiHrVEeSdTdiyFkcj2g" type="7018">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_oZgZiXrVEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_oZgZinrVEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_oZgZi3rVEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZgZjHrVEeSdTdiyFkcj2g"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_oZgZjXrVEeSdTdiyFkcj2g" type="7019">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_oZgZjnrVEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_oZgZj3rVEeSdTdiyFkcj2g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_oZgZkHrVEeSdTdiyFkcj2g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZgZkXrVEeSdTdiyFkcj2g"/>
+      </children>
+      <element xmi:type="uml:Class" href="TemperatureSensor.uml#_oZfLYHrVEeSdTdiyFkcj2g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oZgZgXrVEeSdTdiyFkcj2g" x="59" y="49" width="272" height="213"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_n6lB0XrVEeSdTdiyFkcj2g" name="diagram_compatibility_version" stringValue="1.0.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_n6lB0nrVEeSdTdiyFkcj2g"/>
+    <styles xmi:type="style:PapyrusViewStyle" xmi:id="_n6lB03rVEeSdTdiyFkcj2g">
+      <owner xmi:type="uml:Package" href="TemperatureSensor.uml#_a_oOUHrVEeSdTdiyFkcj2g"/>
+    </styles>
+    <element xmi:type="uml:Package" href="TemperatureSensor.uml#_a_oOUHrVEeSdTdiyFkcj2g"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_8CgKoHrbEeSlC55EsxuOPA" type="PapyrusUMLDeploymentDiagram" name="Deployment" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_t6PHEHrpEeSlC55EsxuOPA" type="2006">
+      <children xmi:type="notation:DecorationNode" xmi:id="_t6PHEnrpEeSlC55EsxuOPA" type="8"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_t6PHE3rpEeSlC55EsxuOPA" type="26">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_t6PHFHrpEeSlC55EsxuOPA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_t6PHFXrpEeSlC55EsxuOPA"/>
+      </children>
+      <element xmi:type="uml:Artifact" href="TemperatureSensor.uml#_t3hxUHrpEeSlC55EsxuOPA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_t6PHEXrpEeSlC55EsxuOPA" x="94" y="185"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_vUjwAHrpEeSlC55EsxuOPA" type="2006">
+      <children xmi:type="notation:DecorationNode" xmi:id="_vUjwAnrpEeSlC55EsxuOPA" type="8"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_vUjwA3rpEeSlC55EsxuOPA" type="26">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_vUjwBHrpEeSlC55EsxuOPA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vUjwBXrpEeSlC55EsxuOPA"/>
+      </children>
+      <element xmi:type="uml:Artifact" href="TemperatureSensor.uml#_vUih4HrpEeSlC55EsxuOPA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vUjwAXrpEeSlC55EsxuOPA" x="311" y="185"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_ymNG8HrpEeSlC55EsxuOPA" type="2002">
+      <children xmi:type="notation:DecorationNode" xmi:id="_ymNuAHrpEeSlC55EsxuOPA" type="5"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_ymNuAXrpEeSlC55EsxuOPA" type="18">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_ymNuAnrpEeSlC55EsxuOPA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ymNuA3rpEeSlC55EsxuOPA"/>
+      </children>
+      <element xmi:type="uml:ExecutionEnvironment" href="TemperatureSensor.uml#_ymL40HrpEeSlC55EsxuOPA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ymNG8XrpEeSlC55EsxuOPA" x="309" y="319"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_6VBz0HrpEeSlC55EsxuOPA" type="2002">
+      <children xmi:type="notation:DecorationNode" xmi:id="_6VBz0nrpEeSlC55EsxuOPA" type="5"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_6VBz03rpEeSlC55EsxuOPA" type="18">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_6VBz1HrpEeSlC55EsxuOPA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6VBz1XrpEeSlC55EsxuOPA"/>
+      </children>
+      <element xmi:type="uml:ExecutionEnvironment" href="TemperatureSensor.uml#_6VAlsHrpEeSlC55EsxuOPA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6VBz0XrpEeSlC55EsxuOPA" x="86" y="326"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_8CgKoXrbEeSlC55EsxuOPA" name="diagram_compatibility_version" stringValue="1.0.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_8CgKonrbEeSlC55EsxuOPA"/>
+    <styles xmi:type="style:PapyrusViewStyle" xmi:id="_8CgKo3rbEeSlC55EsxuOPA">
+      <owner xmi:type="uml:Package" href="TemperatureSensor.uml#_5_vBoHrbEeSlC55EsxuOPA"/>
+    </styles>
+    <element xmi:type="uml:Package" href="TemperatureSensor.uml#_5_vBoHrbEeSlC55EsxuOPA"/>
+    <edges xmi:type="notation:Connector" xmi:id="_zUABEHrpEeSlC55EsxuOPA" type="4001" source="_ymNG8HrpEeSlC55EsxuOPA" target="_vUjwAHrpEeSlC55EsxuOPA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_zUABE3rpEeSlC55EsxuOPA" type="13">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_zUABFHrpEeSlC55EsxuOPA" y="60"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_zUABFXrpEeSlC55EsxuOPA" type="14">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_zUABFnrpEeSlC55EsxuOPA" x="-9" y="-1"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_zUABEXrpEeSlC55EsxuOPA"/>
+      <element xmi:type="uml:Deployment" href="TemperatureSensor.uml#_zT-L4HrpEeSlC55EsxuOPA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zUABEnrpEeSlC55EsxuOPA" points="[-32, -21, 169, 107]$[-171, -122, 30, 6]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zUKZIHrpEeSlC55EsxuOPA" id="(0.43333333333333335,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zULAMHrpEeSlC55EsxuOPA" id="(0.6933333333333334,1.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_75AIAHrpEeSlC55EsxuOPA" type="4001" source="_6VBz0HrpEeSlC55EsxuOPA" target="_t6PHEHrpEeSlC55EsxuOPA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_75AvEHrpEeSlC55EsxuOPA" type="13">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_75AvEXrpEeSlC55EsxuOPA" y="60"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_75AvEnrpEeSlC55EsxuOPA" type="14">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_75AvE3rpEeSlC55EsxuOPA" x="-4" y="9"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_75AIAXrpEeSlC55EsxuOPA"/>
+      <element xmi:type="uml:Deployment" href="TemperatureSensor.uml#_74_g8HrpEeSlC55EsxuOPA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_75AIAnrpEeSlC55EsxuOPA" points="[-7, -50, -15, 106]$[-67, -153, -75, 3]"/>
+    </edges>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_ci8LcHrmEeSlC55EsxuOPA" type="BlockDefinition" name="System Types" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_eRxr0HrmEeSlC55EsxuOPA" type="shape_sysml_block_as_classifier">
+      <children xmi:type="notation:DecorationNode" xmi:id="_eRyS4HrmEeSlC55EsxuOPA" type="label_sysml_block_name"/>
+      <children xmi:type="notation:ListCompartment" xmi:id="_eR2kUHrmEeSlC55EsxuOPA" type="compartment_sysml_property_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_eR2kUXrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_eR2kUnrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_eR2kU3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_eR2kVHrmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_eR2kVXrmEeSlC55EsxuOPA" type="compartment_sysml_part_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_eR2kVnrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_eR2kV3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_eR2kWHrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_eR2kWXrmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_eR2kWnrmEeSlC55EsxuOPA" type="compartment_sysml_reference_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_eR2kW3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_eR2kXHrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_eR2kXXrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_eR2kXnrmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_eR2kX3rmEeSlC55EsxuOPA" type="compartment_uml_port_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_eR2kYHrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_eR2kYXrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_eR2kYnrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_eR2kY3rmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_eR3LYHrmEeSlC55EsxuOPA" type="compartment_sysml_flowport_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_eR3LYXrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_eR3LYnrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_eR3LY3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_eR3LZHrmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_eR3LZXrmEeSlC55EsxuOPA" type="compartment_uml_operation_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_eR3LZnrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_eR3LZ3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_eR3LaHrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_eR3LaXrmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_eR3LanrmEeSlC55EsxuOPA" type="compartment_sysml_constraint_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_eR3La3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_eR3LbHrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_eR3LbXrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_eR3LbnrmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_eR3Lb3rmEeSlC55EsxuOPA" type="compartment_sysml_value_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_eR3LcHrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_eR3LcXrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_eR3LcnrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_eR3Lc3rmEeSlC55EsxuOPA"/>
+      </children>
+      <element xmi:type="uml:Class" href="TemperatureSensor.uml#_eRpwAHrmEeSlC55EsxuOPA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eRxr0XrmEeSlC55EsxuOPA" x="56" y="39" width="100" height="150"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_fHM38HrmEeSlC55EsxuOPA" type="shape_sysml_block_as_classifier">
+      <children xmi:type="notation:DecorationNode" xmi:id="_fHM38nrmEeSlC55EsxuOPA" type="label_sysml_block_name"/>
+      <children xmi:type="notation:ListCompartment" xmi:id="_fHNfAHrmEeSlC55EsxuOPA" type="compartment_sysml_property_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_fHNfAXrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_fHNfAnrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_fHNfA3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_fHNfBHrmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_fHNfBXrmEeSlC55EsxuOPA" type="compartment_sysml_part_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_fHNfBnrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_fHNfB3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_fHNfCHrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_fHNfCXrmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_fHNfCnrmEeSlC55EsxuOPA" type="compartment_sysml_reference_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_fHNfC3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_fHNfDHrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_fHNfDXrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_fHNfDnrmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_fHOGEHrmEeSlC55EsxuOPA" type="compartment_uml_port_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_fHOGEXrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_fHOGEnrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_fHOGE3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_fHOGFHrmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_fHOGFXrmEeSlC55EsxuOPA" type="compartment_sysml_flowport_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_fHOGFnrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_fHOGF3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_fHOGGHrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_fHOGGXrmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_fHOGGnrmEeSlC55EsxuOPA" type="compartment_uml_operation_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_fHOGG3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_fHOGHHrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_fHOGHXrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_fHOGHnrmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_fHOGH3rmEeSlC55EsxuOPA" type="compartment_sysml_constraint_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_fHOGIHrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_fHOGIXrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_fHOGInrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_fHOGI3rmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_fHOtIHrmEeSlC55EsxuOPA" type="compartment_sysml_value_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_fHOtIXrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_fHOtInrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_fHOtI3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_fHOtJHrmEeSlC55EsxuOPA"/>
+      </children>
+      <element xmi:type="uml:Class" href="TemperatureSensor.uml#_fHLCwHrmEeSlC55EsxuOPA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fHM38XrmEeSlC55EsxuOPA" x="537" y="165" width="100" height="150"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_hGAuAHrmEeSlC55EsxuOPA" type="shape_sysml_block_as_classifier">
+      <children xmi:type="notation:DecorationNode" xmi:id="_hGBVEHrmEeSlC55EsxuOPA" type="label_sysml_block_name"/>
+      <children xmi:type="notation:ListCompartment" xmi:id="_hGBVEXrmEeSlC55EsxuOPA" type="compartment_sysml_property_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_hGBVEnrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_hGBVE3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_hGBVFHrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_hGBVFXrmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_hGBVFnrmEeSlC55EsxuOPA" type="compartment_sysml_part_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_hGBVF3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_hGBVGHrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_hGBVGXrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_hGBVGnrmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_hGBVG3rmEeSlC55EsxuOPA" type="compartment_sysml_reference_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_hGBVHHrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_hGBVHXrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_hGBVHnrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_hGBVH3rmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_hGBVIHrmEeSlC55EsxuOPA" type="compartment_uml_port_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_hGBVIXrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_hGBVInrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_hGBVI3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_hGBVJHrmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_hGBVJXrmEeSlC55EsxuOPA" type="compartment_sysml_flowport_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_hGBVJnrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_hGBVJ3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_hGBVKHrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_hGBVKXrmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_hGBVKnrmEeSlC55EsxuOPA" type="compartment_uml_operation_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_hGBVK3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_hGBVLHrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_hGBVLXrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_hGBVLnrmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_hGBVL3rmEeSlC55EsxuOPA" type="compartment_sysml_constraint_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_hGBVMHrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_hGBVMXrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_hGBVMnrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_hGBVM3rmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_hGB8IHrmEeSlC55EsxuOPA" type="compartment_sysml_value_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_hGB8IXrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_hGB8InrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_hGB8I3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_hGB8JHrmEeSlC55EsxuOPA"/>
+      </children>
+      <element xmi:type="uml:Class" href="TemperatureSensor.uml#_hF_f4HrmEeSlC55EsxuOPA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hGAuAXrmEeSlC55EsxuOPA" x="380" y="133" width="100" height="150"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_jU7coHrmEeSlC55EsxuOPA" type="shape_sysml_block_as_classifier">
+      <children xmi:type="notation:DecorationNode" xmi:id="_jU7conrmEeSlC55EsxuOPA" type="label_sysml_block_name"/>
+      <children xmi:type="notation:ListCompartment" xmi:id="_jU7co3rmEeSlC55EsxuOPA" type="compartment_sysml_property_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_jU7cpHrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_jU7cpXrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_jU7cpnrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_jU7cp3rmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_jU7cqHrmEeSlC55EsxuOPA" type="compartment_sysml_part_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_jU7cqXrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_jU7cqnrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_jU7cq3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_jU7crHrmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_jU7crXrmEeSlC55EsxuOPA" type="compartment_sysml_reference_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_jU7crnrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_jU7cr3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_jU7csHrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_jU7csXrmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_jU8DsHrmEeSlC55EsxuOPA" type="compartment_uml_port_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_jU8DsXrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_jU8DsnrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_jU8Ds3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_jU8DtHrmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_jU8DtXrmEeSlC55EsxuOPA" type="compartment_sysml_flowport_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_jU8DtnrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_jU8Dt3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_jU8DuHrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_jU8DuXrmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_jU8DunrmEeSlC55EsxuOPA" type="compartment_uml_operation_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_jU8Du3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_jU8DvHrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_jU8DvXrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_jU8DvnrmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_jU8Dv3rmEeSlC55EsxuOPA" type="compartment_sysml_constraint_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_jU8DwHrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_jU8DwXrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_jU8DwnrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_jU8Dw3rmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_jU8DxHrmEeSlC55EsxuOPA" type="compartment_sysml_value_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_jU8DxXrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_jU8DxnrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_jU8Dx3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_jU8DyHrmEeSlC55EsxuOPA"/>
+      </children>
+      <element xmi:type="uml:Class" href="TemperatureSensor.uml#_jU5ncHrmEeSlC55EsxuOPA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jU7coXrmEeSlC55EsxuOPA" x="208" y="89" width="100" height="150"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_4BOFgHrmEeSlC55EsxuOPA" type="shape_sysml_block_as_classifier">
+      <children xmi:type="notation:DecorationNode" xmi:id="_4BOskHrmEeSlC55EsxuOPA" type="label_sysml_block_name"/>
+      <children xmi:type="notation:ListCompartment" xmi:id="_4BOskXrmEeSlC55EsxuOPA" type="compartment_sysml_property_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_4BOsknrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_4BOsk3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_4BOslHrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_4BOslXrmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_4BOslnrmEeSlC55EsxuOPA" type="compartment_sysml_part_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_4BOsl3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_4BOsmHrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_4BOsmXrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_4BOsmnrmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_4BOsm3rmEeSlC55EsxuOPA" type="compartment_sysml_reference_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_4BOsnHrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_4BOsnXrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_4BOsnnrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_4BOsn3rmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_4BOsoHrmEeSlC55EsxuOPA" type="compartment_uml_port_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_4BOsoXrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_4BOsonrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_4BOso3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_4BOspHrmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_4BOspXrmEeSlC55EsxuOPA" type="compartment_sysml_flowport_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_4BOspnrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_4BOsp3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_4BOsqHrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_4BOsqXrmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_4BPToHrmEeSlC55EsxuOPA" type="compartment_uml_operation_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_4BPToXrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_4BPTonrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_4BPTo3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_4BPTpHrmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_4BPTpXrmEeSlC55EsxuOPA" type="compartment_sysml_constraint_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_4BPTpnrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_4BPTp3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_4BPTqHrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_4BPTqXrmEeSlC55EsxuOPA"/>
+      </children>
+      <children xmi:type="notation:ListCompartment" xmi:id="_4BPTqnrmEeSlC55EsxuOPA" type="compartment_sysml_value_as_list">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_4BPTq3rmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_4BPTrHrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_4BPTrXrmEeSlC55EsxuOPA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_4BPTrnrmEeSlC55EsxuOPA"/>
+      </children>
+      <element xmi:type="uml:Class" href="TemperatureSensor.uml#_4BLCMHrmEeSlC55EsxuOPA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4BOFgXrmEeSlC55EsxuOPA" x="125" y="378" width="100" height="150"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_ci8LcXrmEeSlC55EsxuOPA"/>
+    <styles xmi:type="style:PapyrusViewStyle" xmi:id="_ci8LcnrmEeSlC55EsxuOPA">
+      <owner xmi:type="uml:Package" href="TemperatureSensor.uml#_5_vBoHrbEeSlC55EsxuOPA"/>
+    </styles>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_cjN4QHrmEeSlC55EsxuOPA" name="diagram_compatibility_version" stringValue="1.0.0"/>
+    <element xmi:type="uml:Package" href="TemperatureSensor.uml#_5_vBoHrbEeSlC55EsxuOPA"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_md6m0HrmEeSlC55EsxuOPA" type="InternalBlock" name="System Composition" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_md6m0XrmEeSlC55EsxuOPA" type="shape_sysml_block_as_composite">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DGnsoHrnEeSlC55EsxuOPA" source="PapyrusCSSForceValue">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DGo6wHrnEeSlC55EsxuOPA" key="fillColor" value="true"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_md6m0nrmEeSlC55EsxuOPA" type="label_sysml_block_name"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_md6m03rmEeSlC55EsxuOPA" type="compartment_sysml_structure">
+        <children xmi:type="notation:Shape" xmi:id="_n-N78HrmEeSlC55EsxuOPA" type="shape_sysml_blockproperty_as_composite">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EVeFYHrnEeSlC55EsxuOPA" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EVeFYXrnEeSlC55EsxuOPA" key="fillColor" value="true"/>
+          </eAnnotations>
+          <children xmi:type="notation:DecorationNode" xmi:id="_n-OjAHrmEeSlC55EsxuOPA" type="label_uml_property_label"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_n-OjAXrmEeSlC55EsxuOPA" type="compartment_sysml_blockproperty_structure">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_n-OjAnrmEeSlC55EsxuOPA"/>
+          </children>
+          <element xmi:type="uml:Property" href="TemperatureSensor.uml#_n-FZEHrmEeSlC55EsxuOPA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n-N78XrmEeSlC55EsxuOPA" x="363" y="97" width="136" height="70"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_qX_PsHrmEeSlC55EsxuOPA" type="shape_sysml_blockproperty_as_composite">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EVeFYnrnEeSlC55EsxuOPA" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EVescHrnEeSlC55EsxuOPA" key="fillColor" value="true"/>
+          </eAnnotations>
+          <children xmi:type="notation:DecorationNode" xmi:id="_qX_2wHrmEeSlC55EsxuOPA" type="label_uml_property_label"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_qX_2wXrmEeSlC55EsxuOPA" type="compartment_sysml_blockproperty_structure">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_qX_2wnrmEeSlC55EsxuOPA"/>
+          </children>
+          <element xmi:type="uml:Property" href="TemperatureSensor.uml#_qX7lUHrmEeSlC55EsxuOPA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qX_PsXrmEeSlC55EsxuOPA" x="528" y="97" width="136" height="70"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_yfC2YHrmEeSlC55EsxuOPA" type="shape_sysml_blockproperty_as_composite">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EVdeUHrnEeSlC55EsxuOPA" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EVdeUXrnEeSlC55EsxuOPA" key="fillColor" value="true"/>
+          </eAnnotations>
+          <children xmi:type="notation:DecorationNode" xmi:id="_yfDdcHrmEeSlC55EsxuOPA" type="label_uml_property_label"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_yfDdcXrmEeSlC55EsxuOPA" type="compartment_sysml_blockproperty_structure">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_yfDdcnrmEeSlC55EsxuOPA"/>
+          </children>
+          <element xmi:type="uml:Property" href="TemperatureSensor.uml#_ye_MAHrmEeSlC55EsxuOPA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yfC2YXrmEeSlC55EsxuOPA" x="40" y="25" width="200" height="99"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_5XWyAHrmEeSlC55EsxuOPA" type="shape_sysml_blockproperty_as_composite">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DjJQkHrnEeSlC55EsxuOPA" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DjJQkXrnEeSlC55EsxuOPA" key="fillColor" value="true"/>
+          </eAnnotations>
+          <children xmi:type="notation:DecorationNode" xmi:id="_5XWyAnrmEeSlC55EsxuOPA" type="label_uml_property_label"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_5XWyA3rmEeSlC55EsxuOPA" type="compartment_sysml_blockproperty_structure">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_5XWyBHrmEeSlC55EsxuOPA"/>
+          </children>
+          <element xmi:type="uml:Property" href="TemperatureSensor.uml#_5XTHoHrmEeSlC55EsxuOPA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5XWyAXrmEeSlC55EsxuOPA" x="32" y="231" width="827" height="75"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_L_OsEHrnEeSlC55EsxuOPA" type="shape_sysml_blockproperty_as_composite">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MrHhsHrnEeSlC55EsxuOPA" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MrHhsXrnEeSlC55EsxuOPA" key="fillColor" value="true"/>
+          </eAnnotations>
+          <children xmi:type="notation:DecorationNode" xmi:id="_L_PTIHrnEeSlC55EsxuOPA" type="label_uml_property_label"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_L_PTIXrnEeSlC55EsxuOPA" type="compartment_sysml_blockproperty_structure">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_L_PTInrnEeSlC55EsxuOPA"/>
+          </children>
+          <element xmi:type="uml:Property" href="TemperatureSensor.uml#_L_JzkHrnEeSlC55EsxuOPA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L_OsEXrnEeSlC55EsxuOPA" x="723" y="95" width="136" height="70"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_UWbnkHrnEeSlC55EsxuOPA" type="shape_sysml_blockproperty_as_composite">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hvhIk3rnEeSlC55EsxuOPA" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hvhIlHrnEeSlC55EsxuOPA" key="fillColor" value="true"/>
+          </eAnnotations>
+          <children xmi:type="notation:DecorationNode" xmi:id="_UWcOoHrnEeSlC55EsxuOPA" type="label_uml_property_label"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_UWcOoXrnEeSlC55EsxuOPA" type="compartment_sysml_blockproperty_structure">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_UWcOonrnEeSlC55EsxuOPA"/>
+          </children>
+          <element xmi:type="uml:Property" href="TemperatureSensor.uml#_UWWvEHrnEeSlC55EsxuOPA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UWbnkXrnEeSlC55EsxuOPA" x="377" y="15" width="110" height="59"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_a5QbYHrnEeSlC55EsxuOPA" type="shape_sysml_blockproperty_as_composite">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hvhIkXrnEeSlC55EsxuOPA" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hvhIknrnEeSlC55EsxuOPA" key="fillColor" value="true"/>
+          </eAnnotations>
+          <children xmi:type="notation:DecorationNode" xmi:id="_a5RCcHrnEeSlC55EsxuOPA" type="label_uml_property_label"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_a5RCcXrnEeSlC55EsxuOPA" type="compartment_sysml_blockproperty_structure">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_a5RCcnrnEeSlC55EsxuOPA"/>
+          </children>
+          <element xmi:type="uml:Property" href="TemperatureSensor.uml#_a5MJ8HrnEeSlC55EsxuOPA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_a5QbYXrnEeSlC55EsxuOPA" x="538" y="16" width="110" height="59"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_cvIX4HrnEeSlC55EsxuOPA" type="shape_sysml_blockproperty_as_composite">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hvghgHrnEeSlC55EsxuOPA" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hvhIkHrnEeSlC55EsxuOPA" key="fillColor" value="true"/>
+          </eAnnotations>
+          <children xmi:type="notation:DecorationNode" xmi:id="_cvIX4nrnEeSlC55EsxuOPA" type="label_uml_property_label"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_cvI-8HrnEeSlC55EsxuOPA" type="compartment_sysml_blockproperty_structure">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_cvI-8XrnEeSlC55EsxuOPA"/>
+          </children>
+          <element xmi:type="uml:Property" href="TemperatureSensor.uml#_cvFUkHrnEeSlC55EsxuOPA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cvIX4XrnEeSlC55EsxuOPA" x="733" y="15" width="110" height="59"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_md6m1HrmEeSlC55EsxuOPA"/>
+      </children>
+      <element xmi:type="uml:Class" href="TemperatureSensor.uml#_eRpwAHrmEeSlC55EsxuOPA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_md6m1XrmEeSlC55EsxuOPA" x="40" y="40" width="916" height="366"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_md6m1nrmEeSlC55EsxuOPA"/>
+    <styles xmi:type="style:PapyrusViewStyle" xmi:id="_md6m13rmEeSlC55EsxuOPA">
+      <owner xmi:type="uml:Class" href="TemperatureSensor.uml#_eRpwAHrmEeSlC55EsxuOPA"/>
+    </styles>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_meUPcHrmEeSlC55EsxuOPA" name="diagram_compatibility_version" stringValue="1.0.0"/>
+    <element xmi:type="uml:Class" href="TemperatureSensor.uml#_eRpwAHrmEeSlC55EsxuOPA"/>
+    <edges xmi:type="notation:Connector" xmi:id="_95oDUHrmEeSlC55EsxuOPA" type="link_uml_connector" source="_qX_PsHrmEeSlC55EsxuOPA" target="_5XWyAHrmEeSlC55EsxuOPA" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_95oqYHrmEeSlC55EsxuOPA" type="linklabel_uml_appliedstereotype">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_95oqYXrmEeSlC55EsxuOPA" y="-30"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_95pRcHrmEeSlC55EsxuOPA" type="linklabel_uml_connector_label">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_95pRcXrmEeSlC55EsxuOPA" y="-10"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_95pRcnrmEeSlC55EsxuOPA" type="linklabel_uml_connector_source_multiplicity">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_95pRc3rmEeSlC55EsxuOPA" y="10"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_95pRdHrmEeSlC55EsxuOPA" type="linklabel_uml_connector_target_multiplicity">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_95pRdXrmEeSlC55EsxuOPA" y="10"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_95oDUXrmEeSlC55EsxuOPA"/>
+      <element xmi:type="uml:Connector" href="TemperatureSensor.uml#_95kY8HrmEeSlC55EsxuOPA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_95oDUnrmEeSlC55EsxuOPA" points="[-9, 0, -9, -64]$[-9, 64, -9, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_9503oHrmEeSlC55EsxuOPA" id="(0.5588235294117647,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_951esHrmEeSlC55EsxuOPA" id="(0.6916565900846433,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_-QUFAHrmEeSlC55EsxuOPA" type="link_uml_connector" source="_n-N78HrmEeSlC55EsxuOPA" target="_5XWyAHrmEeSlC55EsxuOPA" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_-QUsEHrmEeSlC55EsxuOPA" type="linklabel_uml_appliedstereotype">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-QUsEXrmEeSlC55EsxuOPA" y="-30"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_-QUsEnrmEeSlC55EsxuOPA" type="linklabel_uml_connector_label">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-QUsE3rmEeSlC55EsxuOPA" y="-10"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_-QUsFHrmEeSlC55EsxuOPA" type="linklabel_uml_connector_source_multiplicity">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-QUsFXrmEeSlC55EsxuOPA" y="10"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_-QUsFnrmEeSlC55EsxuOPA" type="linklabel_uml_connector_target_multiplicity">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-QUsF3rmEeSlC55EsxuOPA" y="10"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_-QUFAXrmEeSlC55EsxuOPA"/>
+      <element xmi:type="uml:Connector" href="TemperatureSensor.uml#_-QSP0HrmEeSlC55EsxuOPA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-QUFAnrmEeSlC55EsxuOPA" points="[1, 0, -113, -64]$[1, 64, -113, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-QY9gHrmEeSlC55EsxuOPA" id="(0.5147058823529411,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-QY9gXrmEeSlC55EsxuOPA" id="(0.4848851269649335,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_-6lKAHrmEeSlC55EsxuOPA" type="link_uml_connector" source="_yfC2YHrmEeSlC55EsxuOPA" target="_5XWyAHrmEeSlC55EsxuOPA" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_-6lKA3rmEeSlC55EsxuOPA" type="linklabel_uml_appliedstereotype">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-6lKBHrmEeSlC55EsxuOPA" y="-30"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_-6lxEHrmEeSlC55EsxuOPA" type="linklabel_uml_connector_label">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-6lxEXrmEeSlC55EsxuOPA" y="-10"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_-6lxEnrmEeSlC55EsxuOPA" type="linklabel_uml_connector_source_multiplicity">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-6lxE3rmEeSlC55EsxuOPA" y="10"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_-6lxFHrmEeSlC55EsxuOPA" type="linklabel_uml_connector_target_multiplicity">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-6lxFXrmEeSlC55EsxuOPA" y="10"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_-6lKAXrmEeSlC55EsxuOPA"/>
+      <element xmi:type="uml:Connector" href="TemperatureSensor.uml#_-6jU0HrmEeSlC55EsxuOPA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-6lKAnrmEeSlC55EsxuOPA" points="[-4, 0, -36, -61]$[-4, 61, -36, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-6qCgHrmEeSlC55EsxuOPA" id="(0.505,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-6qCgXrmEeSlC55EsxuOPA" id="(0.13180169286577992,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_QF3KQHrnEeSlC55EsxuOPA" type="link_uml_connector" source="_L_OsEHrnEeSlC55EsxuOPA" target="_5XWyAHrmEeSlC55EsxuOPA" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_QF3KQ3rnEeSlC55EsxuOPA" type="linklabel_uml_appliedstereotype">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_QF3KRHrnEeSlC55EsxuOPA" y="-30"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_QF3xUHrnEeSlC55EsxuOPA" type="linklabel_uml_connector_label">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_QF3xUXrnEeSlC55EsxuOPA" y="-10"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_QF3xUnrnEeSlC55EsxuOPA" type="linklabel_uml_connector_source_multiplicity">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_QF3xU3rnEeSlC55EsxuOPA" y="10"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_QF3xVHrnEeSlC55EsxuOPA" type="linklabel_uml_connector_target_multiplicity">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_QF3xVXrnEeSlC55EsxuOPA" y="10"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_QF3KQXrnEeSlC55EsxuOPA"/>
+      <element xmi:type="uml:Connector" href="TemperatureSensor.uml#_QF1VEHrnEeSlC55EsxuOPA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_QF3KQnrnEeSlC55EsxuOPA" points="[0, 10, 0, -80]$[71, 85, 71, -5]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QF8p0HrnEeSlC55EsxuOPA" id="(0.47794117647058826,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QF8p0XrnEeSlC55EsxuOPA" id="(0.9141475211608222,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_X055kHrnEeSlC55EsxuOPA" type="link_uml_connector" source="_UWbnkHrnEeSlC55EsxuOPA" target="_n-N78HrmEeSlC55EsxuOPA" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_X055k3rnEeSlC55EsxuOPA" type="linklabel_uml_appliedstereotype">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_X055lHrnEeSlC55EsxuOPA" y="-30"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_X06goHrnEeSlC55EsxuOPA" type="linklabel_uml_connector_label">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_X06goXrnEeSlC55EsxuOPA" y="-10"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_X06gonrnEeSlC55EsxuOPA" type="linklabel_uml_connector_source_multiplicity">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_X06go3rnEeSlC55EsxuOPA" y="10"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_X06gpHrnEeSlC55EsxuOPA" type="linklabel_uml_connector_target_multiplicity">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_X06gpXrnEeSlC55EsxuOPA" y="10"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_X055kXrnEeSlC55EsxuOPA"/>
+      <element xmi:type="uml:Connector" href="TemperatureSensor.uml#_X03dUHrnEeSlC55EsxuOPA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_X055knrnEeSlC55EsxuOPA" points="[-6, 0, 5, -23]$[-6, 23, 5, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_X0-yEHrnEeSlC55EsxuOPA" id="(0.5454545454545454,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_X0-yEXrnEeSlC55EsxuOPA" id="(0.4632352941176471,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_egIbcHrnEeSlC55EsxuOPA" type="link_uml_connector" source="_cvIX4HrnEeSlC55EsxuOPA" target="_L_OsEHrnEeSlC55EsxuOPA" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_egJCgHrnEeSlC55EsxuOPA" type="linklabel_uml_appliedstereotype">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_egJCgXrnEeSlC55EsxuOPA" y="-30"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_egJCgnrnEeSlC55EsxuOPA" type="linklabel_uml_connector_label">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_egJCg3rnEeSlC55EsxuOPA" y="-10"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_egJChHrnEeSlC55EsxuOPA" type="linklabel_uml_connector_source_multiplicity">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_egJChXrnEeSlC55EsxuOPA" y="10"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_egJChnrnEeSlC55EsxuOPA" type="linklabel_uml_connector_target_multiplicity">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_egJCh3rnEeSlC55EsxuOPA" y="10"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_egIbcXrnEeSlC55EsxuOPA"/>
+      <element xmi:type="uml:Connector" href="TemperatureSensor.uml#_egF_MHrnEeSlC55EsxuOPA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_egIbcnrnEeSlC55EsxuOPA" points="[4, 30, 1, -56]$[4, 51, 1, -35]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_egN7AHrnEeSlC55EsxuOPA" id="(0.4909090909090909,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_egN7AXrnEeSlC55EsxuOPA" id="(0.4852941176470588,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_e37QYHrnEeSlC55EsxuOPA" type="link_uml_connector" source="_a5QbYHrnEeSlC55EsxuOPA" target="_qX_PsHrmEeSlC55EsxuOPA" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_e37QY3rnEeSlC55EsxuOPA" type="linklabel_uml_appliedstereotype">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_e37QZHrnEeSlC55EsxuOPA" y="-30"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_e373cHrnEeSlC55EsxuOPA" type="linklabel_uml_connector_label">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_e373cXrnEeSlC55EsxuOPA" y="-10"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_e373cnrnEeSlC55EsxuOPA" type="linklabel_uml_connector_source_multiplicity">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_e373c3rnEeSlC55EsxuOPA" y="10"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_e373dHrnEeSlC55EsxuOPA" type="linklabel_uml_connector_target_multiplicity">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_e373dXrnEeSlC55EsxuOPA" y="10"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_e37QYXrnEeSlC55EsxuOPA"/>
+      <element xmi:type="uml:Connector" href="TemperatureSensor.uml#_e35bMHrnEeSlC55EsxuOPA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_e37QYnrnEeSlC55EsxuOPA" points="[6, 30, 3, -57]$[6, 52, 3, -35]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_e3_h0HrnEeSlC55EsxuOPA" id="(0.4727272727272727,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_e3_h0XrnEeSlC55EsxuOPA" id="(0.4852941176470588,0.0)"/>
+    </edges>
+  </notation:Diagram>
+  <css:ModelStyleSheets xmi:id="_3BGFQHrmEeSlC55EsxuOPA"/>
+  <notation:Diagram xmi:id="_HsdH8HrqEeSlC55EsxuOPA" type="PapyrusUMLDeploymentDiagram" name="Sampler" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_IH_NYHrqEeSlC55EsxuOPA" type="2006" fillColor="10265827">
+      <children xmi:type="notation:DecorationNode" xmi:id="_IH_NYnrqEeSlC55EsxuOPA" type="8"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_IH_NY3rqEeSlC55EsxuOPA" type="26">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_IH_NZHrqEeSlC55EsxuOPA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IH_NZXrqEeSlC55EsxuOPA"/>
+      </children>
+      <element xmi:type="uml:Artifact" href="TemperatureSensor.uml#_vUih4HrpEeSlC55EsxuOPA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IH_NYXrqEeSlC55EsxuOPA" x="61" y="376" width="180" height="93"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_KjPu4HrqEeSlC55EsxuOPA" type="2006" fillColor="8421504">
+      <children xmi:type="notation:DecorationNode" xmi:id="_KjPu4nrqEeSlC55EsxuOPA" type="8"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_KjQV8HrqEeSlC55EsxuOPA" type="26">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_KjQV8XrqEeSlC55EsxuOPA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KjQV8nrqEeSlC55EsxuOPA"/>
+      </children>
+      <element xmi:type="uml:Artifact" href="TemperatureSensor.uml#_KjPH0HrqEeSlC55EsxuOPA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KjPu4XrqEeSlC55EsxuOPA" x="414" y="392" width="164" height="46"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_Mj5YAHrqEeSlC55EsxuOPA" type="2006" fillColor="8421504">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Mj5YAnrqEeSlC55EsxuOPA" type="8"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_Mj5YA3rqEeSlC55EsxuOPA" type="26">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_Mj5YBHrqEeSlC55EsxuOPA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mj5YBXrqEeSlC55EsxuOPA"/>
+      </children>
+      <element xmi:type="uml:Artifact" href="TemperatureSensor.uml#_Mj4J4HrqEeSlC55EsxuOPA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mj5YAXrqEeSlC55EsxuOPA" x="413" y="449" width="179" height="46"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_TfGPkHrqEeSlC55EsxuOPA" type="2006" fillColor="10011046">
+      <children xmi:type="notation:DecorationNode" xmi:id="_TfGPknrqEeSlC55EsxuOPA" type="8"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_TfGPk3rqEeSlC55EsxuOPA" type="26">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_TfGPlHrqEeSlC55EsxuOPA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TfGPlXrqEeSlC55EsxuOPA"/>
+      </children>
+      <element xmi:type="uml:Artifact" href="TemperatureSensor.uml#_TfFBcHrqEeSlC55EsxuOPA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TfGPkXrqEeSlC55EsxuOPA" x="387" y="294" width="187" height="57"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_bS3t4HrqEeSlC55EsxuOPA" type="2006" fillColor="10011046">
+      <children xmi:type="notation:DecorationNode" xmi:id="_bS3t4nrqEeSlC55EsxuOPA" type="8"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_bS3t43rqEeSlC55EsxuOPA" type="26">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_bS3t5HrqEeSlC55EsxuOPA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bS3t5XrqEeSlC55EsxuOPA"/>
+      </children>
+      <element xmi:type="uml:Artifact" href="TemperatureSensor.uml#_bS14sHrqEeSlC55EsxuOPA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bS3t4XrqEeSlC55EsxuOPA" x="386" y="224" width="186" height="53"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_i6rz0HrqEeSlC55EsxuOPA" type="2006" fillColor="12560536">
+      <children xmi:type="notation:DecorationNode" xmi:id="_i6rz0nrqEeSlC55EsxuOPA" type="8"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_i6rz03rqEeSlC55EsxuOPA" type="26">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_i6rz1HrqEeSlC55EsxuOPA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i6rz1XrqEeSlC55EsxuOPA"/>
+      </children>
+      <element xmi:type="uml:Artifact" href="TemperatureSensor.uml#_i6rMwHrqEeSlC55EsxuOPA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i6rz0XrqEeSlC55EsxuOPA" x="64" y="163" width="227" height="66"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_ogY4EHrqEeSlC55EsxuOPA" type="2006" fillColor="12560536">
+      <children xmi:type="notation:DecorationNode" xmi:id="_ogY4EnrqEeSlC55EsxuOPA" type="8"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_ogY4E3rqEeSlC55EsxuOPA" type="26">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_ogY4FHrqEeSlC55EsxuOPA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ogZfIHrqEeSlC55EsxuOPA"/>
+      </children>
+      <element xmi:type="uml:Artifact" href="TemperatureSensor.uml#_ogXp8HrqEeSlC55EsxuOPA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ogY4EXrqEeSlC55EsxuOPA" x="347" y="62" width="201" height="51"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_uLxGgHrqEeSlC55EsxuOPA" type="2006" fillColor="12560536">
+      <children xmi:type="notation:DecorationNode" xmi:id="_uLxGgnrqEeSlC55EsxuOPA" type="8"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_uLxGg3rqEeSlC55EsxuOPA" type="26">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_uLxGhHrqEeSlC55EsxuOPA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uLxGhXrqEeSlC55EsxuOPA"/>
+      </children>
+      <element xmi:type="uml:Artifact" href="TemperatureSensor.uml#_uLwfcHrqEeSlC55EsxuOPA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uLxGgXrqEeSlC55EsxuOPA" x="347" y="127" width="207" height="47"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="__obxsHrqEeSlC55EsxuOPA" type="2006" fillColor="8421504">
+      <children xmi:type="notation:DecorationNode" xmi:id="__obxsnrqEeSlC55EsxuOPA" type="8"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="__obxs3rqEeSlC55EsxuOPA" type="26">
+        <styles xmi:type="notation:TitleStyle" xmi:id="__obxtHrqEeSlC55EsxuOPA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="__obxtXrqEeSlC55EsxuOPA"/>
+      </children>
+      <element xmi:type="uml:Artifact" href="TemperatureSensor.uml#__obKoHrqEeSlC55EsxuOPA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="__obxsXrqEeSlC55EsxuOPA" x="677" y="385" width="207" height="48"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_HsdH8XrqEeSlC55EsxuOPA" name="diagram_compatibility_version" stringValue="1.0.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_HsdH8nrqEeSlC55EsxuOPA"/>
+    <styles xmi:type="style:PapyrusViewStyle" xmi:id="_HsdH83rqEeSlC55EsxuOPA">
+      <owner xmi:type="uml:Package" href="TemperatureSensor.uml#_D4np8HrqEeSlC55EsxuOPA"/>
+    </styles>
+    <element xmi:type="uml:Package" href="TemperatureSensor.uml#_D4np8HrqEeSlC55EsxuOPA"/>
+    <edges xmi:type="notation:Connector" xmi:id="_YkD-QHrqEeSlC55EsxuOPA" type="4004" source="_IH_NYHrqEeSlC55EsxuOPA" target="_TfGPkHrqEeSlC55EsxuOPA" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_YkElUHrqEeSlC55EsxuOPA" type="12">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_YkElUXrqEeSlC55EsxuOPA" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_YkElUnrqEeSlC55EsxuOPA" type="15">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_YkElU3rqEeSlC55EsxuOPA" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_YkD-QXrqEeSlC55EsxuOPA"/>
+      <element xmi:type="uml:Dependency" href="TemperatureSensor.uml#_Yj8pgHrqEeSlC55EsxuOPA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_YkD-QnrqEeSlC55EsxuOPA" points="[18, -23, -239, 83]$[90, -23, -167, 83]$[90, -106, -167, 0]$[164, -106, -93, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_YkOWUHrqEeSlC55EsxuOPA" id="(0.9,0.5591397849462365)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_ZMnzEHrqEeSlC55EsxuOPA" type="4004" source="_IH_NYHrqEeSlC55EsxuOPA" target="_KjPu4HrqEeSlC55EsxuOPA" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_ZMnzE3rqEeSlC55EsxuOPA" type="12">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ZMoaIHrqEeSlC55EsxuOPA" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_ZMoaIXrqEeSlC55EsxuOPA" type="15">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ZMoaInrqEeSlC55EsxuOPA" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_ZMnzEXrqEeSlC55EsxuOPA"/>
+      <element xmi:type="uml:Dependency" href="TemperatureSensor.uml#_ZMnMAHrqEeSlC55EsxuOPA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZMnzEnrqEeSlC55EsxuOPA" points="[0, 6, -173, 46]$[126, 6, -47, 46]$[126, -34, -47, 6]$[173, -34, 0, 6]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ZMqPUHrqEeSlC55EsxuOPA" id="(1.0,0.8602150537634409)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ZMqPUXrqEeSlC55EsxuOPA" id="(0.0,0.5217391304347826)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_Zz51gHrqEeSlC55EsxuOPA" type="4004" source="_IH_NYHrqEeSlC55EsxuOPA" target="_Mj5YAHrqEeSlC55EsxuOPA" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Zz51g3rqEeSlC55EsxuOPA" type="12">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Zz51hHrqEeSlC55EsxuOPA" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Zz51hXrqEeSlC55EsxuOPA" type="15">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Zz6ckHrqEeSlC55EsxuOPA" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Zz51gXrqEeSlC55EsxuOPA"/>
+      <element xmi:type="uml:Dependency" href="TemperatureSensor.uml#_Zz5OcHrqEeSlC55EsxuOPA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Zz51gnrqEeSlC55EsxuOPA" points="[0, 33, -172, -15]$[172, 33, 0, -15]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Zz8RwHrqEeSlC55EsxuOPA" id="(1.0,0.5698924731182796)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_FOfbQHrrEeSlC55EsxuOPA" id="(0.0,0.6086956521739131)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_d9-CMHrqEeSlC55EsxuOPA" type="4004" source="_IH_NYHrqEeSlC55EsxuOPA" target="_bS3t4HrqEeSlC55EsxuOPA" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_d9-CM3rqEeSlC55EsxuOPA" type="12">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_d9-CNHrqEeSlC55EsxuOPA" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_d9-pQHrqEeSlC55EsxuOPA" type="15">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_d9-pQXrqEeSlC55EsxuOPA" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_d9-CMXrqEeSlC55EsxuOPA"/>
+      <element xmi:type="uml:Dependency" href="TemperatureSensor.uml#_d99bIHrqEeSlC55EsxuOPA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_d9-CMnrqEeSlC55EsxuOPA" points="[39, 8, -187, 159]$[111, 8, -115, 159]$[111, -140, -115, 11]$[184, -140, -42, 11]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_d-BFgHrqEeSlC55EsxuOPA" id="(0.7833333333333333,0.22580645161290322)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_d-BFgXrqEeSlC55EsxuOPA" id="(0.22580645161290322,0.41509433962264153)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_nd4SMHrqEeSlC55EsxuOPA" type="4004" source="_IH_NYHrqEeSlC55EsxuOPA" target="_i6rz0HrqEeSlC55EsxuOPA" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_nd4SM3rqEeSlC55EsxuOPA" type="12">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_nd4SNHrqEeSlC55EsxuOPA" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_nd4SNXrqEeSlC55EsxuOPA" type="15">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_nd45QHrqEeSlC55EsxuOPA" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_nd4SMXrqEeSlC55EsxuOPA"/>
+      <element xmi:type="uml:Dependency" href="TemperatureSensor.uml#_nd3rIHrqEeSlC55EsxuOPA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nd4SMnrqEeSlC55EsxuOPA" points="[-16, -17, -59, 180]$[-16, -164, -59, 33]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nd7VgHrqEeSlC55EsxuOPA" id="(0.40555555555555556,0.1827956989247312)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_wW7WgHrqEeSlC55EsxuOPA" type="4004" source="_i6rz0HrqEeSlC55EsxuOPA" target="_uLxGgHrqEeSlC55EsxuOPA" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_wW7Wg3rqEeSlC55EsxuOPA" type="12">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_wW7WhHrqEeSlC55EsxuOPA" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_wW7WhXrqEeSlC55EsxuOPA" type="15">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_wW7WhnrqEeSlC55EsxuOPA" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_wW7WgXrqEeSlC55EsxuOPA"/>
+      <element xmi:type="uml:Dependency" href="TemperatureSensor.uml#_wW6vcHrqEeSlC55EsxuOPA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wW7WgnrqEeSlC55EsxuOPA" points="[0, 16, -56, 36]$[29, 16, -27, 36]$[29, -29, -27, -9]$[56, -29, 0, -9]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wW9LsHrqEeSlC55EsxuOPA" id="(1.0,0.24242424242424243)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wW9LsXrqEeSlC55EsxuOPA" id="(0.0,0.6808510638297872)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_xMklEHrqEeSlC55EsxuOPA" type="4004" source="_TfGPkHrqEeSlC55EsxuOPA" target="_uLxGgHrqEeSlC55EsxuOPA" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_xMklE3rqEeSlC55EsxuOPA" type="12">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_xMklFHrqEeSlC55EsxuOPA" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_xMklFXrqEeSlC55EsxuOPA" type="15">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_xMklFnrqEeSlC55EsxuOPA" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_xMklEXrqEeSlC55EsxuOPA"/>
+      <element xmi:type="uml:Dependency" href="TemperatureSensor.uml#_xMj-AHrqEeSlC55EsxuOPA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_xMklEnrqEeSlC55EsxuOPA" points="[38, 34, 110, 154]$[89, 34, 161, 154]$[89, -144, 161, -24]$[18, -144, 90, -24]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xMnBUHrqEeSlC55EsxuOPA" id="(0.7967914438502673,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G9LxsHrrEeSlC55EsxuOPA" id="(0.5652173913043478,1.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_zyISEHrqEeSlC55EsxuOPA" type="4004" source="_bS3t4HrqEeSlC55EsxuOPA" target="_ogY4EHrqEeSlC55EsxuOPA" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_zyISE3rqEeSlC55EsxuOPA" type="12">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_zyISFHrqEeSlC55EsxuOPA" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_zyISFXrqEeSlC55EsxuOPA" type="15">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_zyI5IHrqEeSlC55EsxuOPA" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_zyISEXrqEeSlC55EsxuOPA"/>
+      <element xmi:type="uml:Dependency" href="TemperatureSensor.uml#_zyHD8HrqEeSlC55EsxuOPA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zyISEnrqEeSlC55EsxuOPA" points="[0, 4, 24, 175]$[25, 4, 49, 175]$[25, -162, 49, 9]$[-24, -162, 0, 9]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zyLVYHrqEeSlC55EsxuOPA" id="(1.0,0.4716981132075472)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zyLVYXrqEeSlC55EsxuOPA" id="(1.0,0.3137254901960784)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_0XcloHrqEeSlC55EsxuOPA" type="4004" source="_i6rz0HrqEeSlC55EsxuOPA" target="_ogY4EHrqEeSlC55EsxuOPA" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_0Xclo3rqEeSlC55EsxuOPA" type="12">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_0XdMsHrqEeSlC55EsxuOPA" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_0XdMsXrqEeSlC55EsxuOPA" type="15">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_0XdMsnrqEeSlC55EsxuOPA" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_0XcloXrqEeSlC55EsxuOPA"/>
+      <element xmi:type="uml:Dependency" href="TemperatureSensor.uml#_0Xb-kHrqEeSlC55EsxuOPA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_0XclonrqEeSlC55EsxuOPA" points="[0, -10, -56, 113]$[29, -10, -27, 113]$[29, -130, -27, -7]$[56, -130, 0, -7]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0XfB4HrqEeSlC55EsxuOPA" id="(1.0,0.6363636363636364)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_GxDaMHrrEeSlC55EsxuOPA" id="(0.0,0.39215686274509803)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_-lKW0HrqEeSlC55EsxuOPA" type="4004" source="_bS3t4HrqEeSlC55EsxuOPA" target="_KjPu4HrqEeSlC55EsxuOPA" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_-lK94HrqEeSlC55EsxuOPA" type="12">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-lK94XrqEeSlC55EsxuOPA" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_-lK94nrqEeSlC55EsxuOPA" type="15">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-lK943rqEeSlC55EsxuOPA" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_-lKW0XrqEeSlC55EsxuOPA"/>
+      <element xmi:type="uml:Dependency" href="TemperatureSensor.uml#_-lJvwHrqEeSlC55EsxuOPA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-lKW0nrqEeSlC55EsxuOPA" points="[134, -24, 153, -139]$[159, -24, 178, -139]$[159, 138, 178, 23]$[140, 138, 159, 23]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-lTgwHrqEeSlC55EsxuOPA" id="(0.27956989247311825,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-lTgwXrqEeSlC55EsxuOPA" id="(0.03048780487804878,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_BjLAEHrrEeSlC55EsxuOPA" type="4004" source="_Mj5YAHrqEeSlC55EsxuOPA" target="__obxsHrqEeSlC55EsxuOPA" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_BjLnIHrrEeSlC55EsxuOPA" type="12">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_BjLnIXrrEeSlC55EsxuOPA" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_BjLnInrrEeSlC55EsxuOPA" type="15">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_BjLnI3rrEeSlC55EsxuOPA" x="-117" y="64"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_BjLAEXrrEeSlC55EsxuOPA"/>
+      <element xmi:type="uml:Dependency" href="TemperatureSensor.uml#_BjKZAHrrEeSlC55EsxuOPA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_BjLAEnrrEeSlC55EsxuOPA" points="[0, 16, -103, 41]$[50, 16, -53, 41]$[50, -49, -53, -24]$[85, -49, -18, -24]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_BjOqcHrrEeSlC55EsxuOPA" id="(1.0,0.1956521739130435)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_BjOqcXrrEeSlC55EsxuOPA" id="(0.08695652173913043,1.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_B9CRkHrrEeSlC55EsxuOPA" type="4004" source="_TfGPkHrqEeSlC55EsxuOPA" target="__obxsHrqEeSlC55EsxuOPA" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_B9CRk3rrEeSlC55EsxuOPA" type="12">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_B9CRlHrrEeSlC55EsxuOPA" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_B9CRlXrrEeSlC55EsxuOPA" type="15">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_B9CRlnrrEeSlC55EsxuOPA" x="-117" y="64"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_B9CRkXrrEeSlC55EsxuOPA"/>
+      <element xmi:type="uml:Dependency" href="TemperatureSensor.uml#_B9BqgHrrEeSlC55EsxuOPA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_B9CRknrrEeSlC55EsxuOPA" points="[0, 14, -103, -86]$[51, 14, -52, -86]$[51, 95, -52, -5]$[103, 95, 0, -5]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_B9Et0HrrEeSlC55EsxuOPA" id="(1.0,0.3508771929824561)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_B9Et0XrrEeSlC55EsxuOPA" id="(0.0,0.6041666666666666)"/>
+    </edges>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_ZP6eAHryEeSlC55EsxuOPA" type="CompositeStructure" name="Monitor Structure" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_ZP6eAXryEeSlC55EsxuOPA" type="2069" fillColor="10265827">
+      <children xmi:type="notation:DecorationNode" xmi:id="_ZP6eAnryEeSlC55EsxuOPA" type="5121"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_ZP6eA3ryEeSlC55EsxuOPA" type="7069">
+        <children xmi:type="notation:Shape" xmi:id="_ebw30HryEeSlC55EsxuOPA" type="3070">
+          <children xmi:type="notation:DecorationNode" xmi:id="_ebw30nryEeSlC55EsxuOPA" type="5126"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_ebw303ryEeSlC55EsxuOPA" type="7077">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_ebw31HryEeSlC55EsxuOPA"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ebw31XryEeSlC55EsxuOPA"/>
+          </children>
+          <element xmi:type="uml:Property" href="TemperatureSensor.uml#_ebvpsHryEeSlC55EsxuOPA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ebw30XryEeSlC55EsxuOPA" x="40" y="44" width="148" height="246"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_iFxEYHryEeSlC55EsxuOPA" type="3070" fillColor="8421504">
+          <children xmi:type="notation:DecorationNode" xmi:id="_iFxEYnryEeSlC55EsxuOPA" type="5126"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_iFxEY3ryEeSlC55EsxuOPA" type="7077">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_iFxEZHryEeSlC55EsxuOPA"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iFxEZXryEeSlC55EsxuOPA"/>
+          </children>
+          <element xmi:type="uml:Property" href="TemperatureSensor.uml#_iFwdUHryEeSlC55EsxuOPA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iFxEYXryEeSlC55EsxuOPA" x="489" y="214" width="191"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_lGzzgHryEeSlC55EsxuOPA" type="3070" fillColor="10011046">
+          <children xmi:type="notation:DecorationNode" xmi:id="_lG0akXryEeSlC55EsxuOPA" type="5126"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_lG0aknryEeSlC55EsxuOPA" type="7077">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_lG0ak3ryEeSlC55EsxuOPA"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lG0alHryEeSlC55EsxuOPA"/>
+          </children>
+          <element xmi:type="uml:Property" href="TemperatureSensor.uml#_lGxXQHryEeSlC55EsxuOPA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lG0akHryEeSlC55EsxuOPA" x="253" y="216"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_2t_FkHryEeSlC55EsxuOPA" type="3070" fillColor="10011046">
+          <children xmi:type="notation:DecorationNode" xmi:id="_2t_FknryEeSlC55EsxuOPA" type="5126"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_2t_Fk3ryEeSlC55EsxuOPA" type="7077">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_2t_FlHryEeSlC55EsxuOPA"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2t_FlXryEeSlC55EsxuOPA"/>
+          </children>
+          <element xmi:type="uml:Property" href="TemperatureSensor.uml#_2t93cHryEeSlC55EsxuOPA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2t_FkXryEeSlC55EsxuOPA" x="254" y="76" width="340"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_ZP6eBHryEeSlC55EsxuOPA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZP6eBXryEeSlC55EsxuOPA"/>
+      </children>
+      <element xmi:type="uml:Component" href="TemperatureSensor.uml#_W-oX4HryEeSlC55EsxuOPA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZP6eBnryEeSlC55EsxuOPA" x="40" y="40" width="724" height="401"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_ZP6eB3ryEeSlC55EsxuOPA" name="diagram_compatibility_version" stringValue="1.0.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_ZP6eCHryEeSlC55EsxuOPA"/>
+    <styles xmi:type="style:PapyrusViewStyle" xmi:id="_ZP6eCXryEeSlC55EsxuOPA">
+      <owner xmi:type="uml:Component" href="TemperatureSensor.uml#_W-oX4HryEeSlC55EsxuOPA"/>
+    </styles>
+    <element xmi:type="uml:Component" href="TemperatureSensor.uml#_W-oX4HryEeSlC55EsxuOPA"/>
+    <edges xmi:type="notation:Connector" xmi:id="_mmI4QHryEeSlC55EsxuOPA" type="4013" source="_lGzzgHryEeSlC55EsxuOPA" target="_iFxEYHryEeSlC55EsxuOPA" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_mmI4Q3ryEeSlC55EsxuOPA" visible="false" type="6025">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_mmJfUHryEeSlC55EsxuOPA" y="60"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_mmJfUXryEeSlC55EsxuOPA" visible="false" type="6050">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_mmJfUnryEeSlC55EsxuOPA" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_mmJfU3ryEeSlC55EsxuOPA" visible="false" type="6051">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_mmJfVHryEeSlC55EsxuOPA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_mmJfVXryEeSlC55EsxuOPA" visible="false" type="6052">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_mmJfVnryEeSlC55EsxuOPA" y="20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_mmI4QXryEeSlC55EsxuOPA"/>
+      <element xmi:type="uml:Connector" href="TemperatureSensor.uml#_mmEm0HryEeSlC55EsxuOPA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mmI4QnryEeSlC55EsxuOPA" points="[17, -3, -112, 11]$[109, -3, -20, 11]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mmRbIHryEeSlC55EsxuOPA" id="(0.9005847953216374,0.5652173913043478)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mmRbIXryEeSlC55EsxuOPA" id="(0.11363636363636363,0.30434782608695654)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_m7VFIHryEeSlC55EsxuOPA" type="4013" source="_ebw30HryEeSlC55EsxuOPA" target="_lGzzgHryEeSlC55EsxuOPA" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_m7VFI3ryEeSlC55EsxuOPA" visible="false" type="6025">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_m7VFJHryEeSlC55EsxuOPA" y="60"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_m7VsMHryEeSlC55EsxuOPA" visible="false" type="6050">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_m7VsMXryEeSlC55EsxuOPA" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_m7VsMnryEeSlC55EsxuOPA" visible="false" type="6051">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_m7VsM3ryEeSlC55EsxuOPA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_m7VsNHryEeSlC55EsxuOPA" visible="false" type="6052">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_m7VsNXryEeSlC55EsxuOPA" y="20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_m7VFIXryEeSlC55EsxuOPA"/>
+      <element xmi:type="uml:Connector" href="TemperatureSensor.uml#_m7T3AHryEeSlC55EsxuOPA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_m7VFInryEeSlC55EsxuOPA" points="[21, -8, -125, 0]$[122, -9, -24, -1]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_m7Z9oHryEeSlC55EsxuOPA" id="(0.8581081081081081,0.8252032520325203)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_m7Z9oXryEeSlC55EsxuOPA" id="(0.14035087719298245,0.4782608695652174)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_4sXd0HryEeSlC55EsxuOPA" type="4013" source="_ebw30HryEeSlC55EsxuOPA" target="_2t_FkHryEeSlC55EsxuOPA" routing="Rectilinear">
+      <children xmi:type="notation:DecorationNode" xmi:id="_4sXd03ryEeSlC55EsxuOPA" visible="false" type="6025">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_4sXd1HryEeSlC55EsxuOPA" y="60"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_4sYE4HryEeSlC55EsxuOPA" visible="false" type="6050">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_4sYE4XryEeSlC55EsxuOPA" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_4sYE4nryEeSlC55EsxuOPA" visible="false" type="6051">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_4sYE43ryEeSlC55EsxuOPA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_4sYE5HryEeSlC55EsxuOPA" visible="false" type="6052">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_4sYE5XryEeSlC55EsxuOPA" y="20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_4sXd0XryEeSlC55EsxuOPA"/>
+      <element xmi:type="uml:Connector" href="TemperatureSensor.uml#_4sWPsHryEeSlC55EsxuOPA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_4sXd0nryEeSlC55EsxuOPA" points="[16, 7, -116, 0]$[118, 7, -14, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_4scWUHryEeSlC55EsxuOPA" id="(0.8918918918918919,0.1991869918699187)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_4scWUXryEeSlC55EsxuOPA" id="(0.041176470588235294,0.5217391304347826)"/>
+    </edges>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_oxGucHsHEeSSLvE6bJtqnQ" type="CompositeStructure" name="CompositeDiagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_oxGucXsHEeSSLvE6bJtqnQ" type="2069">
+      <children xmi:type="notation:DecorationNode" xmi:id="_oxGucnsHEeSSLvE6bJtqnQ" type="5121"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_oxGuc3sHEeSSLvE6bJtqnQ" type="7069">
+        <children xmi:type="notation:Shape" xmi:id="_qbEV4HsHEeSSLvE6bJtqnQ" type="3070">
+          <children xmi:type="notation:DecorationNode" xmi:id="_qbE88XsHEeSSLvE6bJtqnQ" type="5126"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_qbE88nsHEeSSLvE6bJtqnQ" type="7077">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_qbE883sHEeSSLvE6bJtqnQ"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qbE89HsHEeSSLvE6bJtqnQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="TemperatureSensor.uml#_qa0eQHsHEeSSLvE6bJtqnQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qbE88HsHEeSSLvE6bJtqnQ" x="70" y="65" width="145" height="250"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_rn9m0HsHEeSSLvE6bJtqnQ" type="3070">
+          <children xmi:type="notation:DecorationNode" xmi:id="_rn-N4HsHEeSSLvE6bJtqnQ" type="5126"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_rn-N4XsHEeSSLvE6bJtqnQ" type="7077">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_rn-N4nsHEeSSLvE6bJtqnQ"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rn-N43sHEeSSLvE6bJtqnQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="TemperatureSensor.uml#_rn8YsHsHEeSSLvE6bJtqnQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rn9m0XsHEeSSLvE6bJtqnQ" x="433" y="70" width="159"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_sDGqsHsHEeSSLvE6bJtqnQ" type="3070">
+          <children xmi:type="notation:DecorationNode" xmi:id="_sDGqsnsHEeSSLvE6bJtqnQ" type="5126"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_sDHRwHsHEeSSLvE6bJtqnQ" type="7077">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_sDHRwXsHEeSSLvE6bJtqnQ"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sDHRwnsHEeSSLvE6bJtqnQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="TemperatureSensor.uml#_sDGDoHsHEeSSLvE6bJtqnQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sDGqsXsHEeSSLvE6bJtqnQ" x="434" y="156" width="159"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_tcYKwHsHEeSSLvE6bJtqnQ" type="3070">
+          <children xmi:type="notation:DecorationNode" xmi:id="_tcYKwnsHEeSSLvE6bJtqnQ" type="5126"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_tcYKw3sHEeSSLvE6bJtqnQ" type="7077">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_tcYKxHsHEeSSLvE6bJtqnQ"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tcYKxXsHEeSSLvE6bJtqnQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="TemperatureSensor.uml#_tcW8oHsHEeSSLvE6bJtqnQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tcYKwXsHEeSSLvE6bJtqnQ" x="435" y="254" width="159"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_FSH34HsIEeSSLvE6bJtqnQ" type="3070">
+          <children xmi:type="notation:DecorationNode" xmi:id="_FSH34nsIEeSSLvE6bJtqnQ" type="5126"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_FSH343sIEeSSLvE6bJtqnQ" type="7077">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_FSH35HsIEeSSLvE6bJtqnQ"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FSH35XsIEeSSLvE6bJtqnQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="TemperatureSensor.uml#_FSGCsHsIEeSSLvE6bJtqnQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FSH34XsIEeSSLvE6bJtqnQ" x="661" y="69"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_GDfqcHsIEeSSLvE6bJtqnQ" type="3070">
+          <children xmi:type="notation:DecorationNode" xmi:id="_GDfqcnsIEeSSLvE6bJtqnQ" type="5126"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_GDfqc3sIEeSSLvE6bJtqnQ" type="7077">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_GDfqdHsIEeSSLvE6bJtqnQ"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GDfqdXsIEeSSLvE6bJtqnQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="TemperatureSensor.uml#_GDecUHsIEeSSLvE6bJtqnQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GDfqcXsIEeSSLvE6bJtqnQ" x="659" y="158"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_GvGzQHsIEeSSLvE6bJtqnQ" type="3070">
+          <children xmi:type="notation:DecorationNode" xmi:id="_GvHaUHsIEeSSLvE6bJtqnQ" type="5126"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_GvHaUXsIEeSSLvE6bJtqnQ" type="7077">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_GvHaUnsIEeSSLvE6bJtqnQ"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GvHaU3sIEeSSLvE6bJtqnQ"/>
+          </children>
+          <element xmi:type="uml:Property" href="TemperatureSensor.uml#_GvFlIHsIEeSSLvE6bJtqnQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GvGzQXsIEeSSLvE6bJtqnQ" x="661" y="254"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_oxGudHsHEeSSLvE6bJtqnQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oxGudXsHEeSSLvE6bJtqnQ"/>
+      </children>
+      <element xmi:type="uml:Component" href="TemperatureSensor.uml#_mwdsYHsHEeSSLvE6bJtqnQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oxGudnsHEeSSLvE6bJtqnQ" x="40" y="40" width="816" height="401"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_oxGud3sHEeSSLvE6bJtqnQ" name="diagram_compatibility_version" stringValue="1.0.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_oxGueHsHEeSSLvE6bJtqnQ"/>
+    <styles xmi:type="style:PapyrusViewStyle" xmi:id="_oxGueXsHEeSSLvE6bJtqnQ">
+      <owner xmi:type="uml:Component" href="TemperatureSensor.uml#_mwdsYHsHEeSSLvE6bJtqnQ"/>
+    </styles>
+    <element xmi:type="uml:Component" href="TemperatureSensor.uml#_mwdsYHsHEeSSLvE6bJtqnQ"/>
+    <edges xmi:type="notation:Connector" xmi:id="_v-0SUHsHEeSSLvE6bJtqnQ" type="4013" source="_qbEV4HsHEeSSLvE6bJtqnQ" target="_tcYKwHsHEeSSLvE6bJtqnQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_v-0SU3sHEeSSLvE6bJtqnQ" visible="false" type="6025">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_v-05YHsHEeSSLvE6bJtqnQ" y="60"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_v-05YXsHEeSSLvE6bJtqnQ" visible="false" type="6050">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_v-05YnsHEeSSLvE6bJtqnQ" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_v-05Y3sHEeSSLvE6bJtqnQ" visible="false" type="6051">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_v-05ZHsHEeSSLvE6bJtqnQ" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_v-05ZXsHEeSSLvE6bJtqnQ" visible="false" type="6052">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_v-05ZnsHEeSSLvE6bJtqnQ" y="20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_v-0SUXsHEeSSLvE6bJtqnQ"/>
+      <element xmi:type="uml:Connector" href="TemperatureSensor.uml#_v-s9kHsHEeSSLvE6bJtqnQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_v-0SUnsHEeSSLvE6bJtqnQ" points="[17, 6, -251, 0]$[237, 6, -31, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_v-7AAHsHEeSSLvE6bJtqnQ" id="(0.8827586206896552,0.828)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_v-7nEHsHEeSSLvE6bJtqnQ" id="(0.1949685534591195,0.5217391304347826)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_wVyn4HsHEeSSLvE6bJtqnQ" type="4013" source="_qbEV4HsHEeSSLvE6bJtqnQ" target="_sDGqsHsHEeSSLvE6bJtqnQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_wVzO8HsHEeSSLvE6bJtqnQ" visible="false" type="6025">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_wVzO8XsHEeSSLvE6bJtqnQ" y="60"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_wVzO8nsHEeSSLvE6bJtqnQ" visible="false" type="6050">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_wVzO83sHEeSSLvE6bJtqnQ" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_wVzO9HsHEeSSLvE6bJtqnQ" visible="false" type="6051">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_wVzO9XsHEeSSLvE6bJtqnQ" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_wVzO9nsHEeSSLvE6bJtqnQ" visible="false" type="6052">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_wVzO93sHEeSSLvE6bJtqnQ" y="20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_wVyn4XsHEeSSLvE6bJtqnQ"/>
+      <element xmi:type="uml:Connector" href="TemperatureSensor.uml#_wVwysHsHEeSSLvE6bJtqnQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wVyn4nsHEeSSLvE6bJtqnQ" points="[22, 9, -256, 0]$[241, 7, -37, -2]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wV25UHsHEeSSLvE6bJtqnQ" id="(0.8482758620689655,0.412)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wV25UXsHEeSSLvE6bJtqnQ" id="(0.23270440251572327,0.45652173913043476)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_wxzOcHsHEeSSLvE6bJtqnQ" type="4013" source="_qbEV4HsHEeSSLvE6bJtqnQ" target="_rn9m0HsHEeSSLvE6bJtqnQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_wxz1gHsHEeSSLvE6bJtqnQ" visible="false" type="6025">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_wxz1gXsHEeSSLvE6bJtqnQ" y="60"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_wxz1gnsHEeSSLvE6bJtqnQ" visible="false" type="6050">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_wxz1g3sHEeSSLvE6bJtqnQ" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_wxz1hHsHEeSSLvE6bJtqnQ" visible="false" type="6051">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_wxz1hXsHEeSSLvE6bJtqnQ" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_wxz1hnsHEeSSLvE6bJtqnQ" visible="false" type="6052">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_wxz1h3sHEeSSLvE6bJtqnQ" y="20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_wxzOcXsHEeSSLvE6bJtqnQ"/>
+      <element xmi:type="uml:Connector" href="TemperatureSensor.uml#_wxxZQHsHEeSSLvE6bJtqnQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wxzOcnsHEeSSLvE6bJtqnQ" points="[18, -1, -297, 8]$[236, -1, -79, 8]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wx240HsHEeSSLvE6bJtqnQ" id="(0.8758620689655172,0.148)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_Haf5oHsIEeSSLvE6bJtqnQ" type="4013" source="_tcYKwHsHEeSSLvE6bJtqnQ" target="_GvGzQHsIEeSSLvE6bJtqnQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_HaggsHsIEeSSLvE6bJtqnQ" visible="false" type="6025">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_HaggsXsIEeSSLvE6bJtqnQ" y="60"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_HaggsnsIEeSSLvE6bJtqnQ" visible="false" type="6050">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Haggs3sIEeSSLvE6bJtqnQ" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_HaggtHsIEeSSLvE6bJtqnQ" visible="false" type="6051">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_HaggtXsIEeSSLvE6bJtqnQ" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_HaggtnsIEeSSLvE6bJtqnQ" visible="false" type="6052">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Haggt3sIEeSSLvE6bJtqnQ" y="20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Haf5oXsIEeSSLvE6bJtqnQ"/>
+      <element xmi:type="uml:Connector" href="TemperatureSensor.uml#_HaeEcHsIEeSSLvE6bJtqnQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Haf5onsIEeSSLvE6bJtqnQ" points="[19, -1, -81, 0]$[86, -1, -14, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HamAQHsIEeSSLvE6bJtqnQ" id="(0.8805031446540881,0.5217391304347826)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HamAQXsIEeSSLvE6bJtqnQ" id="(0.1206896551724138,0.5)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_Hw7coHsIEeSSLvE6bJtqnQ" type="4013" source="_sDGqsHsHEeSSLvE6bJtqnQ" target="_GDfqcHsIEeSSLvE6bJtqnQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Hw8DsHsIEeSSLvE6bJtqnQ" visible="false" type="6025">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Hw8DsXsIEeSSLvE6bJtqnQ" y="60"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Hw8DsnsIEeSSLvE6bJtqnQ" visible="false" type="6050">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Hw8Ds3sIEeSSLvE6bJtqnQ" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Hw8DtHsIEeSSLvE6bJtqnQ" visible="false" type="6051">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Hw8DtXsIEeSSLvE6bJtqnQ" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Hw8DtnsIEeSSLvE6bJtqnQ" visible="false" type="6052">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Hw8Dt3sIEeSSLvE6bJtqnQ" y="20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Hw7coXsIEeSSLvE6bJtqnQ"/>
+      <element xmi:type="uml:Connector" href="TemperatureSensor.uml#_Hw6OgHsIEeSSLvE6bJtqnQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Hw7consIEeSSLvE6bJtqnQ" points="[20, 5, -81, 0]$[86, 5, -15, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HxBjQHsIEeSSLvE6bJtqnQ" id="(0.8742138364779874,0.43478260869565216)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HxBjQXsIEeSSLvE6bJtqnQ" id="(0.12931034482758622,0.5)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_IGs4UHsIEeSSLvE6bJtqnQ" type="4013" source="_rn9m0HsHEeSSLvE6bJtqnQ" target="_FSH34HsIEeSSLvE6bJtqnQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_IGtfYHsIEeSSLvE6bJtqnQ" visible="false" type="6025">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_IGtfYXsIEeSSLvE6bJtqnQ" y="60"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_IGtfYnsIEeSSLvE6bJtqnQ" visible="false" type="6050">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_IGtfY3sIEeSSLvE6bJtqnQ" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_IGtfZHsIEeSSLvE6bJtqnQ" visible="false" type="6051">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_IGtfZXsIEeSSLvE6bJtqnQ" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_IGtfZnsIEeSSLvE6bJtqnQ" visible="false" type="6052">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_IGtfZ3sIEeSSLvE6bJtqnQ" y="20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_IGs4UXsIEeSSLvE6bJtqnQ"/>
+      <element xmi:type="uml:Connector" href="TemperatureSensor.uml#_IGrqMHsIEeSSLvE6bJtqnQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IGs4UnsIEeSSLvE6bJtqnQ" points="[18, 0, -82, 0]$[87, 1, -13, 1]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IGy-8HsIEeSSLvE6bJtqnQ" id="(0.8867924528301887,0.5652173913043478)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IGy-8XsIEeSSLvE6bJtqnQ" id="(0.11711711711711711,0.5869565217391305)"/>
+    </edges>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_1FROwHsHEeSSLvE6bJtqnQ" type="PapyrusUMLSequenceDiagram" name="SeqDiagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_1FROwXsHEeSSLvE6bJtqnQ" type="2001">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rWEwIHsIEeSSLvE6bJtqnQ" source="displayNameLabelIcon">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rWEwIXsIEeSSLvE6bJtqnQ" key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_1FROwnsHEeSSLvE6bJtqnQ" type="5001"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_1FROw3sHEeSSLvE6bJtqnQ" type="7001">
+        <children xmi:type="notation:Shape" xmi:id="_2qzCIHsHEeSSLvE6bJtqnQ" type="3001">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rWFXMHsIEeSSLvE6bJtqnQ" source="displayNameLabelIcon">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rWFXMXsIEeSSLvE6bJtqnQ" key="displayNameLabelIcon_value" value="false"/>
+          </eAnnotations>
+          <children xmi:type="notation:DecorationNode" xmi:id="_2qzCInsHEeSSLvE6bJtqnQ" type="5002"/>
+          <element xmi:type="uml:Lifeline" href="TemperatureSensor.uml#_2quwsHsHEeSSLvE6bJtqnQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2qzCIXsHEeSSLvE6bJtqnQ" x="53" y="10" width="86"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_6bMKkHsHEeSSLvE6bJtqnQ" type="3001">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rWFXMnsIEeSSLvE6bJtqnQ" source="displayNameLabelIcon">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rWFXM3sIEeSSLvE6bJtqnQ" key="displayNameLabelIcon_value" value="false"/>
+          </eAnnotations>
+          <children xmi:type="notation:DecorationNode" xmi:id="_6bMxoHsHEeSSLvE6bJtqnQ" type="5002"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_6bP08HsHEeSSLvE6bJtqnQ" type="compartment_shape_display">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_6bP08XsHEeSSLvE6bJtqnQ"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6bP08nsHEeSSLvE6bJtqnQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_OIbxQHsIEeSSLvE6bJtqnQ" type="3003">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rWF-QHsIEeSSLvE6bJtqnQ" source="displayNameLabelIcon">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rWF-QXsIEeSSLvE6bJtqnQ" key="displayNameLabelIcon_value" value="false"/>
+            </eAnnotations>
+            <children xmi:type="notation:DecorationNode" xmi:id="_OIbxQnsIEeSSLvE6bJtqnQ" type="BehaviorExecutionSpecification_Behavior">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_OIbxQ3sIEeSSLvE6bJtqnQ" x="18" y="18"/>
+            </children>
+            <element xmi:type="uml:BehaviorExecutionSpecification" href="TemperatureSensor.uml#_OIYt8HsIEeSSLvE6bJtqnQ"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OIbxQXsIEeSSLvE6bJtqnQ" x="39" y="45" width="16" height="117"/>
+          </children>
+          <element xmi:type="uml:Lifeline" href="TemperatureSensor.uml#_6bK8cHsHEeSSLvE6bJtqnQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6bMKkXsHEeSSLvE6bJtqnQ" x="352" y="12" width="93"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_Mxd-UHsIEeSSLvE6bJtqnQ" type="3001">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rWF-QnsIEeSSLvE6bJtqnQ" source="displayNameLabelIcon">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rWF-Q3sIEeSSLvE6bJtqnQ" key="displayNameLabelIcon_value" value="false"/>
+          </eAnnotations>
+          <children xmi:type="notation:DecorationNode" xmi:id="_MxelYHsIEeSSLvE6bJtqnQ" type="5002"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_MxhBoHsIEeSSLvE6bJtqnQ" type="compartment_shape_display">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_MxhBoXsIEeSSLvE6bJtqnQ"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MxhBonsIEeSSLvE6bJtqnQ"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_Pq0KAHsIEeSSLvE6bJtqnQ" type="3003">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rWF-RHsIEeSSLvE6bJtqnQ" source="displayNameLabelIcon">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rWGlUHsIEeSSLvE6bJtqnQ" key="displayNameLabelIcon_value" value="false"/>
+            </eAnnotations>
+            <children xmi:type="notation:DecorationNode" xmi:id="_Pq0KAnsIEeSSLvE6bJtqnQ" type="BehaviorExecutionSpecification_Behavior">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_Pq0KA3sIEeSSLvE6bJtqnQ" x="18" y="18"/>
+            </children>
+            <element xmi:type="uml:BehaviorExecutionSpecification" href="TemperatureSensor.uml#_PqxtwXsIEeSSLvE6bJtqnQ"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pq0KAXsIEeSSLvE6bJtqnQ" x="33" y="63" width="16" height="26"/>
+          </children>
+          <element xmi:type="uml:Lifeline" href="TemperatureSensor.uml#_MxdXQHsIEeSSLvE6bJtqnQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mxd-UXsIEeSSLvE6bJtqnQ" x="587" y="14" width="81"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_mE8NsHsIEeSSLvE6bJtqnQ" type="3004">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rWGlUXsIEeSSLvE6bJtqnQ" source="displayNameLabelIcon">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rWGlUnsIEeSSLvE6bJtqnQ" key="displayNameLabelIcon_value" value="false"/>
+          </eAnnotations>
+          <children xmi:type="notation:DecorationNode" xmi:id="_mE80wHsIEeSSLvE6bJtqnQ" type="7004">
+            <children xmi:type="notation:Shape" xmi:id="_mE80xHsIEeSSLvE6bJtqnQ" type="3005">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uamREHsIEeSSLvE6bJtqnQ" source="guard.visibility">
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uam4IHsIEeSSLvE6bJtqnQ" key="guard.visibility" value="false"/>
+              </eAnnotations>
+              <children xmi:type="notation:DecorationNode" xmi:id="_pQu0QHsIEeSSLvE6bJtqnQ" type="InteractionOperand_Guard">
+                <element xsi:nil="true"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pQu0QXsIEeSSLvE6bJtqnQ" x="39" y="22"/>
+              </children>
+              <element xmi:type="uml:InteractionOperand" href="TemperatureSensor.uml#_mE5xcHsIEeSSLvE6bJtqnQ"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mE80xXsIEeSSLvE6bJtqnQ" width="690" height="138"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_mE80wXsIEeSSLvE6bJtqnQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_mE80wnsIEeSSLvE6bJtqnQ"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mE80w3sIEeSSLvE6bJtqnQ"/>
+          </children>
+          <element xmi:type="uml:CombinedFragment" href="TemperatureSensor.uml#_mE048HsIEeSSLvE6bJtqnQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mE8NsXsIEeSSLvE6bJtqnQ" x="12" y="60" width="692" height="162"/>
+        </children>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1FROxHsHEeSSLvE6bJtqnQ"/>
+      </children>
+      <element xmi:type="uml:Interaction" href="TemperatureSensor.uml#_0Xqh4HsHEeSSLvE6bJtqnQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1FROxXsHEeSSLvE6bJtqnQ" width="740" height="320"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_1FROxnsHEeSSLvE6bJtqnQ" name="diagram_compatibility_version" stringValue="1.0.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_1FROx3sHEeSSLvE6bJtqnQ"/>
+    <styles xmi:type="style:PapyrusViewStyle" xmi:id="_1FROyHsHEeSSLvE6bJtqnQ">
+      <owner xmi:type="uml:Component" href="TemperatureSensor.uml#_mwdsYHsHEeSSLvE6bJtqnQ"/>
+    </styles>
+    <element xmi:type="uml:Interaction" href="TemperatureSensor.uml#_0Xqh4HsHEeSSLvE6bJtqnQ"/>
+    <edges xmi:type="notation:Edge" xmi:id="_PqUawHsIEeSSLvE6bJtqnQ" type="4003" source="_OIbxQHsIEeSSLvE6bJtqnQ" target="_Pq0KAHsIEeSSLvE6bJtqnQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rWGlU3sIEeSSLvE6bJtqnQ" source="displayNameLabelIcon">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rWGlVHsIEeSSLvE6bJtqnQ" key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_PqVB0HsIEeSSLvE6bJtqnQ" type="6001">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_PqVB0XsIEeSSLvE6bJtqnQ" x="1" y="-13"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_PqVB0nsIEeSSLvE6bJtqnQ" type="6008">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_PqVB03sIEeSSLvE6bJtqnQ" x="1" y="-33"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_PqUawXsIEeSSLvE6bJtqnQ"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_PqUawnsIEeSSLvE6bJtqnQ"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_PqVo4HsIEeSSLvE6bJtqnQ"/>
+      <element xmi:type="uml:Message" href="TemperatureSensor.uml#_PZw2QHsIEeSSLvE6bJtqnQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PqUaw3sIEeSSLvE6bJtqnQ" points="[4, 7, -229, 0]$[233, 53, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PqwfoHsIEeSSLvE6bJtqnQ" id="(0.75,0.1111111111111111)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pq7ewHsIEeSSLvE6bJtqnQ" id="(1.0,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="_X0GlUHsIEeSSLvE6bJtqnQ" type="4005" source="_Pq0KAHsIEeSSLvE6bJtqnQ" target="_OIbxQHsIEeSSLvE6bJtqnQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rWHMYHsIEeSSLvE6bJtqnQ" source="displayNameLabelIcon">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rWHMYXsIEeSSLvE6bJtqnQ" key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_X0HMYHsIEeSSLvE6bJtqnQ" type="6003">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_X0HMYXsIEeSSLvE6bJtqnQ" x="1" y="-13"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_X0HMYnsIEeSSLvE6bJtqnQ" type="6010">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_X0HMY3sIEeSSLvE6bJtqnQ" x="1" y="-33"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_X0GlUXsIEeSSLvE6bJtqnQ"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_X0GlUnsIEeSSLvE6bJtqnQ"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_X0HMZHsIEeSSLvE6bJtqnQ"/>
+      <element xmi:type="uml:Message" href="TemperatureSensor.uml#_Xz_QkHsIEeSSLvE6bJtqnQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_X0GlU3sIEeSSLvE6bJtqnQ" points="[0, 0, 219, -7]$[-213, -10, 6, -17]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_X0RkcHsIEeSSLvE6bJtqnQ" id="(0.0,1.0){32}"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_X0RkcXsIEeSSLvE6bJtqnQ" id="(0.625,0.452991452991453)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="_bdGFQHsIEeSSLvE6bJtqnQ" type="4004" source="_OIbxQHsIEeSSLvE6bJtqnQ" target="_2qzCIHsHEeSSLvE6bJtqnQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rWHMYnsIEeSSLvE6bJtqnQ" source="displayNameLabelIcon">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rWHMY3sIEeSSLvE6bJtqnQ" key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_bdGFRHsIEeSSLvE6bJtqnQ" type="6002">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bdGFRXsIEeSSLvE6bJtqnQ" x="1" y="-13"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_bdGFRnsIEeSSLvE6bJtqnQ" type="6009">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bdGFR3sIEeSSLvE6bJtqnQ" x="1" y="-33"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_bdGFQXsIEeSSLvE6bJtqnQ"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_bdGFQnsIEeSSLvE6bJtqnQ"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_bdGFSHsIEeSSLvE6bJtqnQ"/>
+      <element xmi:type="uml:Message" href="TemperatureSensor.uml#_bdDB8HsIEeSSLvE6bJtqnQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bdGFQ3sIEeSSLvE6bJtqnQ" points="[-5, 0, 294, 0]$[-299, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bdP2QHsIEeSSLvE6bJtqnQ" id="(0.3125,0.6581196581196581)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bdQdUHsIEeSSLvE6bJtqnQ" id="(1.0,0.5644444444444444)"/>
+    </edges>
+  </notation:Diagram>
+</xmi:XMI>
