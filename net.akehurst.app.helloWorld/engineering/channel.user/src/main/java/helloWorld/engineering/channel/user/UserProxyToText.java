@@ -19,6 +19,7 @@ import helloWorld.computational.interfaceUser.IUserNotification;
 import helloWorld.computational.interfaceUser.IUserRequest;
 import helloWorld.computational.interfaceUser.Message;
 import net.akehurst.application.framework.common.IPort;
+import net.akehurst.application.framework.common.UserSession;
 import net.akehurst.application.framework.common.annotations.declaration.Component;
 import net.akehurst.application.framework.common.annotations.instance.PortInstance;
 import net.akehurst.application.framework.realisation.AbstractComponent;
@@ -34,17 +35,17 @@ public class UserProxyToText extends AbstractComponent implements IUserNotificat
 		super(id);
 	}
 	
-	public void notifyMessage(Message message) {
+	public void notifyMessage(UserSession session, Message message) {
 		this.portConsole().out(IConsoleRequest.class).requestOutput(message.asPrimitive());
 	}
 
 	@Override
-	public void notifyReady() {
-		this.portUser().out(IUserRequest.class).requestStart();
+	public void notifyReady(UserSession session) {
+		this.portUser().out(IUserRequest.class).requestStart(session);
 	}
 
 	@Override
-	public void notifyKeyPress() {
+	public void notifyKeyPress(UserSession session) {
 	}
 
 	@PortInstance(provides = { IUserNotification.class }, requires = { IUserRequest.class })

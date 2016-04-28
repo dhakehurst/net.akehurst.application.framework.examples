@@ -15,11 +15,13 @@
  */
 package helloWorld.computational.interfaceUser;
 
+import net.akehurst.application.framework.common.UserSession;
+
 // logical interface to the user,
 // we are not indicating how the interface is implemented
 // it could be using the standard console, or a gui, or anything else!
 public interface IUserNotification {
 
-	void notifyMessage(Message message);
+	void notifyMessage(UserSession session, Message message);
 	
 }

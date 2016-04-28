@@ -20,6 +20,7 @@ import java.util.concurrent.Future;
 import helloWorld.computational.interfaceUser.IUserNotification;
 import helloWorld.computational.interfaceUser.IUserRequest;
 import helloWorld.computational.interfaceUser.Message;
+import net.akehurst.application.framework.common.UserSession;
 import net.akehurst.application.framework.common.annotations.instance.CommandLineArgument;
 import net.akehurst.application.framework.common.annotations.instance.ConfiguredValue;
 import net.akehurst.application.framework.common.annotations.instance.ServiceReference;
@@ -41,10 +42,10 @@ public class UserRequestHandler extends AbstractActiveSignalProcessingObject imp
 	
 	// --------- IUserRequest ---------
 	@Override
-	public Future<Void> requestStart() {
+	public Future<Void> requestStart(UserSession session) {
 		return super.submit("requestStart", () -> {
 			
-			this.userNotification.notifyMessage(this.message);
+			this.userNotification.notifyMessage(session, this.message);
 
 		});
 	}
