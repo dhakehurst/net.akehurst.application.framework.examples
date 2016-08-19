@@ -7,6 +7,7 @@ import java.net.InetAddress;
 import java.net.MulticastSocket;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.net.SocketTimeoutException;
 import java.util.Arrays;
 
 import net.akehurst.application.framework.common.annotations.instance.ServiceReference;
@@ -67,10 +68,15 @@ public class MulticastSocketChannel extends AbstractActiveObject {
 				while(true) {
 					byte[] buf = new byte[ this.multiSocket.getReceiveBufferSize() ];
 					DatagramPacket pkt = new DatagramPacket(buf, buf.length);
-					this.multiSocket.receive(pkt);
-					logger.log(LogLevel.DEBUG,"received " + pkt.getLength() + "bytes");
-					byte[] bytes = Arrays.copyOf(buf, pkt.getLength());
-					this.socketListener.receive(bytes);
+					try {
+						this.multiSocket.receive(pkt);
+						logger.log(LogLevel.DEBUG,"received " + pkt.getLength() + "bytes");
+						byte[] bytes = Arrays.copyOf(buf, pkt.getLength());
+						this.socketListener.receive(bytes);
+					} catch(SocketTimeoutException e) {
+						logger.log(LogLevel.DEBUG,"timeout ");
+					}
+
 				}
 			}
 		} catch (Exception e) {
@@ -107,6 +113,7 @@ public class MulticastSocketChannel extends AbstractActiveObject {
 			try {
 				logger.log(LogLevel.DEBUG, "Trying to connect to " + address + " : " + port);
 				this.multiSocket = new MulticastSocket(port.asPrimitive());
+				this.multiSocket.setSoTimeout(500);
 				InetAddress group = InetAddress.getByName(address.asPrimitive());
 				this.multiSocket.joinGroup(group);
 				logger.log(LogLevel.INFO,"Connected to " + address + " : " + port);

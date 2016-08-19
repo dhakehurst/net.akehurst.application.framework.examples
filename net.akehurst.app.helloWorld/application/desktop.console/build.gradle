@@ -20,5 +20,5 @@ dependencies {
 
 	compile project(":${rootProject.name}.engineering.channel.user")
 
-	compile "net.akehurst.application.framework:net.akehurst.application.framework.technology.gui.console:+"
+	compile "${af}.technology.gui.console:${afVersion}"
 }

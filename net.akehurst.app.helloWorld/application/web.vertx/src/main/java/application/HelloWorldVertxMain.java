@@ -17,10 +17,10 @@ package application;
 
 import net.akehurst.application.framework.realisation.ApplicationFramework;
 
-public class JfxMain {
+public class HelloWorldVertxMain {
 
 	public static void main(String[] args) {
-		ApplicationFramework.start(JfxApplication.class, args);
+		ApplicationFramework.start(HelloWorldVertxApplication.class, args);
 	}
 
 }

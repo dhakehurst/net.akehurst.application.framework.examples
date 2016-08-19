@@ -30,21 +30,21 @@ import net.akehurst.application.framework.realisation.AbstractComponent;
 @Component
 public class Greeter extends AbstractComponent {
 
-	public Greeter(String id) {
+	public Greeter(final String id) {
 		super(id);
 	}
 
-	@ProvidesInterfaceForPort(portId="portUser", provides=IUserRequest.class)
 	@ActiveObjectInstance
+	@ProvidesInterfaceForPort(portId = "portUser", provides = IUserRequest.class)
 	UserRequestHandler userRequestHandler;
 
 	@Override
 	public void afConnectParts() {
-		this.userRequestHandler.userNotification = portUser().out(IUserNotification.class);
+		this.userRequestHandler.userNotification = this.portUser().out(IUserNotification.class);
 	}
 
 	// ---------- Ports ---------
-	@PortInstance(provides={IUserRequest.class}, requires={IUserNotification.class})
+	@PortInstance(provides = { IUserRequest.class }, requires = { IUserNotification.class })
 	IPort portUser;
 
 	public IPort portUser() {

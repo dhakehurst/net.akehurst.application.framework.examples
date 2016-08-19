@@ -3,26 +3,30 @@ package net.akehurst.app.temperatureSensor.engineering.channel.monitorGui;
 import java.net.URL;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
-import java.time.format.DateTimeFormatter;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
 
-import javafx.scene.chart.LineChart;
 import net.akehurst.application.framework.common.annotations.instance.ConfiguredValue;
 import net.akehurst.application.framework.technology.gui.common.AbstractGuiHandler;
 import net.akehurst.application.framework.technology.guiInterface.GuiEvent;
 import net.akehurst.application.framework.technology.guiInterface.IGuiScene;
-import net.akehurst.application.framework.technology.guiInterface.controls.IChart;
-import net.akehurst.application.framework.technology.guiInterface.controls.IChartData;
-import net.akehurst.application.framework.technology.guiInterface.controls.IChartDataItem;
-import net.akehurst.application.framework.technology.guiInterface.controls.IChartDataSeries;
+import net.akehurst.application.framework.technology.guiInterface.SceneIdentity;
+import net.akehurst.application.framework.technology.guiInterface.StageIdentity;
+import net.akehurst.application.framework.technology.guiInterface.elements.IGuiChart;
+import net.akehurst.application.framework.technology.guiInterface.elements.IGuiChartData;
+import net.akehurst.application.framework.technology.guiInterface.elements.IGuiChartDataItem;
+import net.akehurst.application.framework.technology.guiInterface.elements.IGuiChartDataSeries;
 import temperatureSensor.computational.userInterface.IUserNotification;
 
 public class UserNotificationHandler extends AbstractGuiHandler implements IUserNotification {
 
-	public UserNotificationHandler(String id) {
+	public UserNotificationHandler(final String id) {
 		super(id);
 	}
+
+	@ConfiguredValue(defaultValue = "/monitor")
+	StageIdentity stageId;
+
+	@ConfiguredValue(defaultValue = "monitor")
+	SceneIdentity sceneId;
 
 	@ConfiguredValue(defaultValue = "/Gui.fxml")
 	String urlStr;
@@ -33,23 +37,23 @@ public class UserNotificationHandler extends AbstractGuiHandler implements IUser
 
 	// --------- IUserNotification ---------
 	@Override
-	public void notifyNewPoint(String id, double temp, long time) {
+	public void notifyNewPoint(final String id, final double temp, final long time) {
 		super.submit("notifyNewPoint", () -> {
 
-			synchronized (lock) {
+			synchronized (this.lock) {
 				if (null == this.scene) {
 					// can't do it
 				} else {
-					IChart chart = this.scene.getChart();
-					IChartDataSeries<LocalDateTime, Double> series = chart.getSeries(id);
+					final IGuiChart chart = this.scene.getChart();
+					IGuiChartDataSeries<LocalDateTime, Double> series = chart.getSeries(id);
 					if (null == series) {
 						series = chart.addSeries(id);
 					}
-					IChartData<LocalDateTime, Double> data = series.getData();
-					data.getItems().add(new IChartDataItem<LocalDateTime, Double>() {
+					final IGuiChartData<LocalDateTime, Double> data = series.getData();
+					data.getItems().add(new IGuiChartDataItem<LocalDateTime, Double>() {
 						@Override
 						public LocalDateTime getX() {
-							return LocalDateTime.ofEpochSecond(time, 0, ZoneOffset.UTC);//.format(DateTimeFormatter.ISO_LOCAL_TIME);
+							return LocalDateTime.ofEpochSecond(time, 0, ZoneOffset.UTC);// .format(DateTimeFormatter.ISO_LOCAL_TIME);
 						}
 
 						@Override
@@ -63,7 +67,7 @@ public class UserNotificationHandler extends AbstractGuiHandler implements IUser
 	}
 
 	@Override
-	public void raiseAlarm(String id) {
+	public void raiseAlarm(final String id) {
 		super.submit("raiseAlarm", () -> {
 
 		});
@@ -71,26 +75,26 @@ public class UserNotificationHandler extends AbstractGuiHandler implements IUser
 
 	// --------- AbstractGuiHandler ---------
 	@Override
-	protected void onStageCreated(GuiEvent event) {
-		URL content = this.getClass().getResource(this.urlStr);
-		this.scene = this.guiRequest.createScene("Monitor", "mainWindow", IMonitorScene.class, content);
+	protected void onStageCreated(final GuiEvent event) {
+		final URL content = this.getClass().getResource(this.urlStr);
+		this.scene = this.guiRequest.createScene(this.stageId, this.sceneId, IMonitorScene.class, content);
 	}
 
 	@Override
-	protected void onSceneLoaded(GuiEvent event) {
+	protected void onSceneLoaded(final GuiEvent event) {
 		// TODO Auto-generated method stub
-
+		// super.submit(name, signal)
 	}
 
 	@Override
-	protected IGuiScene getScene(String sceneId) {
+	protected IGuiScene getScene(final SceneIdentity sceneId) {
 		return this.scene;
 	}
 
 	@Override
 	public void notifyReady() {
-		URL rootUrl = this.getClass().getResource("/monitor");
-		this.getGuiRequest().createStage("/monitor", false, rootUrl);
+		final URL rootUrl = this.getClass().getResource("/monitor");
+		this.getGuiRequest().createStage(this.stageId, false, rootUrl);
 	}
 
 }

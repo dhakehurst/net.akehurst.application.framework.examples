@@ -20,6 +20,6 @@ dependencies {
 
 	compile project(":${rootProject.name}.engineering.channel.user")
 
-	compile "net.akehurst.application.framework:net.akehurst.application.framework.technology.gui.javafx:+"
+	compile "${af}.technology.gui.javafx:${afVersion}"
 
 }

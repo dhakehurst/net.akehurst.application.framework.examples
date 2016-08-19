@@ -13,52 +13,49 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package application;
-
+package helloWorld.application.desktop.console;
 
 import helloWorld.computational.greeter.Greeter;
-import helloWorld.engineering.channel.user.UserToGui;
+import helloWorld.engineering.channel.user.UserProxyToText;
 import net.akehurst.application.framework.common.annotations.declaration.Application;
 import net.akehurst.application.framework.common.annotations.instance.ComponentInstance;
 import net.akehurst.application.framework.common.annotations.instance.ServiceInstance;
 import net.akehurst.application.framework.realisation.AbstractApplication;
 import net.akehurst.application.framework.technology.filesystem.StandardFilesystem;
-import net.akehurst.application.framework.technology.gui.vertx.VertxWebsite;
+import net.akehurst.application.framework.technology.gui.console.StandardStreams;
 import net.akehurst.application.framework.technology.log4j.Log4JLogger;
 import net.akehurst.application.framework.technology.persistence.filesystem.HJsonFile;
 
 @Application
-public class VertxApplication extends AbstractApplication {
+public class HelloWorldConsoleApplication extends AbstractApplication {
 
-	public VertxApplication(String id, String[] args) {
-		super(id, args);		
+	public HelloWorldConsoleApplication(final String id) {
+		super(id);
 	}
-	
+
 	@ServiceInstance
 	Log4JLogger logger;
-	
+
 	@ServiceInstance
 	StandardFilesystem fs;
 
 	@ServiceInstance
 	HJsonFile configuration;
-	
+
 	@ComponentInstance
+	// @Connect(port="portUser", to="proxy.portUser")
 	Greeter greeter;
-	
+
 	@ComponentInstance
-	UserToGui proxy;
-	
+	UserProxyToText proxy;
+
 	@ComponentInstance
-	VertxWebsite gui;
-	
+	StandardStreams console;
+
 	@Override
-	public void connectComputationalToEngineering() {
+	public void afConnectParts() {
 		this.greeter.portUser().connect(this.proxy.portUser());
+		this.proxy.portConsole().connect(this.console.portOutput());
 	}
-	
-	@Override
-	public void connectEngineeringToTechnology() {
-		this.proxy.portGui().connect(this.gui.portGui());
-	}
+
 }

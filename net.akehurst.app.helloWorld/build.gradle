@@ -33,16 +33,16 @@ subprojects {
 	}
     
     ext {
-    	afPrefix = 'net.akehurst.application.framework:net.akehurst.application.framework'
-		afVersion = '1.0.alpha.+'
+    	af = 'net.akehurst.application.framework:net.akehurst.application.framework'
+		afVersion = '+'
     }
     
     dependencies {
-   		compile "${afPrefix}.common.bits:${afVersion}"
-    	compile "${afPrefix}.common.os:${afVersion}"
-    	compile "${afPrefix}.technology.logging.log4j:${afVersion}"
-		compile "${afPrefix}.technology.filesystem:${afVersion}"
-		compile "${afPrefix}.technology.persistence.filesystem:${afVersion}"
+   		compile "${af}.common.bits:${afVersion}"
+    	compile "${af}.common.os:${afVersion}"
+    	compile "${af}.technology.logging.log4j:${afVersion}"
+		compile "${af}.technology.filesystem:${afVersion}"
+		compile "${af}.technology.persistence.filesystem:${afVersion}"
 
     	testCompile 'junit:junit:+'
     }

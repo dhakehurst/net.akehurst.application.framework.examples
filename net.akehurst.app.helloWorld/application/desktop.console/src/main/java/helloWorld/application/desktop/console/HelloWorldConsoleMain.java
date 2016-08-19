@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package application;
+package helloWorld.application.desktop.console;
 
 import net.akehurst.application.framework.realisation.ApplicationFramework;
 
-public class VertxMain {
+public class HelloWorldConsoleMain {
 
 	public static void main(String[] args) {
-		ApplicationFramework.start(VertxApplication.class, args);
+		ApplicationFramework.start(HelloWorldConsoleApplication.class, args);
 	}
 
 }

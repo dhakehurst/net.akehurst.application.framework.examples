@@ -22,28 +22,26 @@ import net.akehurst.application.framework.common.annotations.instance.ComponentI
 import net.akehurst.application.framework.common.annotations.instance.ServiceInstance;
 import net.akehurst.application.framework.realisation.AbstractApplication;
 import net.akehurst.application.framework.technology.filesystem.StandardFilesystem;
-import net.akehurst.application.framework.technology.gui.jfx.JfxWindow;
+import net.akehurst.application.framework.technology.gui.vertx.VertxWebsite;
 import net.akehurst.application.framework.technology.log4j.Log4JLogger;
 import net.akehurst.application.framework.technology.persistence.filesystem.HJsonFile;
 
 @Application
-public class JfxApplication extends AbstractApplication {
+public class HelloWorldVertxApplication extends AbstractApplication {
 
-	public JfxApplication(String id, String[] args) {
-		super(id, args);		
+	public HelloWorldVertxApplication(final String id) {
+		super(id);
 	}
-	
 
 	@ServiceInstance
 	Log4JLogger logger;
-	
+
 	@ServiceInstance
 	StandardFilesystem fs;
 
 	@ServiceInstance
 	HJsonFile configuration;
-	
-	
+
 	@ComponentInstance
 	Greeter greeter;
 
@@ -51,15 +49,11 @@ public class JfxApplication extends AbstractApplication {
 	UserToGui proxy;
 
 	@ComponentInstance
-	JfxWindow gui;
-	
+	VertxWebsite gui;
+
 	@Override
-	public void connectComputationalToEngineering() {
+	public void afConnectParts() {
 		this.greeter.portUser().connect(this.proxy.portUser());
-	}
-	
-	@Override
-	public void connectEngineeringToTechnology() {
 		this.proxy.portGui().connect(this.gui.portGui());
 	}
 }

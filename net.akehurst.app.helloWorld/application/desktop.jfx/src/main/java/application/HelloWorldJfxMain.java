@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package helloWorld.application.desktop.console;
+package application;
 
 import net.akehurst.application.framework.realisation.ApplicationFramework;
 
-public class ConsoleMain {
+public class HelloWorldJfxMain {
 
 	public static void main(String[] args) {
-		ApplicationFramework.start(ConsoleApplication.class, args);
+		ApplicationFramework.start(HelloWorldJfxApplication.class, args);
 	}
 
 }

@@ -1,0 +1,16 @@
+{
+	greeter: {
+	  userRequestHandler: {
+	    message: "Hi World!"
+	  }
+	}
+	
+	proxy: {
+		handler: {
+			urlStr: "/Gui2.fxml"
+		}
+		
+	}
+	
+
+}
