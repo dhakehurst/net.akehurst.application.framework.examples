@@ -5,6 +5,7 @@ import java.util.Map;
 
 import net.akehurst.application.framework.common.IApplicationFramework;
 import net.akehurst.application.framework.common.IPort;
+import net.akehurst.application.framework.common.annotations.instance.PortContract;
 import net.akehurst.application.framework.common.annotations.instance.PortInstance;
 import net.akehurst.application.framework.common.annotations.instance.ServiceReference;
 import net.akehurst.application.framework.realisation.AbstractComponent;
@@ -23,7 +24,7 @@ import temperatureSensor.technology.interfaceSocket.IpPort;
 
 public class SocketComms extends AbstractComponent implements ISenderReceiverRequest, IPublishSubscribeRequest {
 
-	public SocketComms(String id) {
+	public SocketComms(final String id) {
 		super(id);
 		this.channels = new HashMap<>();
 		this.pubSubChannels = new HashMap<>();
@@ -31,23 +32,22 @@ public class SocketComms extends AbstractComponent implements ISenderReceiverReq
 
 	@ServiceReference
 	IApplicationFramework af;
-	
+
 	@ServiceReference
 	ILogger logger;
-	
+
 	Map<ChannelIdentity, SocketChannel> channels;
 	Map<ChannelIdentity, MulticastSocketChannel> pubSubChannels;
 
 	private ISocketListener socketListener;
 
 	public ISocketListener getSocketListener() {
-		return socketListener;
+		return this.socketListener;
 	}
 
-	public void setSocketListener(ISocketListener socketListener) {
+	public void setSocketListener(final ISocketListener socketListener) {
 		this.socketListener = socketListener;
 	}
-
 
 	// ---------- ISenderReceiverRequest ---------
 	@Override
@@ -63,55 +63,55 @@ public class SocketComms extends AbstractComponent implements ISenderReceiverReq
 	}
 
 	@Override
-	public void requestSendMessage(ISenderReceiverDestination destination, Map<String, Object> data) {
+	public void requestSendMessage(final ISenderReceiverDestination destination, final Map<String, Object> data) {
 		// TODO Auto-generated method stub
 
 	}
 
 	// ---------- IPublishSubscribeRequest ---------
 	@Override
-	public void requestPublisherOf(ChannelIdentity channelId, Map<String, Object> channelConfiguration) throws PublishSubscribeException {
+	public void requestPublisherOf(final ChannelIdentity channelId, final Map<String, Object> channelConfiguration) throws PublishSubscribeException {
 		try {
-			IpAddress multicastAddress = (IpAddress) channelConfiguration.get("multicastAddress");
-			IpPort port = (IpPort) channelConfiguration.get("port");
-			String id = this.afId() + "[" + channelId.getValue() + "]";
-			MulticastSocketChannel newChannel = new MulticastSocketChannel(id, multicastAddress, port, (bytes) -> {
+			final IpAddress multicastAddress = (IpAddress) channelConfiguration.get("multicastAddress");
+			final IpPort port = (IpPort) channelConfiguration.get("port");
+			final String id = this.afId() + "[" + channelId.getValue() + "]";
+			final MulticastSocketChannel newChannel = new MulticastSocketChannel(id, multicastAddress, port, (bytes) -> {
 
 			});
-			af.injectIntoActiveObject(newChannel);
+			this.af.injectIntoActiveObject(newChannel);
 			this.pubSubChannels.put(channelId, newChannel);
-		} catch (Exception ex) {
+		} catch (final Exception ex) {
 			throw new PublishSubscribeException("Failed to create publisher", ex);
 		}
 	};
 
 	@Override
-	public void requestSubscribeTo(ChannelIdentity channelId, Map<String, Object> channelConfiguration) throws PublishSubscribeException {
+	public void requestSubscribeTo(final ChannelIdentity channelId, final Map<String, Object> channelConfiguration) throws PublishSubscribeException {
 		try {
-			IpAddress multicastAddress = (IpAddress) channelConfiguration.get("multicastAddress");
-			IpPort port = (IpPort) channelConfiguration.get("port");
-			String id = this.afId() + "[" + channelId.getValue() + "]";
-			MulticastSocketChannel newChannel = new MulticastSocketChannel(id, multicastAddress, port, (bytes) -> {
-				portComms().out(IPublishSubscribeNotification.class).notifyPublication(channelId, bytes);
+			final IpAddress multicastAddress = (IpAddress) channelConfiguration.get("multicastAddress");
+			final IpPort port = (IpPort) channelConfiguration.get("port");
+			final String id = this.afId() + "[" + channelId.getValue() + "]";
+			final MulticastSocketChannel newChannel = new MulticastSocketChannel(id, multicastAddress, port, (bytes) -> {
+				this.portComms().out(IPublishSubscribeNotification.class).notifyPublication(channelId, bytes);
 			});
-			af.injectIntoActiveObject(newChannel);
+			this.af.injectIntoActiveObject(newChannel);
 			this.pubSubChannels.put(channelId, newChannel);
 			newChannel.afStart();
-		} catch (Exception ex) {
+		} catch (final Exception ex) {
 			throw new PublishSubscribeException("Failed to create publisher", ex);
 		}
 	}
 
 	@Override
-	public <T> void requestPublish(ChannelIdentity channelId, byte[] data) throws PublishSubscribeException {
+	public <T> void requestPublish(final ChannelIdentity channelId, final byte[] data) throws PublishSubscribeException {
 		try {
-			MulticastSocketChannel chan = this.pubSubChannels.get(channelId);
-			if (null==chan) {
-				logger.log(LogLevel.ERROR, "Trying to publish but can't find channel with id "+channelId.getValue());
+			final MulticastSocketChannel chan = this.pubSubChannels.get(channelId);
+			if (null == chan) {
+				this.logger.log(LogLevel.ERROR, "Trying to publish but can't find channel with id " + channelId.getValue());
 			} else {
 				chan.tryPublish(data);
 			}
-		} catch (Exception ex) {
+		} catch (final Exception ex) {
 			throw new PublishSubscribeException("Failed to publish data on channel " + channelId, ex);
 		}
 	}
@@ -119,10 +119,9 @@ public class SocketComms extends AbstractComponent implements ISenderReceiverReq
 	// --------------------- Client -------------------------------
 
 	// ---------- Ports ---------
-	@PortInstance(
-		provides = { ISenderReceiverRequest.class, IPublishSubscribeRequest.class },
-		requires = { ISenderReceiverNotification.class, IPublishSubscribeNotification.class }
-	)
+	@PortInstance
+	@PortContract(provides = ISenderReceiverRequest.class, requires = ISenderReceiverNotification.class)
+	@PortContract(provides = IPublishSubscribeRequest.class, requires = IPublishSubscribeNotification.class)
 	IPort portComms;
 
 	public IPort portComms() {

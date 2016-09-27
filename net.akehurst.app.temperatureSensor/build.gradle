@@ -31,7 +31,7 @@ subprojects {
     
     dependencies {
     	compile 'net.akehurst.application.framework:net.akehurst.application.framework.common.bits:+'
-    	compile 'net.akehurst.application.framework:net.akehurst.application.framework.common.os:+'
+    	compile 'net.akehurst.application.framework:net.akehurst.application.framework.common.realisation:+'
     	compile 'net.akehurst.application.framework:net.akehurst.application.framework.technology.interfaceLogging:+'
 
     	testCompile 'junit:junit:+'

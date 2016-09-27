@@ -3,6 +3,7 @@ package computational.sampler;
 import net.akehurst.application.framework.common.IPort;
 import net.akehurst.application.framework.common.annotations.instance.CommandLineArgument;
 import net.akehurst.application.framework.common.annotations.instance.ConfiguredValue;
+import net.akehurst.application.framework.common.annotations.instance.PortContract;
 import net.akehurst.application.framework.common.annotations.instance.PortInstance;
 import net.akehurst.application.framework.common.annotations.instance.ServiceReference;
 import net.akehurst.application.framework.realisation.AbstractComponent;
@@ -20,27 +21,27 @@ import temperatureSensor.computational.interfaceSensor.TemperatureCelsius;
  *  - identity : SensorIdentity(String)
  *  - temperature : TemperatureCelsius(double)
  *  - timestamp : TimeStampMilliseconds(long)
- *  
+ *
  *  the start method will be called after the object is created and properties are set,
  *  this should cause the object to start collecting samples.
- *  
+ *
  *  Samples should be collected at the given rate.
  *  The rate will be set after the object has been constructed
- *  
+ *
  *  once a sample has been collected, it should be published to the provided SamplePublisher.
- *  
+ *
  *  the object should continue collecting samples forever (until program termination).
- *  
+ *
  */
-public class Sampler extends AbstractComponent implements ISampleSubscriberRequest  {
+public class Sampler extends AbstractComponent implements ISampleSubscriberRequest {
 
 	@ServiceReference
 	ILogger logger;
-	
-//	@Service(name="config")
-//	IConfiguration config;
-	
-	public Sampler(String id) {
+
+	// @Service(name="config")
+	// IConfiguration config;
+
+	public Sampler(final String id) {
 		super(id);
 		this.sensorId = null;
 		this.sampleRate = null;
@@ -50,49 +51,51 @@ public class Sampler extends AbstractComponent implements ISampleSubscriberReque
 	public void afRun() {
 		try {
 			while (true) {
-				TemperatureCelsius temperature = portSensor().out(ISensorRequest.class).readTemperature();
-				TimeStampMilliseconds timestamp = new TimeStampMilliseconds(System.currentTimeMillis());
+				final TemperatureCelsius temperature = this.portSensor().out(ISensorRequest.class).readTemperature();
+				final TimeStampMilliseconds timestamp = new TimeStampMilliseconds(System.currentTimeMillis());
 
-				Sample sample = new Sample(this.sensorId, temperature, timestamp);
+				final Sample sample = new Sample(this.sensorId, temperature, timestamp);
 
 				this.portSubscribers().out(ISampleSubscriberNotification.class).publishSample(sample);
 
 				Thread.sleep(1000 / this.sampleRate.asPrimitive());
 			}
-		} catch (Exception e) {
+		} catch (final Exception e) {
 			e.printStackTrace();
 		}
 	}
-	
 
-	@CommandLineArgument(required=true, description="The sample rate (Integer)")
-	@ConfiguredValue(defaultValue="20")
-	private SampleRatePerSecond sampleRate;
+	@CommandLineArgument(required = true, description = "The sample rate (Integer)")
+	@ConfiguredValue(defaultValue = "20")
+	private final SampleRatePerSecond sampleRate;
 
 	public SampleRatePerSecond getSampleRate() {
-		return sampleRate;
+		return this.sampleRate;
 	}
 
-	@CommandLineArgument(required=true, description="The sensor identity (String)")
-	@ConfiguredValue(defaultValue="sensor")
-	private SensorIdentity sensorId;
+	@CommandLineArgument(required = true, description = "The sensor identity (String)")
+	@ConfiguredValue(defaultValue = "sensor")
+	private final SensorIdentity sensorId;
 
 	public SensorIdentity getSensorId() {
-		return sensorId;
+		return this.sensorId;
 	}
 
-	
 	// --------- Ports ---------
-	@PortInstance(provides={},requires={ISensorRequest.class})
+	@PortInstance
+	@PortContract(requires = ISensorRequest.class)
 	IPort portSensor;
+
 	public IPort portSensor() {
 		return this.portSensor;
 	}
-	
-	@PortInstance(provides={ISampleSubscriberRequest.class},requires={ISampleSubscriberNotification.class})
+
+	@PortInstance
+	@PortContract(provides = ISampleSubscriberRequest.class, requires = ISampleSubscriberNotification.class)
 	IPort portSubscribers;
+
 	public IPort portSubscribers() {
 		return this.portSubscribers;
 	}
-	
+
 }

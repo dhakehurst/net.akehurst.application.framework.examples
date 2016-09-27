@@ -6,17 +6,19 @@ import java.time.ZoneOffset;
 
 import net.akehurst.application.framework.common.annotations.instance.ConfiguredValue;
 import net.akehurst.application.framework.technology.gui.common.AbstractGuiHandler;
-import net.akehurst.application.framework.technology.guiInterface.GuiEvent;
-import net.akehurst.application.framework.technology.guiInterface.IGuiScene;
-import net.akehurst.application.framework.technology.guiInterface.SceneIdentity;
-import net.akehurst.application.framework.technology.guiInterface.StageIdentity;
-import net.akehurst.application.framework.technology.guiInterface.elements.IGuiChart;
-import net.akehurst.application.framework.technology.guiInterface.elements.IGuiChartData;
-import net.akehurst.application.framework.technology.guiInterface.elements.IGuiChartDataItem;
-import net.akehurst.application.framework.technology.guiInterface.elements.IGuiChartDataSeries;
+import net.akehurst.application.framework.technology.interfaceGui.GuiEvent;
+import net.akehurst.application.framework.technology.interfaceGui.IGuiHandler;
+import net.akehurst.application.framework.technology.interfaceGui.IGuiScene;
+import net.akehurst.application.framework.technology.interfaceGui.IGuiSceneHandler;
+import net.akehurst.application.framework.technology.interfaceGui.SceneIdentity;
+import net.akehurst.application.framework.technology.interfaceGui.StageIdentity;
+import net.akehurst.application.framework.technology.interfaceGui.data.chart.IGuiChart;
+import net.akehurst.application.framework.technology.interfaceGui.data.chart.IGuiChartData;
+import net.akehurst.application.framework.technology.interfaceGui.data.chart.IGuiChartDataItem;
+import net.akehurst.application.framework.technology.interfaceGui.data.chart.IGuiChartDataSeries;
 import temperatureSensor.computational.userInterface.IUserNotification;
 
-public class UserNotificationHandler extends AbstractGuiHandler implements IUserNotification {
+public class UserNotificationHandler extends AbstractGuiHandler implements IGuiSceneHandler, IUserNotification {
 
 	public UserNotificationHandler(final String id) {
 		super(id);
@@ -77,18 +79,7 @@ public class UserNotificationHandler extends AbstractGuiHandler implements IUser
 	@Override
 	protected void onStageCreated(final GuiEvent event) {
 		final URL content = this.getClass().getResource(this.urlStr);
-		this.scene = this.guiRequest.createScene(this.stageId, this.sceneId, IMonitorScene.class, content);
-	}
-
-	@Override
-	protected void onSceneLoaded(final GuiEvent event) {
-		// TODO Auto-generated method stub
-		// super.submit(name, signal)
-	}
-
-	@Override
-	protected IGuiScene getScene(final SceneIdentity sceneId) {
-		return this.scene;
+		this.createScene(this, this.stageId, content);
 	}
 
 	@Override
@@ -97,4 +88,15 @@ public class UserNotificationHandler extends AbstractGuiHandler implements IUser
 		this.getGuiRequest().createStage(this.stageId, false, rootUrl);
 	}
 
+	@Override
+	public IGuiScene createScene(final IGuiHandler gui, final StageIdentity stageId, final URL content) {
+		this.scene = gui.createScene(stageId, this.sceneId, IMonitorScene.class, this, content);
+		return this.scene;
+	}
+
+	@Override
+	public void loaded(final IGuiHandler gui, final IGuiScene guiScene, final GuiEvent event) {
+		// TODO Auto-generated method stub
+
+	}
 }

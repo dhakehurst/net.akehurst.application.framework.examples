@@ -12,6 +12,7 @@ import javax.json.JsonStructure;
 import net.akehurst.application.framework.common.IPort;
 import net.akehurst.application.framework.common.annotations.instance.CommandLineArgument;
 import net.akehurst.application.framework.common.annotations.instance.ConfiguredValue;
+import net.akehurst.application.framework.common.annotations.instance.PortContract;
 import net.akehurst.application.framework.common.annotations.instance.PortInstance;
 import net.akehurst.application.framework.common.annotations.instance.ServiceReference;
 import net.akehurst.application.framework.realisation.AbstractComponent;
@@ -31,7 +32,7 @@ import temperatureSensor.technology.interfaceSocket.IpPort;
 
 public class SamplerProxy extends AbstractComponent implements ISampleSubscriberRequest, IPublishSubscribeNotification {
 
-	public SamplerProxy(String id) {
+	public SamplerProxy(final String id) {
 		super(id);
 	}
 
@@ -41,22 +42,22 @@ public class SamplerProxy extends AbstractComponent implements ISampleSubscriber
 	@ConfiguredValue(defaultValue = "commsChannel")
 	ChannelIdentity channelId;
 
-	@CommandLineArgument(required=true, description="a multicast address (String)")
+	@CommandLineArgument(required = true, description = "a multicast address (String)")
 	IpAddress address;
 
-	@CommandLineArgument(required=true, description="a port number (Integer)")
+	@CommandLineArgument(required = true, description = "a port number (Integer)")
 	IpPort port;
 
 	@Override
 	public void afRun() {
-		logger.log(LogLevel.TRACE, "afRun");
+		this.logger.log(LogLevel.TRACE, "afRun");
 		try {
-			Map<String, Object> channelConfiguration = new HashMap<>();
+			final Map<String, Object> channelConfiguration = new HashMap<>();
 			channelConfiguration.put("multicastAddress", this.address);
 			channelConfiguration.put("port", this.port);
-			this.portComms().out(IPublishSubscribeRequest.class).requestSubscribeTo(channelId, channelConfiguration);
-		} catch (Exception ex) {
-			logger.log(LogLevel.ERROR, "Failed to run MonitorProxy", ex);
+			this.portComms().out(IPublishSubscribeRequest.class).requestSubscribeTo(this.channelId, channelConfiguration);
+		} catch (final Exception ex) {
+			this.logger.log(LogLevel.ERROR, "Failed to run MonitorProxy", ex);
 		}
 	}
 
@@ -64,47 +65,46 @@ public class SamplerProxy extends AbstractComponent implements ISampleSubscriber
 
 	// --------- IPublishSubscribeNotification ---------
 	@Override
-	public void notifyPublication(ChannelIdentity channelId, byte[] data) {
+	public void notifyPublication(final ChannelIdentity channelId, final byte[] data) {
 		try {
 
-			Sample s = this.unserialiseSample(data);
-			portSamples().out(ISampleSubscriberNotification.class).publishSample(s);
+			final Sample s = this.unserialiseSample(data);
+			this.portSamples().out(ISampleSubscriberNotification.class).publishSample(s);
 
-		} catch (Exception e) {
+		} catch (final Exception e) {
 			e.printStackTrace();
 		}
 	}
 
-	Sample unserialiseSample(byte[] bytes) {
-		String jsonData = new String(bytes);
-		JsonReader reader = Json.createReader(new StringReader(jsonData));
-		JsonStructure json = reader.read();
+	Sample unserialiseSample(final byte[] bytes) {
+		final String jsonData = new String(bytes);
+		final JsonReader reader = Json.createReader(new StringReader(jsonData));
+		final JsonStructure json = reader.read();
 
-		JsonObject jobj = (JsonObject) json;
-		String strIdentity = jobj.getString("identity");
-		double dblTemperature = jobj.getJsonNumber("temperature").doubleValue();
-		long lngTime = jobj.getJsonNumber("timestamp").longValue();
+		final JsonObject jobj = (JsonObject) json;
+		final String strIdentity = jobj.getString("identity");
+		final double dblTemperature = jobj.getJsonNumber("temperature").doubleValue();
+		final long lngTime = jobj.getJsonNumber("timestamp").longValue();
 
-		SensorIdentity sensorId = new SensorIdentity(strIdentity);
-		TemperatureCelsius temperature = new TemperatureCelsius(dblTemperature);
-		TimeStampMilliseconds timestamp = new TimeStampMilliseconds(lngTime);
-		Sample s = new Sample(sensorId, temperature, timestamp);
+		final SensorIdentity sensorId = new SensorIdentity(strIdentity);
+		final TemperatureCelsius temperature = new TemperatureCelsius(dblTemperature);
+		final TimeStampMilliseconds timestamp = new TimeStampMilliseconds(lngTime);
+		final Sample s = new Sample(sensorId, temperature, timestamp);
 
 		return s;
 	}
 
 	// --------- Ports ---------
-	@PortInstance(
-		provides = { IPublishSubscribeNotification.class },
-		requires = { IPublishSubscribeRequest.class }
-	)
+	@PortInstance
+	@PortContract(provides = IPublishSubscribeNotification.class, requires = IPublishSubscribeRequest.class)
 	IPort portComms;
 
 	public IPort portComms() {
 		return this.portComms;
 	}
 
-	@PortInstance(provides = { ISampleSubscriberRequest.class }, requires = { ISampleSubscriberNotification.class })
+	@PortInstance
+	@PortContract(provides = ISampleSubscriberRequest.class, requires = ISampleSubscriberNotification.class)
 	IPort portSamples;
 
 	public IPort portSamples() {
