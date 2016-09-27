@@ -9,15 +9,12 @@
   
   	<p id="output">..........</p>
   
-  	<script>stageId = "${rootPath}/helloWorld"</script>
-	
-    <script src="${jsPath}/jquery.js"></script>
-	<script src="${jsPath}/sockjs.js"></script>
-	<script src="${jsPath}/snap.svg.js"></script>
-	<script src='${jsPath}/vertx-eventbus.js'></script>
-	<script src='${jsPath}/diagram.js'></script>
-	<script src='${jsPath}/dynamic.js'></script>
-	<script src='${jsPath}/ServerComms.js'></script>
-	<script src='${jsPath}/index-script.js'></script>
+		<script>
+		  var rootPath = '${rootPath}'
+	      var stageId = '${stageId}'
+	    </script>
+
+		<script data-main='/${jsPath}/index.js' src='/lib/requirejs/2.3.1/require.min.js' type='text/javascript' charset='utf-8'></script>
+
   </body>
 </html>

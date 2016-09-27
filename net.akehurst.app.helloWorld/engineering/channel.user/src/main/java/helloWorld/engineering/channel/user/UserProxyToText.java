@@ -19,43 +19,46 @@ import helloWorld.computational.interfaceUser.IUserNotification;
 import helloWorld.computational.interfaceUser.IUserRequest;
 import helloWorld.computational.interfaceUser.Message;
 import net.akehurst.application.framework.common.IPort;
-import net.akehurst.application.framework.common.UserSession;
 import net.akehurst.application.framework.common.annotations.declaration.Component;
+import net.akehurst.application.framework.common.annotations.instance.PortContract;
 import net.akehurst.application.framework.common.annotations.instance.PortInstance;
+import net.akehurst.application.framework.common.interfaceUser.UserSession;
 import net.akehurst.application.framework.realisation.AbstractComponent;
-import net.akehurst.application.framework.technology.guiInterface.console.IConsoleNotification;
-import net.akehurst.application.framework.technology.guiInterface.console.IConsoleRequest;
+import net.akehurst.application.framework.technology.interfaceGui.console.IConsoleNotification;
+import net.akehurst.application.framework.technology.interfaceGui.console.IConsoleRequest;
 
 //the proxy object implements the IUser interface by
 // forwarding messages to an output object
 @Component
 public class UserProxyToText extends AbstractComponent implements IUserNotification, IConsoleNotification {
 
-	public UserProxyToText(String id) {
+	public UserProxyToText(final String id) {
 		super(id);
 	}
-	
-	public void notifyMessage(UserSession session, Message message) {
+
+	@Override
+	public void notifyMessage(final UserSession session, final Message message) {
 		this.portConsole().out(IConsoleRequest.class).requestOutput(message.asPrimitive());
 	}
 
 	@Override
-	public void notifyReady(UserSession session) {
+	public void notifyReady(final UserSession session) {
 		this.portUser().out(IUserRequest.class).requestStart(session);
 	}
 
 	@Override
-	public void notifyKeyPress(UserSession session) {
-	}
+	public void notifyKeyPress(final UserSession session) {}
 
-	@PortInstance(provides = { IUserNotification.class }, requires = { IUserRequest.class })
+	@PortInstance
+	@PortContract(provides = IUserNotification.class, requires = IUserRequest.class)
 	IPort portUser;
 
 	public IPort portUser() {
 		return this.portUser;
 	}
 
-	@PortInstance(provides = { IConsoleNotification.class }, requires = { IConsoleRequest.class })
+	@PortInstance
+	@PortContract(provides = IConsoleNotification.class, requires = IConsoleRequest.class)
 	IPort portConsole;
 
 	public IPort portConsole() {

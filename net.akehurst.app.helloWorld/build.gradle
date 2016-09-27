@@ -39,7 +39,7 @@ subprojects {
     
     dependencies {
    		compile "${af}.common.bits:${afVersion}"
-    	compile "${af}.common.os:${afVersion}"
+    	compile "${af}.common.realisation:${afVersion}"
     	compile "${af}.technology.logging.log4j:${afVersion}"
 		compile "${af}.technology.filesystem:${afVersion}"
 		compile "${af}.technology.persistence.filesystem:${afVersion}"

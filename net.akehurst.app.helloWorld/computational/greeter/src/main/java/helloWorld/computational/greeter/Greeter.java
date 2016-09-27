@@ -21,6 +21,7 @@ import net.akehurst.application.framework.common.IPort;
 import net.akehurst.application.framework.common.annotations.declaration.Component;
 import net.akehurst.application.framework.common.annotations.declaration.ProvidesInterfaceForPort;
 import net.akehurst.application.framework.common.annotations.instance.ActiveObjectInstance;
+import net.akehurst.application.framework.common.annotations.instance.PortContract;
 import net.akehurst.application.framework.common.annotations.instance.PortInstance;
 import net.akehurst.application.framework.realisation.AbstractComponent;
 
@@ -44,7 +45,8 @@ public class Greeter extends AbstractComponent {
 	}
 
 	// ---------- Ports ---------
-	@PortInstance(provides = { IUserRequest.class }, requires = { IUserNotification.class })
+	@PortInstance
+	@PortContract(provides = IUserRequest.class, requires = IUserNotification.class)
 	IPort portUser;
 
 	public IPort portUser() {

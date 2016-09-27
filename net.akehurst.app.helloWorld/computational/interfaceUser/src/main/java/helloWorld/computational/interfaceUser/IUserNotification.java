@@ -15,7 +15,7 @@
  */
 package helloWorld.computational.interfaceUser;
 
-import net.akehurst.application.framework.common.UserSession;
+import net.akehurst.application.framework.common.interfaceUser.UserSession;
 
 // logical interface to the user,
 // we are not indicating how the interface is implemented
@@ -23,5 +23,5 @@ import net.akehurst.application.framework.common.UserSession;
 public interface IUserNotification {
 
 	void notifyMessage(UserSession session, Message message);
-	
+
 }

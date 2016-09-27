@@ -21,16 +21,16 @@ import net.akehurst.application.framework.common.IPort;
 import net.akehurst.application.framework.common.annotations.declaration.Component;
 import net.akehurst.application.framework.common.annotations.declaration.ProvidesInterfaceForPort;
 import net.akehurst.application.framework.common.annotations.instance.ActiveObjectInstance;
-import net.akehurst.application.framework.common.annotations.instance.ConfiguredValue;
+import net.akehurst.application.framework.common.annotations.instance.PortContract;
 import net.akehurst.application.framework.common.annotations.instance.PortInstance;
 import net.akehurst.application.framework.realisation.AbstractComponent;
-import net.akehurst.application.framework.technology.guiInterface.IGuiNotification;
-import net.akehurst.application.framework.technology.guiInterface.IGuiRequest;
+import net.akehurst.application.framework.technology.interfaceGui.IGuiNotification;
+import net.akehurst.application.framework.technology.interfaceGui.IGuiRequest;
 
 @Component
 public class UserToGui extends AbstractComponent {
 
-	public UserToGui(String id) {
+	public UserToGui(final String id) {
 		super(id);
 	}
 
@@ -38,22 +38,23 @@ public class UserToGui extends AbstractComponent {
 	@ProvidesInterfaceForPort(portId = "portGui", provides = IGuiNotification.class)
 	@ProvidesInterfaceForPort(portId = "portUser", provides = IUserNotification.class)
 	HelloWorldHandler handler;
-	
+
 	@Override
 	public void afConnectParts() {
-		this.handler.setGuiRequest( portGui().out(IGuiRequest.class) );
-		this.handler.userRequest = portUser().out(IUserRequest.class);
+		this.handler.setGuiRequest(this.portGui().out(IGuiRequest.class));
+		this.handler.userRequest = this.portUser().out(IUserRequest.class);
 	}
-	
 
-	@PortInstance(provides = { IUserNotification.class }, requires = { IUserRequest.class })
+	@PortInstance
+	@PortContract(provides = IUserNotification.class, requires = IUserRequest.class)
 	IPort portUser;
 
 	public IPort portUser() {
 		return this.portUser;
 	}
 
-	@PortInstance(provides = { IGuiNotification.class }, requires = { IGuiRequest.class })
+	@PortInstance
+	@PortContract(provides = IGuiNotification.class, requires = IGuiRequest.class)
 	IPort portGui;
 
 	public IPort portGui() {

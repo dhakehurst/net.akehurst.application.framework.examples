@@ -17,12 +17,12 @@ package helloWorld.computational.interfaceUser;
 
 import java.util.concurrent.Future;
 
-import net.akehurst.application.framework.common.UserSession;
 import net.akehurst.application.framework.common.annotations.declaration.Signal;
+import net.akehurst.application.framework.common.interfaceUser.UserSession;
 
 public interface IUserRequest {
 
 	@Signal
 	Future<Void> requestStart(UserSession session);
-	
+
 }
