@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('/lib/font-awesome/4.6.3/fonts/fontawesome-webfont.eot?v=4.6.3');
+  src: url('/lib/font-awesome/4.6.3/fonts/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'), url('/lib/font-awesome/4.6.3/fonts/fontawesome-webfont.woff2?v=4.6.3') format('woff2'), url('/lib/font-awesome/4.6.3/fonts/fontawesome-webfont.woff?v=4.6.3') format('woff'), url('/lib/font-awesome/4.6.3/fonts/fontawesome-webfont.ttf?v=4.6.3') format('truetype'), url('/lib/font-awesome/4.6.3/fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin glyph {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-family: FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    width: 1.28571429em;
+  text-align: center;
+}
+
+@mixin glyph-signout {
+	@include glyph;
+	content: "\f08b";
+}
+
+@mixin glyph-signin {
+	@include glyph;
+	content: "\f090";
+}
+
+@mixin glyph-settings {
+	@include glyph;
+	content:"\f085";
+}
+
+@mixin glyph-menu-right {
+	@include glyph;
+	content:"\f105";
+}
+
+@mixin glyph-plus {
+	@include glyph;
+	content:"\f067";
+}
+
+@mixin glyph-minus {
+	@include glyph;
+	content:"\f068";
+}

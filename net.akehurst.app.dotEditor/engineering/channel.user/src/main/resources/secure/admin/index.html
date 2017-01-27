@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+		<link rel="stylesheet" href="/css/layout.css">
+		<link rel="stylesheet" href="/css/style.css">		
+		
+		<title>Requirements Manager - Admin</title>
+	</head>
+	<body>
+
+		<header>
+			<h1><strong>Requirements Manager</strong> - Admin</h1>
+			<nav>
+				<ul>
+			      <li><p id='textUsername'>Unknown</p></li>
+			      <li class='clickable'><p id='actionSignOut'>Sign Out</p></li>
+			    </ul>			
+			</nav>
+		</header>
+		
+		<main>
+
+			<section>
+				<!-- fieldset added as container so that input items are returned as event data -->
+				<fieldset>
+					<table id="projectTable" class="table table-striped">
+						<thead>
+							<tr>
+								<th>Project Name</th>
+								<th>Description</th>
+								<th>Owner</th>
+								<th class='size-min'><button id='actionNewProject' class='table-row-add'><span/></button></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<tr class='clickable table-row-template'>
+							        <td><p>${row.name}</p></td>
+									<td><p>${row.description}</p></td>
+							        <td><p>${row.owner}</p></td>
+							        <td><button class='actionDeleteProject' data='${row.identity}' class='table-row-remove'><span/></button></td>
+				        		</tr>
+							</tr>
+						</tbody>
+					</table>
+				</fieldset>
+			</section
+
+		</main>
+		
+	
+		<script>
+		  var rootPath = '${rootPath}'
+	      var stageId = '${stageId}'
+	    </script>
+
+		<script data-main='/${jsPath}/index.js' src='/lib/requirejs/2.3.1/require.min.js' type='text/javascript' charset='utf-8'></script>
+
+	</body>
+</html>

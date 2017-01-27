@@ -12,10 +12,9 @@ import net.akehurst.application.framework.technology.interfaceGui.IGuiScene;
 import net.akehurst.application.framework.technology.interfaceGui.IGuiSceneHandler;
 import net.akehurst.application.framework.technology.interfaceGui.SceneIdentity;
 import net.akehurst.application.framework.technology.interfaceGui.StageIdentity;
-import net.akehurst.application.framework.technology.interfaceGui.data.chart.IGuiChart;
-import net.akehurst.application.framework.technology.interfaceGui.data.chart.IGuiChartData;
-import net.akehurst.application.framework.technology.interfaceGui.data.chart.IGuiChartDataItem;
-import net.akehurst.application.framework.technology.interfaceGui.data.chart.IGuiChartDataSeries;
+import net.akehurst.application.framework.technology.interfaceGui.data.chart.IGuiXYChart;
+import net.akehurst.application.framework.technology.interfaceGui.data.chart.IGuiXYChartDataItem;
+import net.akehurst.application.framework.technology.interfaceGui.data.chart.IGuiXYChartDataSeries;
 import temperatureSensor.computational.userInterface.IUserNotification;
 
 public class UserNotificationHandler extends AbstractGuiHandler implements IGuiSceneHandler, IUserNotification {
@@ -46,13 +45,12 @@ public class UserNotificationHandler extends AbstractGuiHandler implements IGuiS
 				if (null == this.scene) {
 					// can't do it
 				} else {
-					final IGuiChart chart = this.scene.getChart();
-					IGuiChartDataSeries<LocalDateTime, Double> series = chart.getSeries(id);
+					final IGuiXYChart<LocalDateTime, Double> chart = this.scene.getChart();
+					IGuiXYChartDataSeries<LocalDateTime, Double> series = chart.getSeries(id);
 					if (null == series) {
 						series = chart.addSeries(id);
 					}
-					final IGuiChartData<LocalDateTime, Double> data = series.getData();
-					data.getItems().add(new IGuiChartDataItem<LocalDateTime, Double>() {
+					series.getData().add(new IGuiXYChartDataItem<LocalDateTime, Double>() {
 						@Override
 						public LocalDateTime getX() {
 							return LocalDateTime.ofEpochSecond(time, 0, ZoneOffset.UTC);// .format(DateTimeFormatter.ISO_LOCAL_TIME);

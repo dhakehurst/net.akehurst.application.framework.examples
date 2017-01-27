@@ -1,0 +1,165 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body > header {
+    z-index: 0;
+    flex: 0 64px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    
+    display: flex;
+}
+
+body > header > nav {
+	flex-grow: 1;
+	display: flex;
+	align-items: stretch;
+	justify-content: flex-end;
+}
+
+body > header > h1 {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+body > header > nav > ul {
+	list-style: none outside none;
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	margin: 0px;
+}
+
+body > header > nav > ul > li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+body > header > nav > ul > li > * {
+	margin: 0px;
+}
+
+body > main {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+body > main > nav {
+    flex: 0 0 20px;
+    order: 0;
+    display: flex;
+    flex-direction: column;
+
+	min-width: 0;
+}
+
+body > main > nav * {
+	min-width: 0;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+
+body > main > nav:hover {
+	min-width: initial;
+}
+
+body > main > nav > ul {
+	list-style: none outside none;
+	min-width: 0;
+    text-overflow:clip;
+    padding: 5px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+body > main > nav > ul > li {
+	margin: 0px;
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+body > main > section {
+    flex: 1;
+
+    
+    display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	align-content: stretch;
+	justify-content: center;
+}
+
+body > main > aside {
+    flex: 0 0 256px;
+    order: 2;
+}
+body > footer {
+	flex: 0 64px;
+    display: flex;
+	background: AliceBlue;
+	align-items: center;
+	justify-content: center;
+}
+
+body > main > section > fieldset {
+    flex: 1;
+    order: 1;
+	
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	align-content: stretch;
+	justify-content: center;
+}
+
+body > main > section > fieldset > * {
+    background-color: #999999;
+	flex: 10px 1 0;
+}
+
+table {
+	margin: 10px;
+
+	width: 90%;
+	border-collapse: collapse;
+}
+
+table > thead > tr {
+
+}
+
+table > thead > tr > th {
+	text-align: left;
+}
+table > thead > tr > th[class~=size-min] {
+	width: 1%;
+}
+
+table > tbody > tr {
+
+}
+
+table > tbody > tr > td {
+	text-align: left;
+}
+

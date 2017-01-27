@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("/lib/font-awesome/4.6.3/fonts/fontawesome-webfont.eot?v=4.6.3");
+  src: url("/lib/font-awesome/4.6.3/fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("/lib/font-awesome/4.6.3/fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("/lib/font-awesome/4.6.3/fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("/lib/font-awesome/4.6.3/fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("/lib/font-awesome/4.6.3/fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+.editor .element {
+  background-color: #aaaaaa; }
+.editor .startTag {
+  color: #0000ff; }
+.editor .CHARDATA {
+  color: #eeeeee; }
+
+body > header {
+  background-color: #aaaadd;
+  color: #000000; }
+
+body > header > h1 {
+  color: #004c84;
+  margin: 0px 10px; }
+
+body > header > nav > ul > li {
+  border-left: 1px solid #fff;
+  padding: 0px 10px; }
+
+body > header > nav > ul > li[class~=clickable]:hover {
+  cursor: pointer;
+  background-color: #fff; }
+
+#actionSignIn::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-family: FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 1.28571429em;
+  text-align: center;
+  content: "\f090"; }
+
+#actionSignOut::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-family: FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 1.28571429em;
+  text-align: center;
+  content: "\f08b"; }
+
+#actionSettings::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-family: FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 1.28571429em;
+  text-align: center;
+  content: "\f085"; }
+
+body > main > nav {
+  background-color: #dbe0e4; }
+
+body > main > nav ul > li {
+  color: #004c84; }
+
+body > main > nav ul > li:before {
+  color: #004c84;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-family: FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 1.28571429em;
+  text-align: center;
+  content: "\f105"; }
+
+body > main > nav ul > li[class~=clickable]:hover {
+  cursor: pointer;
+  background-color: #fff; }
+
+fieldset {
+  border: none;
+  margin: 0rem;
+  padding: 0rem;
+  flex: 1;
+  display: flex;
+  justify-content: center; }
+
+body > footer {
+  background-color: #ecf1f5;
+  color: #000000; }
+
+.collapsed {
+  display: none; }
+
+/*# sourceMappingURL=style.css.map */
