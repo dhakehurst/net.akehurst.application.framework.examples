@@ -1,0 +1,9 @@
+{
+	proxy: {
+	  fxmlUrlStr: "file:/Users/akehurst/git/net.akehurst.application.framework.examples/net.akehurst.app.flightSystem/engineering/gui/bin/net/akehurst/example/flightSimulator/gui/controls/GuiControlsPanel.fxml"
+	}
+
+	guiInstruments: {
+	  fxmlUrlStr: "file:/Users/akehurst/git/net.akehurst.application.framework.examples/net.akehurst.app.flightSystem/engineering/gui/bin/net/akehurst/example/flightSimulator/gui/instrument/GuiInstrumentPanel.fxml"
+	}
+}

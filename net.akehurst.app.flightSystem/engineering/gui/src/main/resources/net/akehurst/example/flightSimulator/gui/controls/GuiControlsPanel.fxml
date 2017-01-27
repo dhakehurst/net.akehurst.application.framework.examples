@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+ Copyright (c) 2015 D. David H. Akehurst
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ -->
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import net.akehurst.example.flightSimulator.gui.controls.EngineThrustLever?>
+<?import net.akehurst.example.flightSimulator.gui.controls.VirtualJoystick?>
+<?import javafx.scene.layout.GridPane?>
+
+
+<GridPane
+	xmlns:fx="http://javafx.com/fxml"
+>
+
+	<padding><Insets top="5" right="5" bottom="5" left="5"/></padding>
+
+	<EngineThrustLever fx:id="thrust"
+		GridPane.columnIndex="0" GridPane.rowIndex="0"
+		prefWidth="80" prefHeight="200" knobYPercent="100" knobRadiusX="40" knobRadiusY="10"
+	/>
+
+	<VirtualJoystick fx:id="joystick"
+		GridPane.columnIndex="1" GridPane.rowIndex="0"
+		prefWidth="200" prefHeight="200" knobXPercent="0" knobYPercent="0"
+		deadZoneX="10"
+	/>
+
+</GridPane>

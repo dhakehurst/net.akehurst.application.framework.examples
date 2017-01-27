@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+ Copyright (c) 2015 D. David H. Akehurst
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ -->
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.Box?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.Circle?>
+<?import eu.hansolo.airseries.AirCompass?>
+<?import eu.hansolo.airseries.Altimeter?>
+<?import eu.hansolo.airseries.Horizon?>
+<?import eu.hansolo.enzo.gauge.SimpleGauge?>
+<?import eu.hansolo.enzo.gauge.Gauge?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.control.Label?>
+<?import eu.hansolo.enzo.clock.Clock?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml">
+
+	<VBox GridPane.columnIndex="0" GridPane.rowIndex="0" >
+		<Label text="Air Compass" />
+		<AirCompass  fx:id="airCompass" animated="false" bearing="0" prefHeight="200" prefWidth="200"  />
+	</VBox>
+	<VBox GridPane.columnIndex="1" GridPane.rowIndex="0"  >
+		<Label text="Altimeter" />
+		<Altimeter   fx:id="altimeter" value="0" prefHeight="200" prefWidth="200"/>
+	</VBox>
+	<VBox GridPane.columnIndex="2" GridPane.rowIndex="0" >
+		<Label text="Artificial Horizon" />
+		<Horizon     fx:id="horizon" roll="0" prefHeight="200" prefWidth="200" animated="false" />
+	</VBox>
+
+	<VBox GridPane.columnIndex="0" GridPane.rowIndex="1" >
+		<Label text="Air Speed" />
+		<Gauge  fx:id="airSpeed" animated="false"
+		   value="0" minValue="0" maxValue="500" startAngle="300" angleRange="240"
+		   minorTickSpace="10" majorTickSpace="50"
+		   title="Air Speed" unit="m/s">
+		</Gauge>
+	</VBox>
+	<VBox GridPane.columnIndex="1" GridPane.rowIndex="1"  >
+		<Label text="Engine Speed" />
+		<Gauge fx:id="engineSpeed" animated="false"
+			minValue="0" maxValue="10000" startAngle="300" angleRange="240"
+			minorTickSpace="1000" majorTickSpace="2000"
+			title="Engine Speed" unit="RPM" needleColor="RED"
+		/>
+	</VBox>
+	<VBox GridPane.columnIndex="2" GridPane.rowIndex="1"  >
+		<Label text="Clock" />
+		<Clock design="BRAUN" nightMode="true" running="true"/>
+	</VBox>
+</GridPane>
