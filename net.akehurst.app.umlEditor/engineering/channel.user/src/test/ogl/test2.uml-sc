@@ -1,0 +1,9 @@
+package test
+
+statechart Test2 {
+
+	state A
+	transition initial --> A
+	transition A --> final
+
+}

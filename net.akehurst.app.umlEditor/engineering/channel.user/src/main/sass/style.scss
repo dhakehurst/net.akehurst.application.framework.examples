@@ -1,0 +1,87 @@
+@import 'glyphs';
+@import 'dialogs';
+@import 'diagram';
+@import 'style-editor';
+@import 'style-table';
+@import 'editor-statechart';
+
+
+body {
+
+}
+
+body > header {
+	background-color: #aaaadd;
+	color: #000000;
+}
+
+body > header > h1 {
+	color: #004c84;
+	margin: 0px 10px;
+}
+
+body > header > nav > ul > li {
+	border-left: 1px solid #fff;
+	padding: 0px 10px;
+
+}
+
+body > header > nav > ul > li[class~=clickable]:hover {
+	cursor: pointer;
+	background-color: #fff;
+}
+
+#actionSignIn::before {
+	@include glyph-signin;
+}
+
+#actionSignOut::before {
+	@include glyph-signout;
+}
+
+#actionSettings::before {
+	@include glyph-settings;
+}
+
+body > main {
+
+}
+
+body > main > nav {
+    background-color: #dbe0e4;
+}
+
+body > main > nav  ul > li {
+    color: #004c84;  
+}
+
+body > main > nav  ul > li:before {
+    color: #004c84;
+    @include glyph-menu-right;
+}
+
+body > main > nav  ul > li[class~=clickable]:hover  {
+	cursor: pointer;
+	background-color: #fff;
+}
+
+fieldset {
+	border: none;
+	margin: 0rem;
+	padding: 0rem;
+	flex: 1;
+	
+	display: flex;
+	justify-content: center;
+}
+
+
+body > footer {
+	background-color: #ecf1f5;
+	color: #000000;
+}
+
+.collapsed {
+	display:none;
+}
+

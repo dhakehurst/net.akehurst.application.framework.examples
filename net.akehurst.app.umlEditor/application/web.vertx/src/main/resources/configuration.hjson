@@ -1,0 +1,11 @@
+{
+
+    ldapAuthenticator {
+    	handler {
+        	url "ldap://dc1.itemis.de:636"
+        	baseDN "dc=itemis,dc=de"
+        	userAttributes=["name","sn","memberOf"]
+        }
+    }
+
+}

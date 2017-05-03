@@ -1,0 +1,12 @@
+package test
+
+statechart {
+
+	state A
+	state B
+
+	transition initial --> A
+	transition A --> B
+	transition B --> final
+
+}

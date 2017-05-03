@@ -1,0 +1,40 @@
+.State {
+	color: black;
+	background-color: #88e;
+	shape: roundrectangle;
+	border-width: 1;
+	border-style: solid;
+	border-color: black;
+	label: data(identity);
+
+	text-halign : center;
+	text-valign : center;
+}
+
+.StateContent {
+	color: black;
+	background-color: #eee;
+	shape: roundrectangle;
+}
+
+.Transition {
+	color: black;
+	width: 1;
+	curve-style:bezier;
+	line-color: black;
+	line-style: solid;
+	label: data(label);
+	target-arrow-color: black;
+	target-arrow-shape: triangle-tee;
+}
+
+edge {
+	color: black;
+	width: 1;
+	curve-style:bezier;
+	line-color: black;
+	line-style: solid;
+	label: data(label);
+	target-arrow-color: black;
+	target-arrow-shape: triangle;
+}

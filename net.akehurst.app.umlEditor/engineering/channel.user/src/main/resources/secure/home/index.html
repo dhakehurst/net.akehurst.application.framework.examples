@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+		<link rel="stylesheet" href="${rootPath}/css/layout.css">
+		<link rel="stylesheet" href="${rootPath}/css/style.css">		
+		
+		<title>UML Editor - Home</title>
+	</head>
+	<body>
+
+		<header>
+			<h1><strong>UML Editor</strong> - Home</h1>
+			<nav>
+				<ul>
+			      <li><p id='textUsername'>Unknown</p></li>
+			      <li class='clickable'><p id='actionSignOut'>Sign Out</p></li>
+			    </ul>			
+			</nav>
+		</header>
+		
+		<main>
+			<nav>
+				<ul>
+			      <li id='actionHome' class='clickable'><p>Home</p></li>
+			      <li id='actionAdministration' class='clickable'><p>Admin</p></li>
+			    </ul>
+			</nav>
+			
+			<section>
+					<table id="tableProjects">
+					    <thead>
+					      <tr>
+					      	<th class='collapsed'>Identity</th>
+					        <th class='size-min'>Status</th>
+					        <th>Project</th>
+					        <th>Description</th>
+					      </tr>
+					    </thead>
+						<tbody>
+					      	<tr  class='table-row-template clickable actionSelectProject'>
+					      		<td class='collapsed'><input id='projectId' type='text' value='${row.identity}'></td>
+						        <td><p>${row.status}</p></td>
+								<td><p>${row.name}</p></td>
+						        <td><p>${row.description}</p></td>					        
+					        </tr>
+					    </tbody>
+					</table>
+			</section
+
+		</main>
+		
+	
+		<script>
+		  var rootPath = '${rootPath}'
+	      var stageId = '${stageId}'
+	    </script>
+
+		<script data-main='${rootPath}/lib/dynamic/1.0.alpha.19/config.js' src='${rootPath}/lib/requirejs/2.3.1/require.min.js' type='text/javascript' charset='utf-8'></script>
+
+	</body>
+</html>

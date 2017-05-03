@@ -1,0 +1,8 @@
+package demo
+
+statechart StateChart {
+	state A
+	state B
+
+	transition A --> B
+}

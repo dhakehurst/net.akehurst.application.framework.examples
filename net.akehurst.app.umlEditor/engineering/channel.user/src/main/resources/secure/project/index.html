@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+		<link rel="stylesheet" href="${rootPath}/css/layout.css">
+		<link rel="stylesheet" href="${rootPath}/css/style.css">		
+		
+		<title>UML Editor - Project</title>
+	</head>
+	<body>
+
+		<header>
+			<h1><strong>UML Editor</strong> - Project</h1>
+			<nav>
+				<ul>
+			      <li><p id='textUsername'>Unknown</p></li>
+			      <li class='clickable'><p id='actionSignOut'>Sign Out</p></li>
+			    </ul>			
+			</nav>
+		</header>
+		
+		<main>
+			<nav>
+				<ul>
+			      <li id='actionHome' class='clickable'><p>Home</p></li>
+			      <li id='actionAdministration' class='clickable'><p>Admin</p></li>
+			    </ul>
+			</nav>
+			
+			<section>
+				<!-- fieldset added as container so that input items are returned as event data -->
+				<!-- fieldset flex container doesn't work on anything but firefox! -->
+				<div class='fieldset'>
+					<div id='editor' class='editor input' ></div>
+				</div>
+			</section>
+			
+			<section>
+				<!-- fieldset added as container so that input items are returned as event data -->
+				<div class='fieldset'>
+					<div id='diagram' class='diagram input' style='display:block'></div>
+				</div>
+			</section>
+
+
+
+		</main>
+		
+	
+		<script>
+		  var rootPath = '${rootPath}'
+	      var stageId = '${stageId}'
+	    </script>
+
+		<script data-main='${rootPath}/lib/dynamic/1.0.alpha.19/config.js' src='${rootPath}/lib/requirejs/2.3.1/require.min.js' type='text/javascript' charset='utf-8'></script>
+
+	</body>
+</html>

@@ -1,0 +1,86 @@
+table {
+	input:disabled {
+		background-color: inherit;
+		border: none;
+		width: auto;
+	}
+}
+
+table > thead > tr > th {
+	border-left: 1px solid #fff;
+	padding: 2px;
+	
+	*[class~=add] {
+		background-color: #77d;
+		border-radius: 50%;
+		border-style: solid;
+		border-width: 0.1rem;
+		border-color: grey;
+		height: 1rem;
+		width: 1rem;
+		text-align:center;
+		span::before {
+			@include glyph-plus;
+			margin: auto;
+		}
+	}
+	*[class~=add]:hover {
+		background-color: #55f;
+		cursor: pointer;
+	}
+	*[class~=add]:active {
+		background-color: #fff;
+	}
+}
+
+table > tbody > tr > td {
+	border-left: 1px solid #fff;
+	padding: 2px;
+	
+	*[class~=remove] {
+		background-color: #d77;
+		border-radius: 50%;
+		border-style: solid;
+		border-width: 0.1rem;
+		border-color: grey;
+		height: 1rem;
+		width: 1rem;
+		text-align:center;
+		span::before {
+			@include glyph-minus;
+			text-align:center;
+		}
+	}
+	*[class~=remove]:hover {
+		background-color: #f55;
+		cursor: pointer;
+	}
+	*[class~=remove]:active {
+		background-color: #fff;
+	}
+}
+
+table > tbody > tr[class~=clickable]:hover {
+	cursor: pointer;
+	background-color: #fff;
+}
+
+table > tbody > tr > td[class~=clickable]:hover {
+	cursor: pointer;
+	background-color: #fff;
+}
+
+table > tbody > tr:nth-child(even) {
+	background: #e1e1e1;
+}
+table > tbody > tr:nth-child(odd) {
+	background: #f2f2f2;
+}
+
+table > thead {
+	background: #aaa;
+}
+
+.table-row-template {
+	display: none;
+}

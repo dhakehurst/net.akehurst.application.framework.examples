@@ -1,0 +1,40 @@
+namespace net::akehurst::language::uml;
+
+grammar StateChart {
+
+    skip WS : "\s+" ;
+    skip MULTI_LINE_COMMENT : "/\*[^*]*\*+(?:[^*/][^*]*\*+)*/" ;
+	skip SINGLE_LINE_COMMENT : "//.*?$" ;
+
+	document :  package statechart  ;
+
+	package : 'package' qualifiedName ;
+	
+	statechart :
+		'statechart' ID '{'
+		
+			state*
+			transition*
+		'}'
+	;
+
+	state : pseudoState | simpleState ;
+	pseudoState : PSEUDO_STATE_TYPE ID ;
+	
+	simpleState : 'state' stateId stateContent? ;
+	stateId : ID;
+	stateContent : '{' '}' ;
+	
+	transition : 'transition' transitionEnd '-->' transitionEnd transitionContent? ;
+	transitionEnd : qualifiedStateId | implicitPseudoState ;
+	implicitPseudoState : 'initial' | 'final' | 'junction' ID | 'choice' ID  | 'fork' ID | 'join' ID;
+	transitionContent : '{' '}' ;
+	
+	qualifiedStateId : [ stateId / '.' ]+  ;
+	
+	PSEUDO_STATE_TYPE : 'initial' | 'final' | 'history' | 'junction' | 'choice' | 'fork' | 'join' ;
+
+	qualifiedName: [ID / '::']+ ;
+	ID : "[a-zA-Z_][a-zA-Z_0-9]*" ;
+
+}
