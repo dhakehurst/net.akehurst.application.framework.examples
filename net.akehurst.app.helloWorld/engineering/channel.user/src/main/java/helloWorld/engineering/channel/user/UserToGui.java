@@ -19,7 +19,6 @@ import helloWorld.computational.interfaceUser.IUserNotification;
 import helloWorld.computational.interfaceUser.IUserRequest;
 import net.akehurst.application.framework.common.IPort;
 import net.akehurst.application.framework.common.annotations.declaration.Component;
-import net.akehurst.application.framework.common.annotations.declaration.ProvidesInterfaceForPort;
 import net.akehurst.application.framework.common.annotations.instance.ActiveObjectInstance;
 import net.akehurst.application.framework.common.annotations.instance.PortContract;
 import net.akehurst.application.framework.common.annotations.instance.PortInstance;
@@ -35,14 +34,14 @@ public class UserToGui extends AbstractComponent {
 	}
 
 	@ActiveObjectInstance
-	@ProvidesInterfaceForPort(portId = "portGui", provides = IGuiNotification.class)
-	@ProvidesInterfaceForPort(portId = "portUser", provides = IUserNotification.class)
 	HelloWorldHandler handler;
 
 	@Override
 	public void afConnectParts() {
-		this.handler.setGuiRequest(this.portGui().out(IGuiRequest.class));
-		this.handler.userRequest = this.portUser().out(IUserRequest.class);
+		this.portGui().connectInternal(this.handler);
+		this.portUser().connectInternal(this.handler);
+		// this.handler.setGuiRequest(this.portGui().out(IGuiRequest.class));
+		// this.handler.userRequest = this.portUser().out(IUserRequest.class);
 	}
 
 	@PortInstance

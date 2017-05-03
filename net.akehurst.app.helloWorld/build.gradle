@@ -42,7 +42,6 @@ subprojects {
     	compile "${af}.common.realisation:${afVersion}"
     	compile "${af}.technology.logging.log4j:${afVersion}"
 		compile "${af}.technology.filesystem:${afVersion}"
-		compile "${af}.technology.persistence.filesystem:${afVersion}"
 
     	testCompile 'junit:junit:+'
     }

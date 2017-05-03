@@ -43,7 +43,7 @@ public class UserRequestHandler extends AbstractActiveSignalProcessingObject imp
 		return super.submit("requestStart", () -> {
 
 			this.userNotification.notifyMessage(session, this.message);
-
+			this.afTerminate();
 		});
 	}
 }

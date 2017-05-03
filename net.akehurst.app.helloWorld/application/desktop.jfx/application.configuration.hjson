@@ -5,7 +5,7 @@
 	  }
 	}
 	
-	proxy: {
+	user2gui: {
 		handler: {
 			urlStr: "/Gui2.fxml"
 		}

@@ -21,4 +21,5 @@ dependencies {
 	compile project(":${rootProject.name}.engineering.channel.user")
 
 	compile "${af}.technology.gui.console:${afVersion}"
+	compile "${af}.service.configuration.file:${afVersion}"
 }

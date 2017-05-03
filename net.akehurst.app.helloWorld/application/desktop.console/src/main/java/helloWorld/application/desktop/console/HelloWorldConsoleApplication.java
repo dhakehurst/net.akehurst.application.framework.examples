@@ -21,10 +21,10 @@ import net.akehurst.application.framework.common.annotations.declaration.Applica
 import net.akehurst.application.framework.common.annotations.instance.ComponentInstance;
 import net.akehurst.application.framework.common.annotations.instance.ServiceInstance;
 import net.akehurst.application.framework.realisation.AbstractApplication;
+import net.akehurst.application.framework.service.configuration.file.HJsonConfigurationService;
 import net.akehurst.application.framework.technology.filesystem.StandardFilesystem;
 import net.akehurst.application.framework.technology.gui.console.StandardStreams;
 import net.akehurst.application.framework.technology.log4j.Log4JLogger;
-import net.akehurst.application.framework.technology.persistence.filesystem.HJsonFile;
 
 @Application
 public class HelloWorldConsoleApplication extends AbstractApplication {
@@ -40,7 +40,7 @@ public class HelloWorldConsoleApplication extends AbstractApplication {
 	StandardFilesystem fs;
 
 	@ServiceInstance
-	HJsonFile configuration;
+	HJsonConfigurationService configuration;
 
 	@ComponentInstance
 	// @Connect(port="portUser", to="proxy.portUser")

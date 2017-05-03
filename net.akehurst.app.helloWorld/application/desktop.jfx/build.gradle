@@ -14,12 +14,18 @@
  * limitations under the License.
  */
 
+apply plugin: 'application'
+
 dependencies {
 
 	compile project(":${rootProject.name}.computational.greeter")
 
 	compile project(":${rootProject.name}.engineering.channel.user")
+	compile project(":${rootProject.name}.engineering.channel.user.jfx")
 
 	compile "${af}.technology.gui.javafx:${afVersion}"
+	compile "${af}.service.configuration.file:${afVersion}"
 
 }
+
+mainClassName = "application.HelloWorldJfxMain"

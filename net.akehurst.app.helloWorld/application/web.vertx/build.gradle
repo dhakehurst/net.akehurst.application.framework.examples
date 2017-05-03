@@ -14,11 +14,17 @@
  * limitations under the License.
  */
 
+apply plugin: 'application'
+
 dependencies {
 	compile project(":${rootProject.name}.computational.greeter")
 
 	compile project(":${rootProject.name}.engineering.channel.user")
+	compile project(":${rootProject.name}.engineering.channel.user.web")
 
 	compile "${af}.technology.gui.vertx:${afVersion}"
+	compile "${af}.service.configuration.file:${afVersion}"
 
 }
+
+mainClassName = "application.HelloWorldVertxMain"

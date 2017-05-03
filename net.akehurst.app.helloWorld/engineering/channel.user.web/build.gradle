@@ -1,0 +1,7 @@
+
+
+jar {
+   from('src/main/html') {
+      include '**/*.html'
+   }
+}

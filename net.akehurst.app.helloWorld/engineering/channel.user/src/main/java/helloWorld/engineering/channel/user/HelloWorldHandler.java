@@ -5,6 +5,7 @@ import java.net.URL;
 import helloWorld.computational.interfaceUser.IUserNotification;
 import helloWorld.computational.interfaceUser.IUserRequest;
 import helloWorld.computational.interfaceUser.Message;
+import net.akehurst.application.framework.common.annotations.declaration.ExternalConnection;
 import net.akehurst.application.framework.common.annotations.instance.ConfiguredValue;
 import net.akehurst.application.framework.common.interfaceUser.UserSession;
 import net.akehurst.application.framework.technology.gui.common.AbstractGuiHandler;
@@ -27,7 +28,8 @@ public class HelloWorldHandler extends AbstractGuiHandler implements IGuiSceneHa
 	@ConfiguredValue(defaultValue = "")
 	SceneIdentity sceneId;
 
-	IUserRequest userRequest;
+	@ExternalConnection
+	public IUserRequest userRequest;
 
 	IHelloWorldScene scene;
 
@@ -43,14 +45,18 @@ public class HelloWorldHandler extends AbstractGuiHandler implements IGuiSceneHa
 	// --------- AbstractGuiHandler ---------
 	@Override
 	public void notifyReady() {
-		final URL rootUrl = this.getClass().getResource("/hello");
-		this.getGuiRequest().createStage(this.stageId, false, rootUrl);
+		this.getGuiRequest().createStage(this.stageId, false, "/hello");
 	}
 
 	@Override
 	protected void onStageCreated(final GuiEvent event) {
 		final URL content = this.getClass().getResource(this.urlStr);
 		this.createScene(this, this.stageId, content);
+	}
+
+	@Override
+	protected void onStageClosed(final GuiEvent event) {
+		this.afTerminate();
 	}
 
 	@Override

@@ -21,10 +21,10 @@ import net.akehurst.application.framework.common.annotations.declaration.Applica
 import net.akehurst.application.framework.common.annotations.instance.ComponentInstance;
 import net.akehurst.application.framework.common.annotations.instance.ServiceInstance;
 import net.akehurst.application.framework.realisation.AbstractApplication;
+import net.akehurst.application.framework.service.configuration.file.HJsonConfigurationService;
 import net.akehurst.application.framework.technology.filesystem.StandardFilesystem;
 import net.akehurst.application.framework.technology.gui.jfx.JfxWindow;
 import net.akehurst.application.framework.technology.log4j.Log4JLogger;
-import net.akehurst.application.framework.technology.persistence.filesystem.HJsonFile;
 
 @Application
 public class HelloWorldJfxApplication extends AbstractApplication {
@@ -40,20 +40,20 @@ public class HelloWorldJfxApplication extends AbstractApplication {
 	StandardFilesystem fs;
 
 	@ServiceInstance
-	HJsonFile configuration;
+	HJsonConfigurationService configuration;
 
 	@ComponentInstance
 	Greeter greeter;
 
 	@ComponentInstance
-	UserToGui proxy;
+	UserToGui user2gui;
 
 	@ComponentInstance
 	JfxWindow gui;
 
 	@Override
 	public void afConnectParts() {
-		this.greeter.portUser().connect(this.proxy.portUser());
-		this.proxy.portGui().connect(this.gui.portGui());
+		this.greeter.portUser().connect(this.user2gui.portUser());
+		this.user2gui.portGui().connect(this.gui.portGui());
 	}
 }
