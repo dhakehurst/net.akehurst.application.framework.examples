@@ -20,6 +20,7 @@ dependencies {
 
 	compile project(":${rootProject.name}.engineering.channel.user")
 
+	compile "${af}.service.configuration.file:${afVersion}"
 	compile "${af}.technology.gui.javafx:${afVersion}"
 
 }

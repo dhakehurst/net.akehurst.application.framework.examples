@@ -39,7 +39,6 @@ public class DotEditor extends AbstractComponent {
 		this.portUser().connectInternal(this.authHandler.portUser());
 		this.portUser().connectInternal(this.welcomeHandler);
 		this.portUser().connectInternal(this.homeHandler);
-
 	}
 
 	// ---------- Ports ---------

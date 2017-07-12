@@ -8,6 +8,7 @@ import net.akehurst.application.framework.common.annotations.declaration.Externa
 import net.akehurst.application.framework.common.interfaceUser.UserSession;
 import net.akehurst.application.framework.realisation.AbstractIdentifiableObject;
 import net.akehurst.application.framework.technology.interfaceGui.GuiEvent;
+import net.akehurst.application.framework.technology.interfaceGui.GuiEventType;
 import net.akehurst.application.framework.technology.interfaceGui.IGuiHandler;
 import net.akehurst.application.framework.technology.interfaceGui.IGuiScene;
 import net.akehurst.application.framework.technology.interfaceGui.IGuiSceneHandler;
@@ -33,7 +34,7 @@ public class SceneHandlerWelcome extends AbstractIdentifiableObject implements I
 	@Override
 	public void loaded(final IGuiHandler gui, final IGuiScene guiScene, final GuiEvent event) {
 		final UserSession session = event.getSession();
-		this.scene.getActionSignIn().onEvent(session, "click", (e) -> {
+		this.scene.getActionSignIn().onEvent(session, GuiEventType.CLICK, (e) -> {
 			gui.getScene(SceneHandlerCommon.sceneIdSignIn).switchTo(session);
 		});
 

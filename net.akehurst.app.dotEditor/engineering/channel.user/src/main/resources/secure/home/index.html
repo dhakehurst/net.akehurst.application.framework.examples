@@ -24,12 +24,13 @@
 		
 		<main>
 
-			<section>
-				<!-- fieldset added as container so that input items are returned as event data -->
-				<fieldset>
-					<div id='editor' class='editor input' ></div>
-				</fieldset>
-			</section
+			<section class='event-group'>
+				<div id='editor' class='editor input' ></div>
+			</section>
+
+			<section class='event-group'>
+				<div id='graph' class='graph input' style='display:block'></div>
+			</section>
 
 		</main>
 		
@@ -39,7 +40,7 @@
 	      var stageId = '${stageId}'
 	    </script>
 
-		<script data-main='/${jsPath}/index.js' src='/lib/requirejs/2.3.1/require.min.js' type='text/javascript' charset='utf-8'></script>
+		<script data-main='${rootPath}/lib/dynamic/1.0.alpha.20/config.js' src='${rootPath}/lib/requirejs/2.3.1/require.min.js' type='text/javascript' charset='utf-8'></script>
 
 	</body>
 </html>

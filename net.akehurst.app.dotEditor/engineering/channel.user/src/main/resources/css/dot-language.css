@@ -1,8 +1,10 @@
+.editor .CHARDATA {
+  color: #eeeeee; }
 .editor .element {
   background-color: #aaaaaa; }
 .editor .startTag {
   color: #0000ff; }
-.editor .CHARDATA {
-  color: #eeeeee; }
+.editor .endTag {
+  color: #0000ff; }
 
 /*# sourceMappingURL=dot-language.css.map */

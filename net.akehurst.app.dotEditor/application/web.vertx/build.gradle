@@ -13,12 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+apply plugin: 'application'
+
+mainClassName = "net.akehurst.app.dotEditor.application.web.vertx.DotEditorVertxMain"
 
 dependencies {
+	// service
+	compile "${af}.service.configuration.file:${afVersion}"
+
+	// computational
 	compile project(":${rootProject.name}.computational.dotEditor")
 
+	// engineering
 	compile project(":${rootProject.name}.engineering.channel.user")
-	compile "${af}.engineering.channel.authenticatorGui:${afVersion}"
+	compile "${af}.engineering.channel.authenticator:${afVersion}"
+
+	// technology
 	compile "${af}.technology.gui.vertx:${afVersion}"
+	compile "${af}.technology.authentication.any:${afVersion}"
 
 }

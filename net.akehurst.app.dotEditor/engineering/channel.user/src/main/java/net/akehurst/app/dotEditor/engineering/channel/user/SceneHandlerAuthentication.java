@@ -5,9 +5,11 @@ import java.net.URL;
 import net.akehurst.application.framework.common.interfaceUser.UserSession;
 import net.akehurst.application.framework.computational.interfaceUser.authentication.IUserAuthenticationNotification;
 import net.akehurst.application.framework.computational.interfaceUser.authentication.IUserAuthenticationRequest;
-import net.akehurst.application.framework.engineering.common.gui.ISignInScene;
+import net.akehurst.application.framework.engineering.gui.common.ISignInScene;
 import net.akehurst.application.framework.realisation.AbstractIdentifiableObject;
 import net.akehurst.application.framework.technology.interfaceGui.GuiEvent;
+import net.akehurst.application.framework.technology.interfaceGui.GuiEventType;
+import net.akehurst.application.framework.technology.interfaceGui.GuiException;
 import net.akehurst.application.framework.technology.interfaceGui.IGuiHandler;
 import net.akehurst.application.framework.technology.interfaceGui.IGuiScene;
 import net.akehurst.application.framework.technology.interfaceGui.IGuiSceneHandler;
@@ -33,7 +35,7 @@ public class SceneHandlerAuthentication extends AbstractIdentifiableObject imple
 	public void loaded(final IGuiHandler gui, final IGuiScene guiScene, final GuiEvent event) {
 		this.gui = gui;
 
-		this.scene.getActionSignIn().onEvent(event.getSession(), "click", (e) -> {
+		this.scene.getActionSignIn().onEvent(event.getSession(), GuiEventType.CLICK, (e) -> {
 			final String username = (String) e.getDataItem("inputEmail");
 			final String password = (String) e.getDataItem("inputPassword");
 
@@ -44,6 +46,12 @@ public class SceneHandlerAuthentication extends AbstractIdentifiableObject imple
 
 	@Override
 	public void notifyAuthenticationSuccess(final UserSession session) {
+		try {
+			this.gui.addAuthentication(session);
+		} catch (final GuiException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		this.gui.getScene(SceneHandlerCommon.sceneIdHome).switchTo(session);
 	}
 

@@ -1,0 +1,27 @@
+namespace net::akehurst::language::dot;
+
+grammar DotXml {
+
+
+	skip COMMENT : "<!-- [.]* -->" ;
+    skip WS : "\s+" ;
+	
+	file : xmlElement? ;
+	
+	xmlElement : elementEmpty | elementContent ;
+	elementEmpty : '<'  TAG_NAME  attribute* '/>' ;
+    elementContent : startTag content endTag ;
+	startTag : '<'  TAG_NAME  attribute* '>' ;
+	endTag : '</'  TAG_NAME  '>' ;
+
+	content : (CHARDATA | xmlElement)* ;
+
+	attribute : ATT_NAME  '='  string  ;
+	string : DOUBLE_QUOTE_STRING | SINGLE_QUOTE_STRING ;
+
+	CHARDATA : "[^<]+" ;
+	TAG_NAME : "[a-zA-Z][a-zA-Z0-9]*" ;
+	ATT_NAME : "[a-zA-Z][a-zA-Z0-9]*" ;
+	DOUBLE_QUOTE_STRING : "[\"][^\"]*[\"]" ;
+	SINGLE_QUOTE_STRING : "['][^']*[']" ;
+}

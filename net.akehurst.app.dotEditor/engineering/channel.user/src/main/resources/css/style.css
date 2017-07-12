@@ -4,12 +4,28 @@
   src: url("/lib/font-awesome/4.6.3/fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("/lib/font-awesome/4.6.3/fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("/lib/font-awesome/4.6.3/fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("/lib/font-awesome/4.6.3/fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("/lib/font-awesome/4.6.3/fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-.editor .element {
+.editor .STRICT, .editor .GRAPH, .editor .DIGRAPH, .editor .SUBGRAPH, .editor .NODE, .editor .EDGE, .editor .EDGEOP {
+  color: #990000;
+  font-weight: bold; }
+.editor .DOUBLE-QUOTE-STRING, .editor .NUMERAL {
+  color: #000099; }
+.editor .node-id {
+  color: #cc33ff;
+  font-weight: bold; }
+.editor .CHARDATA {
+  color: #eeeeee; }
+.editor .HTML {
   background-color: #aaaaaa; }
 .editor .startTag {
   color: #0000ff; }
-.editor .CHARDATA {
-  color: #eeeeee; }
+.editor .endTag {
+  color: #0000ff; }
+.editor .attribute {
+  color: #2222aa; }
+.editor .PREPROC, .editor .MULTI-LINE-COMMENT, .editor .SINGLE-LINE-COMMENT {
+  color: #009900;
+  font-style: italic;
+  font-weight: normal; }
 
 body > header {
   background-color: #aaaadd;
@@ -90,13 +106,7 @@ body > main > nav ul > li[class~=clickable]:hover {
   cursor: pointer;
   background-color: #fff; }
 
-fieldset {
-  border: none;
-  margin: 0rem;
-  padding: 0rem;
-  flex: 1;
-  display: flex;
-  justify-content: center; }
+
 
 body > footer {
   background-color: #ecf1f5;

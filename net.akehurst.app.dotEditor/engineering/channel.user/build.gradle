@@ -23,10 +23,10 @@ dependencies {
 	
 	compile "${af}.computational.interfaceAuthorisation:${afVersion}"
 	compile "${af}.computational.interfaceUser:${afVersion}"
-	compile "${af}.engineering.common:${afVersion}"
+	compile "${af}.engineering.gui.common:${afVersion}"
     compile "${af}.engineering.gui.languageService:${afVersion}"
 	compile "${af}.technology.interfaceGui:${afVersion}"
-	compile "${af}.technology.authentication:${afVersion}"
+//	compile "${af}.technology.authentication:${afVersion}"
 	compile "${af}.technology.gui.common:${afVersion}"
 	
 	compile 'org.webjars:font-awesome:4.6.3'
@@ -38,4 +38,14 @@ sass {
         srcDir = file("$projectDir/src/main/sass")
         outDir = file("$buildDir/css")
     }
+}
+
+sourceSets {
+	main {
+		java {
+			resources {
+				srcDir "$projectDir/src/main/resources"
+			}
+		}
+	}
 }

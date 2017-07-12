@@ -1,0 +1,44 @@
+.editor {
+
+  .STRICT, .GRAPH, .DIGRAPH, .SUBGRAPH, .NODE, .EDGE, .EDGEOP {
+    color: #990000;
+    font-weight: bold;
+  }
+
+  .DOUBLE_QUOTE_STRING, .NUMERAL {
+  	color: #000099;
+  }
+
+
+  .node_id {
+    color: #cc33ff;
+  	font-weight: bold;
+  }
+
+
+  .CHARDATA {
+    color: #eeeeee;
+  }
+
+  .HTML {
+     background-color: #aaaaaa;
+  }
+
+  .startTag {
+    color: #0000ff;
+  }
+
+  .endTag {
+    color: #0000ff;
+  }
+
+  .attribute {
+    color: #2222aa;
+  }
+  
+  .PREPROC, .MULTI_LINE_COMMENT, .SINGLE_LINE_COMMENT {
+    color: #009900;
+    font-style: italic;
+    font-weight: normal;
+  }
+}

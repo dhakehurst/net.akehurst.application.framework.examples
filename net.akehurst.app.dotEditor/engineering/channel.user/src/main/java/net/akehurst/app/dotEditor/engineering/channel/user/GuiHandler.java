@@ -40,18 +40,14 @@ public class GuiHandler extends AbstractGuiHandler implements IGuiNotification {
 	@Override
 	public void notifyReady() {
 
-		final URL rootUrl = this.getClass().getResource("/css");
-		this.getGuiRequest().createStage(this.stageIdStyle, false, rootUrl);
+		this.getGuiRequest().createStage(this.stageIdStyle, "/css", null, null);
 
-		final URL rootUrl2 = this.getClass().getResource("/secure/");
-		this.getGuiRequest().createStage(this.stageIdUser, true, rootUrl2);
+		this.getGuiRequest().createStage(this.stageIdUser, "/secure", this.authStageId, SceneHandlerCommon.sceneIdSignIn);
 
-		final URL rootUrl3 = this.getClass().getResource("/af/");
-		this.getGuiRequest().createStage(this.authStageId, false, rootUrl3);
+		this.getGuiRequest().createStage(this.authStageId, "/af", null, null);
 
 		// Must create this last as the route would override the others given an empty ("") stageId
-		final URL rootUrl4 = this.getClass().getResource("/unsecure/");
-		this.getGuiRequest().createStage(this.unsecureId, false, rootUrl4);
+		this.getGuiRequest().createStage(this.unsecureId, "/unsecure", null, null);
 	}
 
 	@Override
@@ -66,6 +62,11 @@ public class GuiHandler extends AbstractGuiHandler implements IGuiNotification {
 		} else if (this.unsecureId.equals(currentStage)) {
 			this.sceneHandlerWelcome.createScene(this, this.unsecureId, content);
 		}
+	}
+
+	@Override
+	protected void onStageClosed(final GuiEvent event) {
+		this.afTerminate();
 	}
 
 }
