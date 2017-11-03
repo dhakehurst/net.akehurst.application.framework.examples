@@ -7,7 +7,7 @@ grammar Dot extends DotXml {
 	skip SINGLE_LINE_COMMENT : "//.*?$" ;
 
 	graph :
-	  STRICT?  (GRAPH | DIGRAPH) ID? '{' stmt_list '}'
+	  STRICT?  (GRAPH | DIGRAPH) GRAPH_ID? '{' stmt_list '}'
 	;
 	
 	stmt_list : ( stmt ';'? )* ;
@@ -16,7 +16,7 @@ grammar Dot extends DotXml {
 	    node_stmt
       | edge_stmt
       | attr_stmt
-      | ID '=' ID
+      | attr
       | subgraph
       ;
       
@@ -34,7 +34,8 @@ grammar Dot extends DotXml {
     
     attr_stmt : (GRAPH | NODE | EDGE) attr_list ;
     attr_list : ( '[' a_list? ']' )+ ;
-    a_list : ID '=' ID (';' | ',')? a_list? ;
+    a_list : attr (';' | ',')? a_list? ;
+    attr : ATTR_ID '=' ID ;
 
     subgraph : (SUBGRAPH ID?)? '{' stmt_list '}' ;
 	
@@ -52,6 +53,9 @@ grammar Dot extends DotXml {
 	| DOUBLE_QUOTE_STRING
 	| HTML
 	;
+	
+	ATTR_ID : ALPHABETIC_ID | DOUBLE_QUOTE_STRING ;
+	GRAPH_ID : ALPHABETIC_ID | DOUBLE_QUOTE_STRING ;
 	
 	ALPHABETIC_ID : "[a-zA-Z_][a-zA-Z_0-9]*" ;
 	

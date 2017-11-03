@@ -25,22 +25,20 @@ subprojects {
 	
 	repositories {
 		mavenCentral()
-    	mavenLocal()
-    	jcenter()
-    	maven {
-    		url 'https://dl.bintray.com/dhakehurst/maven'
-    	}
+	    	mavenLocal()
+	    	jcenter()
+
 	}
     
     ext {
     	af = 'net.akehurst.application.framework:net.akehurst.application.framework'
-		afVersion = '+'
+		afVersion = '1.0.0-SNAPSHOT'
     }
     
     dependencies {
    		compile "${af}.common.bits:${afVersion}"
-    	compile "${af}.common.realisation:${afVersion}"
-    	compile "${af}.technology.logging.log4j:${afVersion}"
+    		compile "${af}.common.realisation:${afVersion}"
+    		compile "${af}.technology.logging.log4j:${afVersion}"
 		compile "${af}.technology.filesystem:${afVersion}"
 
     	testCompile 'junit:junit:+'

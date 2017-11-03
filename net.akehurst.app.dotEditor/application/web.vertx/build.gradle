@@ -26,6 +26,7 @@ dependencies {
 
 	// engineering
 	compile project(":${rootProject.name}.engineering.channel.user")
+	compile project(":${rootProject.name}.engineering.channel.user.web")
 	compile "${af}.engineering.channel.authenticator:${afVersion}"
 
 	// technology

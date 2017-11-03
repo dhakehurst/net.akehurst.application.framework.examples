@@ -2,6 +2,7 @@ package net.akehurst.app.dotEditor.engineering.channel.user;
 
 import java.net.URL;
 
+import net.akehurst.application.framework.common.annotations.instance.ActiveObjectInstance;
 import net.akehurst.application.framework.common.annotations.instance.ConfiguredValue;
 import net.akehurst.application.framework.common.annotations.instance.IdentifiableObjectInstance;
 import net.akehurst.application.framework.technology.gui.common.AbstractGuiHandler;
@@ -21,7 +22,7 @@ public class GuiHandler extends AbstractGuiHandler implements IGuiNotification {
 	@IdentifiableObjectInstance
 	SceneHandlerAuthentication sceneHandlerAuthentication;
 
-	@IdentifiableObjectInstance
+	@ActiveObjectInstance
 	SceneHandlerHome sceneHandlerHome;
 
 	@ConfiguredValue(defaultValue = "css")

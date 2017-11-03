@@ -21,6 +21,7 @@ dependencies {
 	compile "${af}.computational.authentication:${afVersion}"
 	compile "${af}.computational.authorisation:${afVersion}"
 	compile 'net.akehurst.language:net.akehurst.language.processor:+'
+	compile 'net.akehurst.language:net.akehurst.language.util:+'
 	compile 'org.glassfish:javax.json:1.0.4'
 }
 

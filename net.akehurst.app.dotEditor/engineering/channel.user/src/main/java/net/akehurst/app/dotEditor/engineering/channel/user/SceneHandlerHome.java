@@ -4,21 +4,22 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.Reader;
-import java.io.StringReader;
 import java.net.URL;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import org.jooq.lambda.tuple.Tuple3;
+
 import net.akehurst.app.dotEditor.computational.interfaceUser.IUserHomeNotification;
 import net.akehurst.app.dotEditor.computational.interfaceUser.IUserHomeRequest;
+import net.akehurst.app.dotEditor.computational.interfaceUser.data.DotGraph;
 import net.akehurst.application.framework.common.annotations.declaration.ExternalConnection;
 import net.akehurst.application.framework.common.interfaceUser.UserSession;
 import net.akehurst.application.framework.computational.interfaceUser.authentication.IUserAuthenticationRequest;
-import net.akehurst.application.framework.engineering.gui.common.GuiGraphData;
-import net.akehurst.application.framework.realisation.AbstractIdentifiableObject;
+import net.akehurst.application.framework.realisation.AbstractActiveSignalProcessingObject;
 import net.akehurst.application.framework.technology.interfaceGui.GuiEvent;
 import net.akehurst.application.framework.technology.interfaceGui.GuiEventType;
 import net.akehurst.application.framework.technology.interfaceGui.IGuiHandler;
@@ -27,9 +28,9 @@ import net.akehurst.application.framework.technology.interfaceGui.IGuiSceneHandl
 import net.akehurst.application.framework.technology.interfaceGui.SceneIdentity;
 import net.akehurst.application.framework.technology.interfaceGui.StageIdentity;
 import net.akehurst.application.framework.technology.interfaceGui.data.editor.IGuiLanguageService;
-import net.akehurst.language.core.ILanguageProcessor;
+import net.akehurst.application.framework.technology.interfaceGui.data.graph.IGuiGraphViewData;
 
-public class SceneHandlerHome extends AbstractIdentifiableObject implements IUserHomeNotification, IGuiSceneHandler {
+public class SceneHandlerHome extends AbstractActiveSignalProcessingObject implements IUserHomeNotification, IGuiSceneHandler {
 
 	public SceneHandlerHome(final String afId) {
 		super(afId);
@@ -42,7 +43,6 @@ public class SceneHandlerHome extends AbstractIdentifiableObject implements IUse
 	public IUserAuthenticationRequest userAuthenticationRequest;
 
 	private IHomeScene scene;
-	private ILanguageProcessor languageProcessor;
 	private IGuiLanguageService languageService;
 
 	@Override
@@ -64,18 +64,29 @@ public class SceneHandlerHome extends AbstractIdentifiableObject implements IUse
 			});
 
 			// final IGuiLanguageService ls = this.getLanguageService();
+
+			final Map<String, Tuple3<String, String, String>> theme = new HashMap<>();
+			theme.put("dot.**", new Tuple3<>(null, null, "dd0000"));
+			theme.put("dot.graph.**", new Tuple3<>("00dd00", "normal", null));
+			theme.put("**.GRAPH", new Tuple3<>("00dd00", "bold", null));
+			theme.put("**.WS", new Tuple3<>(null, null, "dddddd"));
+			theme.put("**.node_id.**", new Tuple3<>("dd0000", "bold", null));
+			this.scene.getEditor().defineTextColourTheme(session, "myTheme", theme);
+
 			final String initText = this.getExampleDot();
-			this.scene.getEditor().create(session, "dot", initText);
+			final String edoptions = "{theme:'myTheme', automaticLayout:true, codeLens:false, minimap:{enabled:false} }";
+			this.scene.getEditor().create(session, "dot", initText, edoptions);
+
 			// TODO: need to use an 'onReady' event/message
 			final String jsonParseTreeData = this.userHomeRequest.fetchParseTree(initText).get(); // ls.update(initText);
 			this.scene.getEditor().updateParseTree(session, jsonParseTreeData);
 
-			this.scene.getEditor().onEvent(session, GuiEventType.TEXT_CHANGE, (ev) -> {
+			this.scene.getEditor().onEvent(session, GuiEventType.CHANGE, (ev) -> {
 				try {
 					final String newText = ev.getDataItem("editor");
 					final String jsonParseTreeData1 = this.userHomeRequest.fetchParseTree(newText).get(); // ls.update(newText);
 					this.scene.getEditor().updateParseTree(session, jsonParseTreeData1);
-					this.createGraph(session);
+					this.createGraph(session, newText);
 				} catch (final Exception e) {
 					e.printStackTrace();
 				}
@@ -105,55 +116,20 @@ public class SceneHandlerHome extends AbstractIdentifiableObject implements IUse
 		}
 	}
 
-	private void createGraph(final UserSession session) {
-		try {
-			// userHomeRequest.getGraph()
+	private void createGraph(final UserSession session, final String newText) {
+		super.submit("createGraph", () -> {
+			try {
+				final DotGraph dotGraph = this.userHomeRequest.fetchGraph(newText).get();
 
-			final Reader styleReader = new StringReader("node { border-color: red; background-color:green;} edge {line-color: black; width: 1;}");
-			final GuiGraphData data = new GuiGraphData(styleReader);
+				final DotGraphToGuiGraphConverter converter = new DotGraphToGuiGraphConverter();
+				final IGuiGraphViewData data = converter.convert(dotGraph);
 
-			data.getLayout().put("name", "cose");
-			data.getLayout().put("randomize", "true");
+				this.scene.getGraph().create(session, data);
 
-			data.addNode(null, "s1", "State");
-			data.addNode(null, "s2", "State");
-			data.addNode(null, "s3", "State");
-			data.addNode(null, "s4", "State");
-
-			data.addEdge("t1", null, "s1", "s2", "Transition").getData().put("label", "lbl1");
-			data.addEdge("t2", null, "s1", "s3", "Transition").getData().put("label", "lbl2");
-			data.addEdge("t3", null, "s1", "s4", "Transition").getData().put("label", "lbl3");
-			data.addEdge("t4", null, "s2", "s4", "Transition").getData().put("label", "lbl4");
-
-			this.scene.getGraph().create(session, data);
-
-		} catch (final IOException e) {
-			e.printStackTrace();
-		}
+			} catch (final IOException e) {
+				e.printStackTrace();
+			}
+		});
 	}
 
-	// private ILanguageProcessor getLanguageProcessor() {
-	// // if (null == this.languageProcessor) {
-	// try {
-	// final OGLanguageProcessor oglProc = new OGLanguageProcessor();
-	// final InputStreamReader reader = new InputStreamReader(this.getClass().getResourceAsStream("/net/akehurst/language/dot/Dot.ogl"));
-	// final IGrammar grammar = oglProc.process(reader, "grammarDefinition", IGrammar.class);
-	// final ISemanticAnalyser semanticAnalyser = null;
-	// this.languageProcessor = new LanguageProcessor(grammar, semanticAnalyser);
-	// } catch (final Exception e) {
-	// e.printStackTrace();
-	// return null;
-	// }
-	// // }
-	// return this.languageProcessor;
-	// }
-	//
-	// private IGuiLanguageService getLanguageService() {
-	// // if (null == this.languageService) {
-	// final ILanguageProcessor processor = this.getLanguageProcessor();
-	// this.languageService = new GuiLanguageServiceFromProcessor(processor, "graph");
-	// // }
-	// return this.languageService;
-	//
-	// }
 }
