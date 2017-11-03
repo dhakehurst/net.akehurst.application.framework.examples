@@ -1,7 +1,8 @@
-
-
-jar {
-   from('src/main/html') {
-      include '**/*.html'
-   }
+sourceSets {
+	main {
+		resources {
+			srcDir "${projectDir}/src/main/html"
+			srcDir "${projectDir}/src/main/sass"
+		}
+	}
 }

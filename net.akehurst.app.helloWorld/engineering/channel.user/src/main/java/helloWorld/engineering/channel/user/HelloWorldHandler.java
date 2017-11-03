@@ -22,10 +22,10 @@ public class HelloWorldHandler extends AbstractGuiHandler implements IGuiSceneHa
 		super(id);
 	}
 
-	@ConfiguredValue(defaultValue = "helloWorld")
+	@ConfiguredValue(defaultValue = "hello")
 	StageIdentity stageId;
 
-	@ConfiguredValue(defaultValue = "")
+	@ConfiguredValue(defaultValue = "world")
 	SceneIdentity sceneId;
 
 	@ExternalConnection
@@ -45,7 +45,7 @@ public class HelloWorldHandler extends AbstractGuiHandler implements IGuiSceneHa
 	// --------- AbstractGuiHandler ---------
 	@Override
 	public void notifyReady() {
-		this.getGuiRequest().createStage(this.stageId, false, "/hello");
+		this.getGuiRequest().createStage(this.stageId, "/unsecure", null, null);
 	}
 
 	@Override
