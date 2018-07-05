@@ -21,7 +21,7 @@ subprojects {
 	apply plugin: 'maven-publish'
 	
 	group '${rootProject.name}'
-	version '1.0.0-alpha'
+	version '1.0.0-SNAPSHOT'
 	
 	repositories {
 		mavenCentral()
@@ -33,15 +33,18 @@ subprojects {
     ext {
     	af = 'net.akehurst.application.framework:net.akehurst.application.framework'
 		afVersion = '1.0.0-SNAPSHOT'
+		version_jool = '0.9.13'
+		version_log4j = '2.10.0'
+		version_transform = '2.2.1'
     }
-    
-    dependencies {
-   		compile "${af}.common.bits:${afVersion}"
-    		compile "${af}.common.realisation:${afVersion}"
-    		compile "${af}.technology.logging.log4j:${afVersion}"
-		compile "${af}.technology.filesystem:${afVersion}"
 
-    	testCompile 'junit:junit:+'
+    dependencies {
+   		implementation "${af}.common.bits:${afVersion}"
+    	implementation "${af}.common.realisation:${afVersion}"
+    	implementation "${af}.technology.logging.log4j:${afVersion}"
+		implementation "${af}.technology.filesystem:${afVersion}"
+
+    	testImplementation 'junit:junit:+'
     }
 
 	publishing {

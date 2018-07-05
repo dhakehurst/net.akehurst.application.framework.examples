@@ -15,5 +15,8 @@
  */
 
 dependencies {
+	compile project(":${rootProject.name}.computational.interfacePilot")
+	compile "${af}.technology.interfaceComms:${afVersion}"
+
 	compile 'org.glassfish:javax.json:1.0.4'
 }

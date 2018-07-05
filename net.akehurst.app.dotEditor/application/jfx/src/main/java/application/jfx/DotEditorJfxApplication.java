@@ -20,14 +20,14 @@ import net.akehurst.app.dotEditor.engineering.channel.user.UserToGui;
 import net.akehurst.application.framework.common.annotations.declaration.Application;
 import net.akehurst.application.framework.common.annotations.instance.ComponentInstance;
 import net.akehurst.application.framework.common.annotations.instance.ServiceInstance;
-import net.akehurst.application.framework.realisation.AbstractApplication;
+import net.akehurst.application.framework.realisation.ApplicationAbstract;
+import net.akehurst.application.framework.service.configuration.file.HJsonConfigurationService;
 import net.akehurst.application.framework.technology.filesystem.StandardFilesystem;
 import net.akehurst.application.framework.technology.gui.jfx.JfxWindow;
 import net.akehurst.application.framework.technology.log4j.Log4JLogger;
-import net.akehurst.application.framework.technology.persistence.filesystem.HJsonFile;
 
 @Application
-public class DotEditorJfxApplication extends AbstractApplication {
+public class DotEditorJfxApplication extends ApplicationAbstract {
 
 	public DotEditorJfxApplication(final String id) {
 		super(id);
@@ -40,7 +40,7 @@ public class DotEditorJfxApplication extends AbstractApplication {
 	StandardFilesystem fs;
 
 	@ServiceInstance
-	HJsonFile configuration;
+	HJsonConfigurationService configuration;
 
 	@ComponentInstance
 	DotEditor editor;

@@ -19,7 +19,7 @@ import net.akehurst.app.dotEditor.computational.interfaceUser.data.DotGraph;
 import net.akehurst.application.framework.common.annotations.declaration.ExternalConnection;
 import net.akehurst.application.framework.common.interfaceUser.UserSession;
 import net.akehurst.application.framework.computational.interfaceUser.authentication.IUserAuthenticationRequest;
-import net.akehurst.application.framework.realisation.AbstractActiveSignalProcessingObject;
+import net.akehurst.application.framework.realisation.ActiveSignalProcessingObjectAbstract;
 import net.akehurst.application.framework.technology.interfaceGui.GuiEvent;
 import net.akehurst.application.framework.technology.interfaceGui.GuiEventType;
 import net.akehurst.application.framework.technology.interfaceGui.IGuiHandler;
@@ -30,7 +30,7 @@ import net.akehurst.application.framework.technology.interfaceGui.StageIdentity;
 import net.akehurst.application.framework.technology.interfaceGui.data.editor.IGuiLanguageService;
 import net.akehurst.application.framework.technology.interfaceGui.data.graph.IGuiGraphViewData;
 
-public class SceneHandlerHome extends AbstractActiveSignalProcessingObject implements IUserHomeNotification, IGuiSceneHandler {
+public class SceneHandlerHome extends ActiveSignalProcessingObjectAbstract implements IUserHomeNotification, IGuiSceneHandler {
 
 	public SceneHandlerHome(final String afId) {
 		super(afId);

@@ -1,0 +1,9 @@
+node {
+	border-color: red;
+	background-color: green;
+}
+
+edge {
+	line-color: black;
+	width: 1;
+}

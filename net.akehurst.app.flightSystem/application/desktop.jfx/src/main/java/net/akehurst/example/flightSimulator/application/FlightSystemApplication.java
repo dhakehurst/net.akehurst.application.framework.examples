@@ -18,12 +18,13 @@ package net.akehurst.example.flightSimulator.application;
 import net.akehurst.application.framework.common.annotations.instance.ComponentInstance;
 import net.akehurst.application.framework.common.annotations.instance.ServiceInstance;
 import net.akehurst.application.framework.realisation.AbstractApplication;
+import net.akehurst.application.framework.service.configuration.file.HJsonConfigurationService;
 import net.akehurst.application.framework.technology.filesystem.StandardFilesystem;
 import net.akehurst.application.framework.technology.gui.jfx.JfxWindow;
 import net.akehurst.application.framework.technology.log4j.Log4JLogger;
-import net.akehurst.application.framework.technology.persistence.filesystem.HJsonFile;
 import net.akehurst.example.flightSimulator.computational.FlightController;
 import net.akehurst.example.flightSimulator.gui.channel.PilotToGui;
+import net.akehurst.example.flightSimulator.technology.network.SimulatedNetworkBus;
 
 public class FlightSystemApplication extends AbstractApplication {
 
@@ -81,7 +82,7 @@ public class FlightSystemApplication extends AbstractApplication {
 	StandardFilesystem fs;
 
 	@ServiceInstance
-	HJsonFile configuration;
+	HJsonConfigurationService configuration;
 
 	@ServiceInstance
 	Log4JLogger logger;
@@ -93,12 +94,10 @@ public class FlightSystemApplication extends AbstractApplication {
 	// @ComponentInstance
 	// SensorSampler sensorSampler;
 	//
-	// // --- GUI ---
-	// InstrumentPanel instrumentPanel;
-	// PilotControls controls;
+
 	//
 	// // --- Engineering ---
-	// PilotRequestPublisher controlsPilotRequestPublisher;
+	PilotRequestPublisher controlsPilotRequestPublisher;
 	// PilotRequestSubscriber flightControllerPilotRequestSubscriber;
 	//
 	// EngineRequestPublisher flightControllerEngineRequestPublisher;
@@ -125,7 +124,7 @@ public class FlightSystemApplication extends AbstractApplication {
 	// SensorsNotificationPublisher sensorsPublisher;
 	//
 	// // --- Technoology ---
-	// SimulatedNetworkBus network;
+	SimulatedNetworkBus network;
 	//
 	// AirSpeedSensor airSpeedSensor;
 	// RadarAltitudeSensor radarAltitudeSensor;

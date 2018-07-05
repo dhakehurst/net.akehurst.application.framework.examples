@@ -22,9 +22,9 @@ dependencies {
 	
 	compile project(":${rootProject.name}.technology.comms.socket")
 
-	compile 'net.akehurst.application.framework:net.akehurst.application.framework.technology.gui.javafx:+'
-	compile 'net.akehurst.application.framework:net.akehurst.application.framework.technology.logging.log4j:+'
-	compile 'net.akehurst.application.framework:net.akehurst.application.framework.technology.filesystem:+'
-	compile 'net.akehurst.application.framework:net.akehurst.application.framework.technology.persistence.filesystem:+'
+	compile "${af}.service.configuration.file:${afVersion}"
+	compile "${af}.technology.gui.javafx:${afVersion}"
+	compile "${af}.technology.logging.log4j:${afVersion}"
+	compile "${af}.technology.filesystem:${afVersion}"
 
 }

@@ -1,0 +1,103 @@
+plugins {
+	id "com.moowork.node" version "1.2.0"
+}
+
+configurations {
+	nodeDep
+	nodeDev
+}
+
+dependencies {
+	nodeDev 'org.webjars.npm:typescript:2.9.2'
+	//nodeDev 'org.webjars.npm:angular__cli:1.6.7'
+	
+	nodeDep "org.webjars.npm:systemjs:0.21.4"
+	nodeDep "org.webjars.npm:core-js:2.5.7"
+	nodeDep "org.webjars.npm:rxjs:6.2.1"
+	nodeDep "org.webjars.npm:zone.js:0.8.26"
+	
+	nodeDep "org.webjars.npm:angular__common:6.0.7"
+	nodeDep "org.webjars.npm:angular__compiler:6.0.7"
+	nodeDep "org.webjars.npm:angular__core:6.0.7"
+	nodeDep "org.webjars.npm:angular__platform-browser:6.0.7"
+	nodeDep "org.webjars.npm:angular__platform-browser-dynamic:6.0.7"
+	
+	
+	nodeDep "${af}.technology.web.angular:${afVersion}"
+}
+
+ext {
+	tsBuild = "${project.buildDir}/nodeBuild"
+	node_modules_dir = "${project.buildDir}/nodeBuild/node_modules"
+}
+
+
+sourceSets {
+	main {
+		resources {
+			srcDir "${projectDir}/src/main/angular"
+		}
+	}
+}
+
+jar {
+	into("META-INF/resources/webjars/${project.name}/${project.version}") {
+	   from "${tsBuild}/dist"
+	   include '**/*.*'
+	   from "${projectDir}/src/main/angular/index.html"
+	}
+   
+}
+
+task extractWebjars(type: Sync) {
+	dependsOn configurations.nodeDep
+
+	configurations.nodeDep.resolvedConfiguration.resolvedArtifacts.each{ dep ->
+		//println it.moduleVersion
+		from zipTree(dep.file)
+		into "${tsBuild}/node_modules"
+		include 'META-INF/resources/webjars/**'
+		eachFile { f ->
+			if (f.path.contains('__')) {
+				f.path = '@'+f.path.replaceFirst('META-INF/resources/webjars/', '').replaceFirst('__','/')
+			} else {
+				f.path = f.path.replaceFirst('META-INF/resources/webjars/', '')
+			}
+			f.path = f.path.replaceFirst(dep.moduleVersion.id.version,'')
+		}
+		includeEmptyDirs false
+	}
+	
+	configurations.nodeDev.resolvedConfiguration.resolvedArtifacts.each{ dep ->
+		//println it.moduleVersion
+		from zipTree(dep.file)
+		into "${tsBuild}/node_modules"
+		include 'META-INF/resources/webjars/**'
+		eachFile { f ->
+			if (f.path.contains('__')) {
+				f.path = '@'+f.path.replaceFirst('META-INF/resources/webjars/', '').replaceFirst('__','/')
+			} else {
+				f.path = f.path.replaceFirst('META-INF/resources/webjars/', '')
+			}
+			f.path = f.path.replaceFirst(dep.moduleVersion.id.version,'')
+		}
+		includeEmptyDirs false
+	}
+}
+
+task copySource(type: Sync) {
+	from "${projectDir}/src/main/angular"
+	into "${tsBuild}"
+}
+
+task tsc(type: NodeTask) {
+	dependsOn 'extractWebjars'
+	dependsOn 'copySource'
+	workingDir = file("${tsBuild}")
+	script = file("${tsBuild}/node_modules/typescript/lib/tsc.js")
+	if (project.hasProperty('tscArgs')) {
+		args = project.findProperty('tscArgs').tokenize()
+	}
+}
+
+processResources.dependsOn 'tsc'

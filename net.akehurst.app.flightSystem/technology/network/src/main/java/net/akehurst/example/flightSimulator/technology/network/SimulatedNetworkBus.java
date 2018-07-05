@@ -15,56 +15,36 @@
  */
 package net.akehurst.example.flightSimulator.technology.network;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.LinkedBlockingQueue;
+import net.akehurst.application.framework.common.IPort;
+import net.akehurst.application.framework.common.annotations.declaration.Component;
+import net.akehurst.application.framework.common.annotations.instance.ActiveObjectInstance;
+import net.akehurst.application.framework.common.annotations.instance.PortContract;
+import net.akehurst.application.framework.common.annotations.instance.PortInstance;
+import net.akehurst.application.framework.realisation.AbstractComponent;
+import net.akehurst.application.framework.technology.interfaceComms.IPublishSubscribeNotification;
+import net.akehurst.application.framework.technology.interfaceComms.IPublishSubscribeRequest;
 
-public class SimulatedNetworkBus implements IPublishSubscribe, Runnable {
+@Component
+public class SimulatedNetworkBus extends AbstractComponent {
 
-	public SimulatedNetworkBus() {
-		this.subscribers = new ArrayList<>();
-		this.queue = new LinkedBlockingQueue<>();
+	public SimulatedNetworkBus(final String afId) {
+		super(afId);
 	}
 
-	List<ISubscriber> subscribers;
-	BlockingQueue<byte[]> queue;
+	@ActiveObjectInstance
+	NetworkHandler handler;
 
 	@Override
-	public void publish(byte[] bytes) {
-		this.queue.add(bytes);
+	public void afConnectParts() {
+		this.portComms().connectInternal(this.handler);
 	}
 
-	@Override
-	public void subscribe(ISubscriber subscriber) {
-		this.subscribers.add(subscriber);
+	// --- Ports ---
+	@PortInstance
+	@PortContract(provides = IPublishSubscribeRequest.class, requires = IPublishSubscribeNotification.class)
+	private IPort portComms;
+
+	public IPort portComms() {
+		return this.portComms;
 	}
-
-	// ---------------- Runnable --------------------
-	@Override
-	public void run() {
-		try {
-			while (true) {
-				byte[] packet = this.queue.take();
-				for (ISubscriber sub : this.subscribers) {
-					sub.update(packet);
-				}
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
-	Thread thread;
-
-	public void start() {
-		this.thread = new Thread(this, "SimulatedNetworkBus");
-		this.thread.setPriority(Thread.MAX_PRIORITY);
-		this.thread.start();
-	}
-
-	public void join() throws InterruptedException {
-		this.thread.join();
-	}
-
 }

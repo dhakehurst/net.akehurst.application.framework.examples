@@ -1,0 +1,24 @@
+application Sampler {
+
+	// services
+	service Logger logger
+	
+	// computational
+	component Sampler sampler
+	
+	// engineering
+	object MonitorProxy monitorProxy
+	object SensorProxy sensorProxy
+	
+	// technology
+	component socketComms
+	component sensorSimulator
+	
+	// computational <-> engineering
+	sampler[sensor] <-> sensorProxy
+	sampler[monitor] <-> monitorProxy
+	
+	// engineering <-> technology
+	sensorProxy <-> sensorSimulator[]
+	monitorProxy <-> socketComms[comms]
+}

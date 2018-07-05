@@ -16,4 +16,6 @@
 
 dependencies {
 
+	compile "${af}.technology.interfaceComms:${afVersion}"
+
 }

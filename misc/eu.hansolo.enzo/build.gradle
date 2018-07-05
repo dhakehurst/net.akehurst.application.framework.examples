@@ -1,0 +1,39 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'maven-publish'
+
+
+
+task wrapper(type: Wrapper) {    
+    gradleVersion = '1.8'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/java'
+        }
+        resources {
+            srcDir 'src/resources'
+        }
+    }            
+}
+
+	task sourceJar(type: Jar) {
+	    from sourceSets.main.allJava
+	}
+	
+	publishing {
+	    publications {
+	        mavenJava(MavenPublication) {
+	        	groupId "${group}"
+	        	artifactId "${project.name}"
+				version "${version}"
+	        
+	            from components.java
+	            artifact sourceJar {
+	                classifier "sources"
+	            }
+	        }
+	    }
+	}

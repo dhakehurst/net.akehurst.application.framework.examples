@@ -11,12 +11,12 @@ import net.akehurst.application.framework.common.annotations.instance.PortContra
 import net.akehurst.application.framework.common.annotations.instance.PortInstance;
 import net.akehurst.application.framework.computational.interfaceUser.authentication.IUserAuthenticationNotification;
 import net.akehurst.application.framework.computational.interfaceUser.authentication.IUserAuthenticationRequest;
-import net.akehurst.application.framework.realisation.AbstractComponent;
+import net.akehurst.application.framework.realisation.ComponentAbstract;
 import net.akehurst.application.framework.technology.interfaceGui.IGuiNotification;
 import net.akehurst.application.framework.technology.interfaceGui.IGuiRequest;
 
 @Component
-public class UserToGui extends AbstractComponent {
+public class UserToGui extends ComponentAbstract {
 	public UserToGui(final String id) {
 		super(id);
 	}

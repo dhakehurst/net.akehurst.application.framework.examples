@@ -1,0 +1,65 @@
+plugins {
+    id "com.moowork.node" version "1.2.0"
+}
+
+configurations {
+    typescript
+}
+
+
+dependencies {
+    node    'org.webjars.npm:@angular/http:5.2.3'
+    node    'org.webjars.npm:@angular/core:5.2.3'
+    devNode 'org.webjars.npm:@angular/compiler-cli:5.2.3'
+}
+
+sourceSets {
+	main {
+        java {
+            srcDir "${projectDir}/src/main/angular"
+            srcDir "${projectDir}/src/main/sass"
+        }
+		resources {
+			srcDir "${projectDir}/src/main/html"
+		}
+	}
+}
+
+jar {
+    into('dist') {
+       from "$buildDir/dist"
+           include '**/*.*'
+    }
+   
+}
+
+task extractNode(type: Sync) {
+    dependsOn configurations.node
+
+    from { // use of closure defers evaluation until execution time
+        configurations.node.collect { zipTree(it) }
+    }
+    into "$buildDir/node/node_modules"
+}
+
+node {
+    version = '8.9.0'
+    npmVersion = '5.5.1'
+    download = true
+}
+
+task ng_build(type: NpmTask, dependsOn: 'npmInstall') {
+    npmCommand = ['run']
+    args = ['ng', 'build', '--display-error-details']
+}
+
+
+task serve(type: NodeTask, dependsOn: 'webpack') {
+    script = project.file('node_modules/webpack-dev-server/bin/webpack-dev-server.js')
+    args = ['--content-base', 'src/main/resources/app',
+            '--host', '0.0.0.0']
+}
+
+processResources.dependsOn 'ng_build'
+
+clean.delete << file('node_modules')

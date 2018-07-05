@@ -82,8 +82,7 @@ public class UserNotificationHandler extends AbstractGuiHandler implements IGuiS
 
 	@Override
 	public void notifyReady() {
-		final URL rootUrl = this.getClass().getResource("/monitor");
-		this.getGuiRequest().createStage(this.stageId, false, rootUrl);
+		this.getGuiRequest().createStage(this.stageId, "/monitor", null, null);
 	}
 
 	@Override

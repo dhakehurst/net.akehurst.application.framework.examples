@@ -21,8 +21,9 @@ dependencies {
 //	compile project(":${rootProject.name}.engineering.channel.samplerMonitor")
 //	compile project(":${rootProject.name}.engineering.channel.monitorGui")
 	
-//	compile project(":${rootProject.name}.technology.comms.socket")
+	compile project(":${rootProject.name}.technology.network")
 
+	compile "${af}.service.configuration.file:${afVersion}"
 	compile "${af}.technology.gui.javafx:${afVersion}"
 	compile "${af}.technology.logging.log4j:${afVersion}"
 	compile "${af}.technology.filesystem:${afVersion}"

@@ -6,9 +6,9 @@ import net.akehurst.application.framework.common.annotations.instance.ActiveObje
 import net.akehurst.application.framework.common.annotations.instance.ComponentInstance;
 import net.akehurst.application.framework.common.annotations.instance.ServiceInstance;
 import net.akehurst.application.framework.realisation.AbstractApplication;
+import net.akehurst.application.framework.service.configuration.file.HJsonConfigurationService;
 import net.akehurst.application.framework.technology.filesystem.StandardFilesystem;
 import net.akehurst.application.framework.technology.log4j.Log4JLogger;
-import net.akehurst.application.framework.technology.persistence.filesystem.HJsonFile;
 import temperatureSensor.computational.interfaceSampler.ISampleSubscriberNotification;
 import temperatureSensor.computational.interfaceSensor.ISensorRequest;
 import temperatureSensor.engineering.channel.sensorMonitor.MonitorProxy;
@@ -30,7 +30,7 @@ class SamplerApplication extends AbstractApplication {
 	StandardFilesystem fs;
 
 	@ServiceInstance
-	HJsonFile configuration;
+	HJsonConfigurationService configuration;
 
 	@ComponentInstance
 	Sampler sampler;

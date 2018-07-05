@@ -5,14 +5,14 @@ import net.akehurst.app.dotEditor.engineering.channel.user.UserToGui;
 import net.akehurst.application.framework.common.annotations.instance.ComponentInstance;
 import net.akehurst.application.framework.common.annotations.instance.ServiceInstance;
 import net.akehurst.application.framework.engineering.authenticator.AuthenticatorChannel;
-import net.akehurst.application.framework.realisation.AbstractApplication;
+import net.akehurst.application.framework.realisation.ApplicationAbstract;
 import net.akehurst.application.framework.service.configuration.file.HJsonConfigurationService;
 import net.akehurst.application.framework.technology.authentication.any.AnyAuthenticator;
 import net.akehurst.application.framework.technology.filesystem.StandardFilesystem;
 import net.akehurst.application.framework.technology.gui.vertx.VertxWebsite;
 import net.akehurst.application.framework.technology.log4j.Log4JLogger;
 
-public class DotEditorVertxApplication extends AbstractApplication {
+public class DotEditorVertxApplication extends ApplicationAbstract {
 
 	public DotEditorVertxApplication(final String id) {
 		super(id);

@@ -19,18 +19,18 @@ mainClassName = "net.akehurst.app.dotEditor.application.web.vertx.DotEditorVertx
 
 dependencies {
 	// service
-	compile "${af}.service.configuration.file:${afVersion}"
+	implementation "${af}.service.configuration.file:${afVersion}"
 
 	// computational
-	compile project(":${rootProject.name}.computational.dotEditor")
+	implementation project(":${rootProject.name}.computational.dotEditor")
 
 	// engineering
-	compile project(":${rootProject.name}.engineering.channel.user")
-	compile project(":${rootProject.name}.engineering.channel.user.web")
-	compile "${af}.engineering.channel.authenticator:${afVersion}"
+	implementation project(":${rootProject.name}.engineering.channel.user")
+	implementation project(":${rootProject.name}.engineering.channel.user.web")
+	implementation "${af}.engineering.channel.authenticator:${afVersion}"
 
 	// technology
-	compile "${af}.technology.gui.vertx:${afVersion}"
-	compile "${af}.technology.authentication.any:${afVersion}"
+	implementation "${af}.technology.gui.vertx:${afVersion}"
+	implementation "${af}.technology.authentication.any:${afVersion}"
 
 }

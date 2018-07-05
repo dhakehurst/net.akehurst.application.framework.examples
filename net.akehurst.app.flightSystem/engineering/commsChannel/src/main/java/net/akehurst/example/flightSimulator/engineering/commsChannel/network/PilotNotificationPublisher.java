@@ -15,6 +15,7 @@
  */
 package net.akehurst.example.flightSimulator.engineering.commsChannel.network;
 
+import net.akehurst.application.framework.realisation.AbstractIdentifiableObject;
 import net.akehurst.example.flightSimulator.computational.pilotInterface.AirSpeed;
 import net.akehurst.example.flightSimulator.computational.pilotInterface.Elevation;
 import net.akehurst.example.flightSimulator.computational.pilotInterface.GroundSpeed;
@@ -24,59 +25,67 @@ import net.akehurst.example.flightSimulator.computational.pilotInterface.IPilotN
 import net.akehurst.example.flightSimulator.computational.pilotInterface.Roll;
 import net.akehurst.example.flightSimulator.computational.pilotInterface.Yaw;
 import net.akehurst.example.flightSimulator.engineering.commsChannel.Serialiser;
-import net.akehurst.example.flightSimulator.technology.network.IPublishSubscribe;
 
-public class PilotNotificationPublisher implements IPilotNotification {
+public class PilotNotificationPublisher extends AbstractIdentifiableObject implements IPilotNotification {
 
-	public PilotNotificationPublisher() {
+	public PilotNotificationPublisher(final String afId) {
+		super(afId);
 		this.serialiser = new Serialiser();
 	}
-	
+
 	IPublishSubscribe network;
+
 	public IPublishSubscribe getNetwork() {
 		return this.network;
 	}
-	public void setNetwork(IPublishSubscribe value) {
+
+	public void setNetwork(final IPublishSubscribe value) {
 		this.network = value;
 	}
-	
+
 	Serialiser serialiser;
-	
-	//--------- IPilotNotification ----------
+
+	// --------- IPilotNotification ----------
 	@Override
-	public void notifyCurrentHeightAboveSeaLevel(HeightAboveSeaLevel value) {
-		byte[] bytes = this.serialiser.serialiseDouble(value.getClass(), value.asPrimitive());
+	public void notifyCurrentHeightAboveSeaLevel(final HeightAboveSeaLevel value) {
+		final byte[] bytes = this.serialiser.serialiseDouble(value.getClass(), value.asPrimitive());
 		this.getNetwork().publish(bytes);
 	}
+
 	@Override
-	public void notifyCurrentElevation(Elevation value) {
-		byte[] bytes = this.serialiser.serialiseDouble(value.getClass(), value.asPrimitive());
+	public void notifyCurrentElevation(final Elevation value) {
+		final byte[] bytes = this.serialiser.serialiseDouble(value.getClass(), value.asPrimitive());
 		this.getNetwork().publish(bytes);
 	}
+
 	@Override
-	public void notifyCurrentRoll(Roll value) {
-		byte[] bytes = this.serialiser.serialiseDouble(value.getClass(), value.asPrimitive());
+	public void notifyCurrentRoll(final Roll value) {
+		final byte[] bytes = this.serialiser.serialiseDouble(value.getClass(), value.asPrimitive());
 		this.getNetwork().publish(bytes);
 	}
+
 	@Override
-	public void notifyCurrentYaw(Yaw value) {
-		byte[] bytes = this.serialiser.serialiseDouble(value.getClass(), value.asPrimitive());
+	public void notifyCurrentYaw(final Yaw value) {
+		final byte[] bytes = this.serialiser.serialiseDouble(value.getClass(), value.asPrimitive());
 		this.getNetwork().publish(bytes);
 	}
+
 	@Override
-	public void notifyCurrentAirSpeed(AirSpeed value) {
-		byte[] bytes = this.serialiser.serialiseDouble(value.getClass(), value.asPrimitive());
+	public void notifyCurrentAirSpeed(final AirSpeed value) {
+		final byte[] bytes = this.serialiser.serialiseDouble(value.getClass(), value.asPrimitive());
 		this.getNetwork().publish(bytes);
 	}
+
 	@Override
-	public void notifyCurrentGroundSpeed(GroundSpeed value) {
-		byte[] bytes = this.serialiser.serialiseDouble(value.getClass(), value.asPrimitive());
+	public void notifyCurrentGroundSpeed(final GroundSpeed value) {
+		final byte[] bytes = this.serialiser.serialiseDouble(value.getClass(), value.asPrimitive());
 		this.getNetwork().publish(bytes);
 	}
+
 	@Override
-	public void notifyCurrentHeading(Heading value) {
-		byte[] bytes = this.serialiser.serialiseDouble(value.getClass(), value.asPrimitive());
+	public void notifyCurrentHeading(final Heading value) {
+		final byte[] bytes = this.serialiser.serialiseDouble(value.getClass(), value.asPrimitive());
 		this.getNetwork().publish(bytes);
 	}
-		
+
 }

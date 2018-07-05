@@ -23,127 +23,130 @@ public class MulticastSocketChannel extends AbstractActiveObject {
 
 	@ServiceReference
 	ILogger logger;
-	
-	public MulticastSocketChannel(String id, IpAddress address, IpPort port, ISocketListener socketListener) {
+
+	public MulticastSocketChannel(final String id, final IpAddress address, final IpPort port, final ISocketListener socketListener) {
 		super(id);
 		this.address = address;
 		this.port = port;
 		this.socketListener = socketListener;
 	}
-	
-//	@ConfiguredValue(defaultValue="5")
-//	Integer retries;
-//	
-//	@ConfiguredValue(defaultValue="500")
-//	Integer interTryDelay;
-	
+
+	// @ConfiguredValue(defaultValue="5")
+	// Integer retries;
+	//
+	// @ConfiguredValue(defaultValue="500")
+	// Integer interTryDelay;
+
 	IpAddress address;
 	IpPort port;
-	
+
 	Socket clientSocket;
 	ServerSocket serverSocket;
 	MulticastSocket multiSocket;
-	
+
 	Thread serverThread;
 	Thread listenerThread;
-	
+
 	ISocketListener socketListener;
-	
+
 	@Override
 	public void afRun() {
 		this.startSubscriber(5, 500);
 	}
-	
+
+	@Override
+	public void afTerminate() {
+		// TODO Auto-generated method stub
+
+	}
+
 	public void listen() {
 		try {
-			if (null!=this.clientSocket) {
-				DataInputStream inpStrm = new DataInputStream(clientSocket.getInputStream());
+			if (null != this.clientSocket) {
+				final DataInputStream inpStrm = new DataInputStream(this.clientSocket.getInputStream());
 				while (true) {
-					String s = inpStrm.readUTF();
-					byte[] bytes = s.getBytes();
-					logger.log(LogLevel.DEBUG,"received " + bytes.length + "bytes");
+					final String s = inpStrm.readUTF();
+					final byte[] bytes = s.getBytes();
+					this.logger.log(LogLevel.DEBUG, "received " + bytes.length + "bytes");
 					this.socketListener.receive(bytes);
 				}
-			} else if (null!=this.multiSocket) {
-				while(true) {
-					byte[] buf = new byte[ this.multiSocket.getReceiveBufferSize() ];
-					DatagramPacket pkt = new DatagramPacket(buf, buf.length);
+			} else if (null != this.multiSocket) {
+				while (true) {
+					final byte[] buf = new byte[this.multiSocket.getReceiveBufferSize()];
+					final DatagramPacket pkt = new DatagramPacket(buf, buf.length);
 					try {
 						this.multiSocket.receive(pkt);
-						logger.log(LogLevel.DEBUG,"received " + pkt.getLength() + "bytes");
-						byte[] bytes = Arrays.copyOf(buf, pkt.getLength());
+						this.logger.log(LogLevel.DEBUG, "received " + pkt.getLength() + "bytes");
+						final byte[] bytes = Arrays.copyOf(buf, pkt.getLength());
 						this.socketListener.receive(bytes);
-					} catch(SocketTimeoutException e) {
-						logger.log(LogLevel.DEBUG,"timeout ");
+					} catch (final SocketTimeoutException e) {
+						this.logger.log(LogLevel.DEBUG, "timeout ");
 					}
 
 				}
 			}
-		} catch (Exception e) {
+		} catch (final Exception e) {
 			e.printStackTrace();
 		}
 	}
-	
-	
-	public void tryPublish(byte[] bytes) throws SocketException {
+
+	public void tryPublish(final byte[] bytes) throws SocketException {
 		MulticastSocket skt = null;
 		try {
-			logger.log(LogLevel.DEBUG, "Trying to publish to " + address + " : " + port);
+			this.logger.log(LogLevel.DEBUG, "Trying to publish to " + this.address + " : " + this.port);
 			skt = new MulticastSocket();
-			InetAddress group = InetAddress.getByName(this.address.asPrimitive());
-			DatagramPacket pkt = new DatagramPacket(bytes,  bytes.length, group, this.port.asPrimitive());
+			final InetAddress group = InetAddress.getByName(this.address.asPrimitive());
+			final DatagramPacket pkt = new DatagramPacket(bytes, bytes.length, group, this.port.asPrimitive());
 			skt.send(pkt);
-			logger.log(LogLevel.DEBUG, "published to " + address + " : " + port);
-		} catch (Exception e) {
+			this.logger.log(LogLevel.DEBUG, "published to " + this.address + " : " + this.port);
+		} catch (final Exception e) {
 			throw new SocketException(e.getMessage(), e);
 		} finally {
 			if (null != skt) {
 				try {
 					skt.close();
-				} catch (Exception e) {
+				} catch (final Exception e) {
 					e.printStackTrace();
 				}
 			}
 		}
 	}
-	
 
-	public void startSubscriber(int retries, int interTryDelay) {
-		int tries = 0;
-			try {
-				logger.log(LogLevel.DEBUG, "Trying to connect to " + address + " : " + port);
-				this.multiSocket = new MulticastSocket(port.asPrimitive());
-				this.multiSocket.setSoTimeout(500);
-				InetAddress group = InetAddress.getByName(address.asPrimitive());
-				this.multiSocket.joinGroup(group);
-				logger.log(LogLevel.INFO,"Connected to " + address + " : " + port);
+	public void startSubscriber(final int retries, final int interTryDelay) {
+		final int tries = 0;
+		try {
+			this.logger.log(LogLevel.DEBUG, "Trying to connect to " + this.address + " : " + this.port);
+			this.multiSocket = new MulticastSocket(this.port.asPrimitive());
+			this.multiSocket.setSoTimeout(500);
+			final InetAddress group = InetAddress.getByName(this.address.asPrimitive());
+			this.multiSocket.joinGroup(group);
+			this.logger.log(LogLevel.INFO, "Connected to " + this.address + " : " + this.port);
 
-				this.listenerThread = new Thread(()->this.listen(), "listenerThread");
-				this.listenerThread.start();
+			this.listenerThread = new Thread(() -> this.listen(), "listenerThread");
+			this.listenerThread.start();
 
-			} catch (Exception e) {
-				if (tries >= retries) {
-					e.printStackTrace();
-					// end
-				} else {
-					try {
-						Thread.sleep(interTryDelay);
-					} catch (InterruptedException e1) {
-						e1.printStackTrace();
-					}
+		} catch (final Exception e) {
+			if (tries >= retries) {
+				e.printStackTrace();
+				// end
+			} else {
+				try {
+					Thread.sleep(interTryDelay);
+				} catch (final InterruptedException e1) {
+					e1.printStackTrace();
 				}
 			}
+		}
 	}
-	
-	
-	public void send(byte[] bytes) {
+
+	public void send(final byte[] bytes) {
 		try {
-			logger.log(LogLevel.INFO,"sending " + bytes.length + " bytes");
-			DataOutputStream os = new DataOutputStream(clientSocket.getOutputStream());
-			String str = new String(bytes);
+			this.logger.log(LogLevel.INFO, "sending " + bytes.length + " bytes");
+			final DataOutputStream os = new DataOutputStream(this.clientSocket.getOutputStream());
+			final String str = new String(bytes);
 			os.writeUTF(str);
 
-		} catch (Exception e) {
+		} catch (final Exception e) {
 			e.printStackTrace();
 		}
 

@@ -16,11 +16,14 @@
 
 dependencies {
 
-	compile project(":${rootProject.name}.computational.dotEditor")
+	// --- services
+	implementation "${af}.service.configuration.file:${afVersion}"
+	
+	implementation project(":${rootProject.name}.computational.dotEditor")
 
-	compile project(":${rootProject.name}.engineering.channel.user")
+	implementation project(":${rootProject.name}.engineering.channel.user")
 
-	compile "${af}.service.configuration.file:${afVersion}"
-	compile "${af}.technology.gui.javafx:${afVersion}"
+	implementation "${af}.service.configuration.file:${afVersion}"
+	implementation "${af}.technology.gui.javafx:${afVersion}"
 
 }

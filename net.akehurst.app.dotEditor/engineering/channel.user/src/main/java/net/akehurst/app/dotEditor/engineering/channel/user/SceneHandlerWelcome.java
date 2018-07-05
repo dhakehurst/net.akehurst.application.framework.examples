@@ -6,7 +6,7 @@ import net.akehurst.app.dotEditor.computational.interfaceUser.IUserWelcomeNotifi
 import net.akehurst.app.dotEditor.computational.interfaceUser.IUserWelcomeRequest;
 import net.akehurst.application.framework.common.annotations.declaration.ExternalConnection;
 import net.akehurst.application.framework.common.interfaceUser.UserSession;
-import net.akehurst.application.framework.realisation.AbstractIdentifiableObject;
+import net.akehurst.application.framework.realisation.IdentifiableObjectAbstract;
 import net.akehurst.application.framework.technology.interfaceGui.GuiEvent;
 import net.akehurst.application.framework.technology.interfaceGui.GuiEventType;
 import net.akehurst.application.framework.technology.interfaceGui.IGuiHandler;
@@ -14,7 +14,7 @@ import net.akehurst.application.framework.technology.interfaceGui.IGuiScene;
 import net.akehurst.application.framework.technology.interfaceGui.IGuiSceneHandler;
 import net.akehurst.application.framework.technology.interfaceGui.StageIdentity;
 
-public class SceneHandlerWelcome extends AbstractIdentifiableObject implements IUserWelcomeNotification, IGuiSceneHandler {
+public class SceneHandlerWelcome extends IdentifiableObjectAbstract implements IUserWelcomeNotification, IGuiSceneHandler {
 
 	public SceneHandlerWelcome(final String afId) {
 		super(afId);

@@ -18,55 +18,55 @@ import net.akehurst.application.framework.technology.interfaceGui.StageIdentity;
 
 public class HelloWorldHandler extends AbstractGuiHandler implements IGuiSceneHandler, IUserNotification {
 
-	public HelloWorldHandler(final String id) {
-		super(id);
-	}
+    @ConfiguredValue(defaultValue = "hello")
+    private StageIdentity stageId;
 
-	@ConfiguredValue(defaultValue = "hello")
-	StageIdentity stageId;
+    @ConfiguredValue(defaultValue = "world")
+    private SceneIdentity sceneId;
 
-	@ConfiguredValue(defaultValue = "world")
-	SceneIdentity sceneId;
+    @ExternalConnection
+    private IUserRequest userRequest;
 
-	@ExternalConnection
-	public IUserRequest userRequest;
+    private IHelloWorldScene scene;
 
-	IHelloWorldScene scene;
+    @ConfiguredValue(defaultValue = "/Gui.fxml")
+    private String urlStr;
 
-	@ConfiguredValue(defaultValue = "/Gui.fxml")
-	String urlStr;
+    public HelloWorldHandler(final String id) {
+        super(id);
+    }
 
-	// IUserNotification
-	@Override
-	public void notifyMessage(final UserSession session, final Message message) {
-		this.scene.getOutput().setText(session, message.asPrimitive());
-	}
+    // IUserNotification
+    @Override
+    public void notifyMessage(final UserSession session, final Message message) {
+        this.scene.getOutput().setText(session, message.asPrimitive());
+    }
 
-	// --------- AbstractGuiHandler ---------
-	@Override
-	public void notifyReady() {
-		this.getGuiRequest().createStage(this.stageId, "/unsecure", null, null);
-	}
+    // --------- AbstractGuiHandler ---------
+    @Override
+    public void notifyReady() {
+        this.getGuiRequest().createStage(this.stageId, "/unsecure", null, null);
+    }
 
-	@Override
-	protected void onStageCreated(final GuiEvent event) {
-		final URL content = this.getClass().getResource(this.urlStr);
-		this.createScene(this, this.stageId, content);
-	}
+    @Override
+    protected void onStageCreated(final GuiEvent event) {
+        final URL content = this.getClass().getResource(this.urlStr);
+        this.createScene(this, this.stageId, content);
+    }
 
-	@Override
-	protected void onStageClosed(final GuiEvent event) {
-		this.afTerminate();
-	}
+    @Override
+    protected void onStageClosed(final GuiEvent event) {
+        this.afTerminate();
+    }
 
-	@Override
-	public IGuiScene createScene(final IGuiHandler gui, final StageIdentity stageId, final URL content) {
-		this.scene = gui.createScene(stageId, this.sceneId, IHelloWorldScene.class, this, content);
-		return this.scene;
-	}
+    @Override
+    public IGuiScene createScene(final IGuiHandler gui, final StageIdentity stageId, final URL content) {
+        this.scene = gui.createScene(stageId, this.sceneId, IHelloWorldScene.class, this, content);
+        return this.scene;
+    }
 
-	@Override
-	public void loaded(final IGuiHandler gui, final IGuiScene guiScene, final GuiEvent event) {
-		this.userRequest.requestStart(event.getSession());
-	}
+    @Override
+    public void loaded(final IGuiHandler gui, final IGuiScene guiScene, final GuiEvent event) {
+        this.userRequest.requestStart(event.getSession());
+    }
 }

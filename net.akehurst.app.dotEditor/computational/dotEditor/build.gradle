@@ -15,14 +15,14 @@
  */
 
 dependencies {
-	compile project(":${rootProject.name}.computational.interfaceUser")
+	implementation project(":${rootProject.name}.computational.interfaceUser")
 	
-	compile "${af}.computational.interfaceAuthenticator:${afVersion}"
-	compile "${af}.computational.authentication:${afVersion}"
-	compile "${af}.computational.authorisation:${afVersion}"
-	compile 'net.akehurst.language:net.akehurst.language.processor:+'
-	compile 'net.akehurst.language:net.akehurst.language.util:+'
-	compile 'org.glassfish:javax.json:1.0.4'
+	implementation "${af}.computational.interfaceAuthenticator:${afVersion}"
+	implementation "${af}.computational.authentication:${afVersion}"
+	implementation "${af}.computational.authorisation:${afVersion}"
+	implementation 'net.akehurst.language:processor:1.2.0-SNAPSHOT'
+	implementation 'net.akehurst.language:util:1.2.0-SNAPSHOT'
+	implementation 'org.glassfish:javax.json:1.0.4'
 }
 
 sourceSets {

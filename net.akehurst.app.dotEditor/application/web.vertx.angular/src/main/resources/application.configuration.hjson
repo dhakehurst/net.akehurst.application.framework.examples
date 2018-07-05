@@ -1,0 +1,12 @@
+{
+
+    ldap :{
+    	handler :{
+        	url :"ldaps://filer.itemis.de:636"
+        	userSecurityLevel:"simple"
+        	userSearchRoot :"dc=itemis,dc=de"
+        	userAttributes:["name","sn","memberOf"]
+        }
+    }
+
+}

@@ -29,10 +29,15 @@ subprojects {
 	   	jcenter()
 	}
     
+    ext {
+    	af = 'net.akehurst.application.framework:net.akehurst.application.framework'
+		afVersion = '+'
+    }
+    
     dependencies {
-    	compile 'net.akehurst.application.framework:net.akehurst.application.framework.common.bits:+'
-    	compile 'net.akehurst.application.framework:net.akehurst.application.framework.common.realisation:+'
-    	compile 'net.akehurst.application.framework:net.akehurst.application.framework.technology.interfaceLogging:+'
+   		compile "${af}.common.bits:${afVersion}"
+    	compile "${af}.common.realisation:${afVersion}"
+    	compile "${af}.technology.logging.log4j:${afVersion}"
 
     	testCompile 'junit:junit:+'
     }

@@ -16,36 +16,49 @@
 
 subprojects {
 
-	apply plugin: 'java'
+	apply plugin: 'java-library'
 	apply plugin: 'osgi'
+    apply plugin: 'checkstyle'
 	apply plugin: 'maven-publish'
 	
 	group '${rootProject.name}'
 	version '1.0.0-alpha'
-	
+
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+    	
 	repositories {
+        mavenLocal()
 		mavenCentral()
-    	mavenLocal()
-    	jcenter()
-    	maven {
-    		url 'https://dl.bintray.com/dhakehurst/maven'
-    	}
+    	    jcenter()
+        maven {
+    		    url 'https://dl.bintray.com/dhakehurst/maven'
+        }
 	}
     
     ext {
-    	af = 'net.akehurst.application.framework:net.akehurst.application.framework'
+    	    af = 'net.akehurst.application.framework:net.akehurst.application.framework'
 		afVersion = '+'
     }
     
     dependencies {
-   		compile "${af}.common.bits:${afVersion}"
-    	compile "${af}.common.realisation:${afVersion}"
-    	compile "${af}.technology.logging.log4j:${afVersion}"
-		compile "${af}.technology.filesystem:${afVersion}"
+        implementation "${af}.common.bits:${afVersion}"
+        implementation "${af}.common.realisation:${afVersion}"
+        implementation "${af}.technology.logging.log4j:${afVersion}"
+		implementation "${af}.technology.filesystem:${afVersion}"
 
-    	testCompile 'junit:junit:+'
+    	    testCompile 'junit:junit:+'
     }
-
+    
+    checkstyle {
+        toolVersion = '8.7'
+        configFile = rootProject.file('src/checkstyle/checkstyle.xml')
+        configProperties = [
+            'configDir': rootProject.file('src/checkstyle'),
+            'baseDir': rootDir,
+        ]
+    }
+    
 	publishing {
 	    publications {
 	        mavenJava(MavenPublication) {

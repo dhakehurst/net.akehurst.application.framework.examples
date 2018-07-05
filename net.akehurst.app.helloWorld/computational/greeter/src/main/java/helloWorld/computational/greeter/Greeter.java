@@ -41,7 +41,8 @@ public class Greeter extends AbstractComponent {
 
 	@Override
 	public void afConnectParts() {
-		this.userRequestHandler.userNotification = this.portUser().out(IUserNotification.class);
+		this.portUser().connectInternal(this.userRequestHandler);
+		// this.userRequestHandler.userNotification = this.portUser().out(IUserNotification.class);
 	}
 
 	// ---------- Ports ---------

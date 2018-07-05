@@ -2,11 +2,12 @@ package net.akehurst.app.dotEditor.engineering.channel.user;
 
 import java.net.URL;
 
+import net.akehurst.application.framework.common.annotations.declaration.ExternalConnection;
 import net.akehurst.application.framework.common.interfaceUser.UserSession;
 import net.akehurst.application.framework.computational.interfaceUser.authentication.IUserAuthenticationNotification;
 import net.akehurst.application.framework.computational.interfaceUser.authentication.IUserAuthenticationRequest;
 import net.akehurst.application.framework.engineering.gui.common.ISignInScene;
-import net.akehurst.application.framework.realisation.AbstractIdentifiableObject;
+import net.akehurst.application.framework.realisation.IdentifiableObjectAbstract;
 import net.akehurst.application.framework.technology.interfaceGui.GuiEvent;
 import net.akehurst.application.framework.technology.interfaceGui.GuiEventType;
 import net.akehurst.application.framework.technology.interfaceGui.GuiException;
@@ -15,7 +16,7 @@ import net.akehurst.application.framework.technology.interfaceGui.IGuiScene;
 import net.akehurst.application.framework.technology.interfaceGui.IGuiSceneHandler;
 import net.akehurst.application.framework.technology.interfaceGui.StageIdentity;
 
-public class SceneHandlerAuthentication extends AbstractIdentifiableObject implements IUserAuthenticationNotification, IGuiSceneHandler {
+public class SceneHandlerAuthentication extends IdentifiableObjectAbstract implements IUserAuthenticationNotification, IGuiSceneHandler {
 
 	public SceneHandlerAuthentication(final String afId) {
 		super(afId);
@@ -23,7 +24,9 @@ public class SceneHandlerAuthentication extends AbstractIdentifiableObject imple
 
 	ISignInScene scene;
 	IGuiHandler gui;
-	public IUserAuthenticationRequest userAuthenticationRequest;
+
+	@ExternalConnection
+	IUserAuthenticationRequest userAuthenticationRequest;
 
 	@Override
 	public ISignInScene createScene(final IGuiHandler gui, final StageIdentity stageId, final URL content) {

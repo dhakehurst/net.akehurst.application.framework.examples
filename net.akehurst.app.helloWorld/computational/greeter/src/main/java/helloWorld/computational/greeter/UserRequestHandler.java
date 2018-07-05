@@ -20,6 +20,7 @@ import java.util.concurrent.Future;
 import helloWorld.computational.interfaceUser.IUserNotification;
 import helloWorld.computational.interfaceUser.IUserRequest;
 import helloWorld.computational.interfaceUser.Message;
+import net.akehurst.application.framework.common.annotations.declaration.ExternalConnection;
 import net.akehurst.application.framework.common.annotations.instance.CommandLineArgument;
 import net.akehurst.application.framework.common.annotations.instance.ConfiguredValue;
 import net.akehurst.application.framework.common.interfaceUser.UserSession;
@@ -27,23 +28,24 @@ import net.akehurst.application.framework.realisation.AbstractActiveSignalProces
 
 public class UserRequestHandler extends AbstractActiveSignalProcessingObject implements IUserRequest {
 
-	public UserRequestHandler(final String id) {
-		super(id);
-	}
+    public UserRequestHandler(final String id) {
+        super(id);
+    }
 
-	@CommandLineArgument(hasValue = true, description = "Override the greeting message.")
-	@ConfiguredValue(defaultValue = "Hello World!")
-	Message message;
+    @CommandLineArgument(hasValue = true, description = "Override the greeting message.")
+    @ConfiguredValue(defaultValue = "Hello World!")
+    Message message;
 
-	IUserNotification userNotification;
+    @ExternalConnection
+    private IUserNotification userNotification;
 
-	// --------- IUserRequest ---------
-	@Override
-	public Future<Void> requestStart(final UserSession session) {
-		return super.submit("requestStart", () -> {
+    // --------- IUserRequest ---------
+    @Override
+    public Future<Void> requestStart(final UserSession session) {
+        return super.submit("requestStart", () -> {
 
-			this.userNotification.notifyMessage(session, this.message);
-			this.afTerminate();
-		});
-	}
+            this.userNotification.notifyMessage(session, this.message);
+            this.afTerminate();
+        });
+    }
 }

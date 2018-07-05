@@ -6,10 +6,10 @@ import net.akehurst.application.framework.common.annotations.declaration.Applica
 import net.akehurst.application.framework.common.annotations.instance.ComponentInstance;
 import net.akehurst.application.framework.common.annotations.instance.ServiceInstance;
 import net.akehurst.application.framework.realisation.AbstractApplication;
+import net.akehurst.application.framework.service.configuration.file.HJsonConfigurationService;
 import net.akehurst.application.framework.technology.filesystem.StandardFilesystem;
 import net.akehurst.application.framework.technology.gui.jfx.JfxWindow;
 import net.akehurst.application.framework.technology.log4j.Log4JLogger;
-import net.akehurst.application.framework.technology.persistence.filesystem.HJsonFile;
 import temperatureSensor.engineering.channel.sensorMonitor.SamplerProxy;
 import temperatureSensor.technology.comms.socket.SocketComms;
 
@@ -27,7 +27,7 @@ class TemperatureMonitorApplication extends AbstractApplication {
 	StandardFilesystem fs;
 
 	@ServiceInstance
-	HJsonFile configuration;
+	HJsonConfigurationService configuration;
 
 	@ComponentInstance
 	Monitor monitor;

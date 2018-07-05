@@ -17,20 +17,17 @@ import net.akehurst.app.dotEditor.computational.interfaceUser.IUserHomeNotificat
 import net.akehurst.app.dotEditor.computational.interfaceUser.IUserHomeRequest;
 import net.akehurst.app.dotEditor.computational.interfaceUser.data.DotGraph;
 import net.akehurst.application.framework.common.annotations.declaration.ExternalConnection;
-import net.akehurst.application.framework.realisation.AbstractActiveSignalProcessingObject;
-import net.akehurst.language.core.analyser.ISemanticAnalyser;
-import net.akehurst.language.core.grammar.IGrammar;
-import net.akehurst.language.core.grammar.RuleNotFoundException;
-import net.akehurst.language.core.parser.ICompletionItem;
-import net.akehurst.language.core.parser.IParseTree;
-import net.akehurst.language.core.parser.ParseFailedException;
-import net.akehurst.language.core.parser.ParseTreeException;
-import net.akehurst.language.core.processor.ILanguageProcessor;
-import net.akehurst.language.processor.LanguageProcessor;
+import net.akehurst.application.framework.realisation.ActiveSignalProcessingObjectAbstract;
+import net.akehurst.language.api.analyser.SemanticAnalyser;
+import net.akehurst.language.api.grammar.Grammar;
+import net.akehurst.language.api.processor.CompletionItem;
+import net.akehurst.language.api.processor.LanguageProcessor;
+import net.akehurst.language.api.sppt.SharedPackedParseTree;
+import net.akehurst.language.processor.LanguageProcessorDefault;
 import net.akehurst.language.processor.OGLanguageProcessor;
 import net.akehurst.language.util.ToJsonVisitor;
 
-public class HomeHandler extends AbstractActiveSignalProcessingObject implements IUserHomeRequest {
+public class HomeHandler extends ActiveSignalProcessingObjectAbstract implements IUserHomeRequest {
 
 	public HomeHandler(final String afId) {
 		super(afId);
@@ -39,16 +36,16 @@ public class HomeHandler extends AbstractActiveSignalProcessingObject implements
 	@ExternalConnection
 	public IUserHomeNotification userHomeNotification;
 
-	private ILanguageProcessor languageProcessor;
+	private LanguageProcessor languageProcessor;
 
-	private ILanguageProcessor getLanguageProcessor() {
+	private LanguageProcessor getLanguageProcessor() {
 		if (null == this.languageProcessor) {
 			try {
 				final OGLanguageProcessor oglProc = new OGLanguageProcessor();
 				final InputStreamReader reader = new InputStreamReader(this.getClass().getResourceAsStream("/net/akehurst/language/dot/Dot.ogl"));
-				final IGrammar grammar = oglProc.process(reader, "grammarDefinition", IGrammar.class);
-				final ISemanticAnalyser semanticAnalyser = new DotAnalyserVisitor();
-				this.languageProcessor = new LanguageProcessor(grammar, semanticAnalyser);
+				final Grammar grammar = oglProc.process(reader, "grammarDefinition", Grammar.class);
+				final SemanticAnalyser semanticAnalyser = new DotAnalyserVisitor();
+				this.languageProcessor = new LanguageProcessorDefault(grammar, semanticAnalyser);
 			} catch (final Exception e) {
 				e.printStackTrace();
 				return null;
@@ -61,22 +58,16 @@ public class HomeHandler extends AbstractActiveSignalProcessingObject implements
 	@Override
 	public Future<String> fetchParseTree(final String initText) {
 		return super.submit("fetchParseTree", String.class, () -> {
-			try {
-				final Reader reader = new StringReader(initText);
-				System.out.println("parsing " + initText);
-				final IParseTree pt = this.getLanguageProcessor().getParser().parse("graph", reader);
-				System.out.println("parse success " + pt.getRoot().getName());
-				final ToJsonVisitor visitor = new ToJsonVisitor();
-				final JsonBuilderFactory b = Json.createBuilderFactory(null);
-				final JsonObject json = visitor.visit(pt, b);
 
-				return json.toString();
+			final Reader reader = new StringReader(initText);
+			System.out.println("parsing " + initText);
+			final SharedPackedParseTree pt = this.getLanguageProcessor().getParser().parse("graph", reader);
+			System.out.println("parse success " + pt.getRoot().getName());
+			final ToJsonVisitor visitor = new ToJsonVisitor();
+			final JsonBuilderFactory b = Json.createBuilderFactory(null);
+			final JsonObject json = visitor.visit(pt, b);
 
-			} catch (ParseFailedException | ParseTreeException | RuleNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			return Json.createObjectBuilder().add("error", "error").build().toString();
+			return json.toString();
 
 		});
 	}
@@ -85,9 +76,9 @@ public class HomeHandler extends AbstractActiveSignalProcessingObject implements
 	public Future<List<Map<String, Object>>> fetchCompletion(final String text, final int position) {
 		return super.submit("fetchCompletion", (Class<List<Map<String, Object>>>) (Class<?>) List.class, () -> {
 			final Reader reader = new StringReader(text);
-			final List<ICompletionItem> expected = this.getLanguageProcessor().expectedAt(reader, "graph", position, 1);
+			final List<CompletionItem> expected = this.getLanguageProcessor().expectedAt(reader, "graph", position, 1);
 			final List<Map<String, Object>> res = new ArrayList<>();
-			for (final ICompletionItem n : expected) {
+			for (final CompletionItem n : expected) {
 				final Map<String, Object> m = new HashMap<>();
 				m.put("label", n.getText());
 				m.put("kind", 0);

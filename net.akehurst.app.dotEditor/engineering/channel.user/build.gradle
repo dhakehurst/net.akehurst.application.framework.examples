@@ -19,17 +19,17 @@ plugins {
 
 dependencies {
 
-	compile project(":${rootProject.name}.computational.interfaceUser")
+	implementation project(":${rootProject.name}.computational.interfaceUser")
 	
-	compile "${af}.computational.interfaceAuthorisation:${afVersion}"
-	compile "${af}.computational.interfaceUser:${afVersion}"
-	compile "${af}.engineering.gui.common:${afVersion}"
-    compile "${af}.engineering.gui.languageService:${afVersion}"
-	compile "${af}.technology.interfaceGui:${afVersion}"
+	implementation "${af}.computational.interfaceAuthorisation:${afVersion}"
+	implementation "${af}.computational.interfaceUser:${afVersion}"
+	implementation "${af}.engineering.gui.common:${afVersion}"
+
+	implementation "${af}.technology.interfaceGui:${afVersion}"
 //	compile "${af}.technology.authentication:${afVersion}"
-	compile "${af}.technology.gui.common:${afVersion}"
+	implementation "${af}.technology.gui.common:${afVersion}"
 	
-	compile 'org.webjars:font-awesome:4.6.3'
+//	compile 'org.webjars:font-awesome:4.6.3'
 
 }
 

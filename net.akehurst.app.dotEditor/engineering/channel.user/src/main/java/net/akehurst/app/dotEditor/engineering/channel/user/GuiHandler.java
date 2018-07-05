@@ -37,18 +37,24 @@ public class GuiHandler extends AbstractGuiHandler implements IGuiNotification {
 	@ConfiguredValue(defaultValue = "user")
 	StageIdentity stageIdUser;
 
+	@ConfiguredValue(defaultValue = "ng")
+	StageIdentity angularStageId;
+
 	// --------- AbstractGuiHandler ---------
 	@Override
 	public void notifyReady() {
 
-		this.getGuiRequest().createStage(this.stageIdStyle, "/css", null, null);
+		this.getGuiRequest().createStage(this.angularStageId,
+				"/META-INF/resources/webjars/net.akehurst.app.dotEditor.engineering.channel.user.web.angular/1.0.0-SNAPSHOT", null, null, true);
 
-		this.getGuiRequest().createStage(this.stageIdUser, "/secure", this.authStageId, SceneHandlerCommon.sceneIdSignIn);
-
-		this.getGuiRequest().createStage(this.authStageId, "/af", null, null);
-
-		// Must create this last as the route would override the others given an empty ("") stageId
-		this.getGuiRequest().createStage(this.unsecureId, "/unsecure", null, null);
+		//		this.getGuiRequest().createStage(this.stageIdStyle, "/css", null, null, true);
+		//
+		//		this.getGuiRequest().createStage(this.stageIdUser, "/secure", this.authStageId, SceneHandlerCommon.sceneIdSignIn, true);
+		//
+		//		this.getGuiRequest().createStage(this.authStageId, "/af", null, null, true);
+		//
+		//		// Must create this last as the route would override the others given an empty ("") stageId
+		//		this.getGuiRequest().createStage(this.unsecureId, "/unsecure", null, null, true);
 	}
 
 	@Override

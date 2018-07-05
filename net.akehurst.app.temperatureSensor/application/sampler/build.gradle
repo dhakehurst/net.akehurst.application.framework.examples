@@ -15,17 +15,21 @@
  */
 
 dependencies {
+	// service
+	compile "${af}.service.configuration.file:${afVersion}"
 
+	// computational
 	compile project(":${rootProject.name}.computational.sampler")
 
+	// engineering
 	compile project(":${rootProject.name}.engineering.channel.samplerMonitor")
 	compile project(":${rootProject.name}.engineering.channel.sensorSampler")
 	
+	// technology
 	compile project(":${rootProject.name}.technology.sensorSimulator")
 	compile project(":${rootProject.name}.technology.comms.socket")
 
-	compile 'net.akehurst.application.framework:net.akehurst.application.framework.technology.logging.log4j:+'
-	compile 'net.akehurst.application.framework:net.akehurst.application.framework.technology.filesystem:+'
-	compile 'net.akehurst.application.framework:net.akehurst.application.framework.technology.persistence.filesystem:+'
+	compile "${af}.technology.logging.log4j:${afVersion}"
+	compile "${af}.technology.filesystem:${afVersion}"
 
 }
