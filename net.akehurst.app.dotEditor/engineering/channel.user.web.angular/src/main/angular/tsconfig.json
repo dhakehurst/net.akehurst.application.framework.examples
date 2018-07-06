@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
+    "outDir": "js",
     "module": "commonjs",
     "moduleResolution": "node",
     "experimentalDecorators": true,

@@ -1,11 +1,19 @@
 const path = require('path')
 
 module.exports = {
-  entry: './src/index.js',
 
+  entry: {
+    './src/main.ts'
+  },
+  
   output: {
     path: path.resolve('dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: '/assets/'
+  },
+
+  resolve {
+    extensions: 
   },
 
   module: {

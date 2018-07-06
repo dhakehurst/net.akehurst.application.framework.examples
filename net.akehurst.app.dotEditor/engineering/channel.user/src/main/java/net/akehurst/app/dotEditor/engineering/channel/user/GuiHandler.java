@@ -45,7 +45,7 @@ public class GuiHandler extends AbstractGuiHandler implements IGuiNotification {
 	public void notifyReady() {
 
 		this.getGuiRequest().createStage(this.angularStageId,
-				"/META-INF/resources/webjars/net.akehurst.app.dotEditor.engineering.channel.user.web.angular/1.0.0-SNAPSHOT", null, null, true);
+				"/META-INF/resources/webjars/net.akehurst.app.dotEditor.engineering.channel.user.web.angular/1.0.0-SNAPSHOT", null, null, false);
 
 		//		this.getGuiRequest().createStage(this.stageIdStyle, "/css", null, null, true);
 		//

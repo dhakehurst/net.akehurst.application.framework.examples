@@ -9,9 +9,15 @@ configurations {
 
 dependencies {
 	nodeDev 'org.webjars.npm:typescript:2.9.2'
+	nodeDev 'org.webjars.npm:rollup:0.62.0'
+	nodeDev 'org.webjars.npm:rollup-plugin-commonjs:8.4.1'
+	nodeDev 'org.webjars.npm:rollup-plugin-node-resolve:3.3.0'
+	nodeDev 'org.webjars.npm:rollup-plugin-typescript:0.8.1'
+	nodeDev 'org.webjars.npm:rollup-plugin-angular:0.4.4' //0.5.3
+	
 	//nodeDev 'org.webjars.npm:angular__cli:1.6.7'
 	
-	nodeDep "org.webjars.npm:systemjs:0.21.4"
+	//nodeDep "org.webjars.npm:systemjs:0.21.4"
 	nodeDep "org.webjars.npm:core-js:2.5.7"
 	nodeDep "org.webjars.npm:rxjs:6.2.1"
 	nodeDep "org.webjars.npm:zone.js:0.8.26"
@@ -44,7 +50,6 @@ jar {
 	into("META-INF/resources/webjars/${project.name}/${project.version}") {
 	   from "${tsBuild}/dist"
 	   include '**/*.*'
-	   from "${projectDir}/src/main/angular/index.html"
 	}
    
 }
@@ -63,7 +68,11 @@ task extractWebjars(type: Sync) {
 			} else {
 				f.path = f.path.replaceFirst('META-INF/resources/webjars/', '')
 			}
-			f.path = f.path.replaceFirst(dep.moduleVersion.id.version,'')
+			def s = f.path.indexOf('/'+dep.moduleVersion.id.version)
+			def e = f.path.indexOf('/', s+1)
+			def r = (s>0 && e>0 && e>s) ? f.path.substring(0,s)+f.path.substring(e) : f.path
+			//println ''+s+', '+e+', '+r+', ' + 'replace ' + f.path + ' with ' + r
+			f.path = r
 		}
 		includeEmptyDirs false
 	}
@@ -79,7 +88,10 @@ task extractWebjars(type: Sync) {
 			} else {
 				f.path = f.path.replaceFirst('META-INF/resources/webjars/', '')
 			}
-			f.path = f.path.replaceFirst(dep.moduleVersion.id.version,'')
+			def s = f.path.indexOf('/'+dep.moduleVersion.id.version)
+			def e = f.path.indexOf('/', s+1)
+			def r = (s>0 && e>0 && e>s) ? f.path.substring(0,s)+f.path.substring(e) : f.path
+			f.path = r
 		}
 		includeEmptyDirs false
 	}
@@ -100,4 +112,17 @@ task tsc(type: NodeTask) {
 	}
 }
 
-processResources.dependsOn 'tsc'
+task rollup(type: NodeTask) {
+	dependsOn 'tsc'
+	workingDir = file("${tsBuild}")
+	script = file("${tsBuild}/node_modules/rollup/bin/rollup")
+	args = ['-c', 'rollup.config.js']
+}
+
+task copyIndex(type: Copy) {
+	dependsOn 'rollup'
+	from "${projectDir}/src/main/angular/index.html"
+	into "${tsBuild}/dist"
+}
+
+processResources.dependsOn 'copyIndex'
