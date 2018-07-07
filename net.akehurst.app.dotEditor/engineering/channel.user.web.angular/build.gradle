@@ -10,11 +10,12 @@ configurations {
 dependencies {
 	nodeDev 'org.webjars.npm:typescript:2.9.2'
 	nodeDev 'org.webjars.npm:rollup:0.62.0'
-	nodeDev 'org.webjars.npm:rollup-plugin-commonjs:8.4.1'
+	nodeDev 'org.webjars.npm:rollup-plugin-commonjs:9.1.3'
 	nodeDev 'org.webjars.npm:rollup-plugin-node-resolve:3.3.0'
-	nodeDev 'org.webjars.npm:rollup-plugin-typescript:0.8.1'
-	nodeDev 'org.webjars.npm:rollup-plugin-angular:0.4.4' //0.5.3
-	
+	nodeDev 'org.webjars.npm:rollup-plugin-typescript2:0.15.1'
+	nodeDev 'org.webjars.npm:rollup-plugin-angular:0.5.3'
+	nodeDev 'org.webjars.npm:rollup-plugin-cleanup:3.0.0-beta.1'
+	nodeDev 'org.webjars.npm:rollup-plugin-postcss-modules:1.0.8'
 	//nodeDev 'org.webjars.npm:angular__cli:1.6.7'
 	
 	//nodeDep "org.webjars.npm:systemjs:0.21.4"
@@ -37,6 +38,13 @@ ext {
 	node_modules_dir = "${project.buildDir}/nodeBuild/node_modules"
 }
 
+node {
+	version = '10.6.0'
+	distBaseUrl = 'https://nodejs.org/dist'
+	download = true
+	workDir = file("${project.buildDir}/node")
+	nodeModulesDir = file("${tsBuild}/node_modules")
+}
 
 sourceSets {
 	main {

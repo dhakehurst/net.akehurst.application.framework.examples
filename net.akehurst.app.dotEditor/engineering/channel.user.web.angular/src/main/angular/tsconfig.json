@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
     "outDir": "js",
-    "module": "commonjs",
+    "module": "ESNext",
     "moduleResolution": "node",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "lib": [
       "dom",
-      "es2015"
+      "ESNext"
     ]
   }
 }
